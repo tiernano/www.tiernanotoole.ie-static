@@ -4,7 +4,7 @@
 	<title>TiernanOToole</title>
 	<link href="https://feeds.feedburner.com/tiernanotoole" rel="self"/>
 	<link href="https://www.tiernanotoole.ie/"/>
-	<updated>2017-05-05T16:51:10+00:00</updated>
+	<updated>2017-05-05T20:07:17+00:00</updated>
 	<id>https://www.tiernanotoole.ie/</id>
 	<author>
 		<name>Tiernan OToole</name>
@@ -29,17 +29,17 @@
 
 &lt;p&gt;So, the question is, how fast? Well, on my &lt;a href=&quot;https://www.tiernanotoole.ie/Computers/surfacebook.html&quot;&gt;Surface Book&lt;/a&gt; on a WiFi connection in the house, behind a &lt;a href=&quot;http://www.meraki.com&quot;&gt;Meraki&lt;/a&gt; &lt;a href=&quot;https://meraki.cisco.com/products/appliances/mx64&quot;&gt;MX64&lt;/a&gt; firewall, connecting to &lt;a href=&quot;https://www.tiernanotoole.ie/Computers/GodBoxV2.html&quot;&gt;the GodBoxV2&lt;/a&gt; over FTP though ZeroTier, i get the following result:&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://www.tiernanotoole.ie/post_images/2017/05/05/ftpdownload-zerotier-rs.png&quot; alt=&quot;FTP over ZeroTier&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.tiernanotoole.ie/post_images/2017/05/05/ftpdownload-zerotier.png&quot;&gt;&lt;img src=&quot;https://www.tiernanotoole.ie/post_images/2017/05/05/ftpdownload-zerotier-rs.png&quot; alt=&quot;FTP over ZeroTier&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;the same download over FTP direct (no ZeroTier) does the following:&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://www.tiernanotoole.ie/post_images/2017/05/05/ftpdownload-direct-rs.png&quot; alt=&quot;FTP direct&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.tiernanotoole.ie/post_images/2017/05/05/ftpdownload-direct.png&quot;&gt;&lt;img src=&quot;https://www.tiernanotoole.ie/post_images/2017/05/05/ftpdownload-direct-rs.png&quot; alt=&quot;FTP direct&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;So, direct over FTP is faster… in this instance by about 70%, but, over the download, it did get slower (seen it hit 12 at one stage) and because its over WiFi, those are a bit wonky…&lt;/p&gt;
 
 &lt;p&gt;I did get one last screen shot:&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://www.tiernanotoole.ie/post_images/2017/05/05/networkseed-rs.png&quot; alt=&quot;network speed&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.tiernanotoole.ie/post_images/2017/05/05/networkspeed.png&quot;&gt;&lt;img src=&quot;https://www.tiernanotoole.ie/post_images/2017/05/05/networkseed-rs.png&quot; alt=&quot;network speed&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;as you can see, the Zerotier network adapter is showing 77.3Mbps, but the main network adapter is showing 80.8Mbps. There would be other traffic there, but if we assume there is nothing but ZeroTier traffic being sent, there is about 5% of an overhead.&lt;/p&gt;
 
