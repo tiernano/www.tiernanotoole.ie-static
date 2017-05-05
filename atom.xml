@@ -4,12 +4,49 @@
 	<title>TiernanOToole</title>
 	<link href="https://feeds.feedburner.com/tiernanotoole" rel="self"/>
 	<link href="https://www.tiernanotoole.ie/"/>
-	<updated>2017-05-05T16:46:47+00:00</updated>
+	<updated>2017-05-05T16:51:10+00:00</updated>
 	<id>https://www.tiernanotoole.ie/</id>
 	<author>
 		<name>Tiernan OToole</name>
 		<email>tiernan@tiernanotoole.ie</email>
 	</author>
+	
+	<entry>
+		<title>Zerotier and Mini Followup</title>
+		<link href="https://www.tiernanotoole.ie/2017/05/05/zerotier-minio-update.html"/>
+		<updated>2017-05-05T16:00:00+00:00</updated>
+		<id>https://www.tiernanotoole.ie{ post.id }}</id>
+		<content type="html">&lt;p&gt;in a &lt;a href=&quot;https://www.tiernanotoole.ie/2017/01/19/distributed-s3-storage-minio-zerotier.html&quot;&gt;previous post&lt;/a&gt;, I talked about setting up a distributed S3 like data storage system using &lt;a href=&quot;https://minio.io/&quot;&gt;Minio&lt;/a&gt; and &lt;a href=&quot;https://www.zerotier.com/&quot;&gt;ZeroTier&lt;/a&gt;. Well, this week, the ZeroTier guys tweeted about this.&lt;/p&gt;
+
+&lt;blockquote class=&quot;twitter-tweet&quot; data-lang=&quot;en&quot;&gt;&lt;p lang=&quot;en&quot; dir=&quot;ltr&quot;&gt;Distributed S3 data storage using &lt;a href=&quot;https://twitter.com/Minio&quot;&gt;@minio&lt;/a&gt; and &lt;a href=&quot;https://twitter.com/hashtag/ZeroTier?src=hash&quot;&gt;#ZeroTier&lt;/a&gt; -- &lt;a href=&quot;https://t.co/MAXTjo3muh&quot;&gt;https://t.co/MAXTjo3muh&lt;/a&gt;&lt;/p&gt;&amp;mdash; ZeroTier, Inc. (@ZeroTier) &lt;a href=&quot;https://twitter.com/ZeroTier/status/859557214997970944&quot;&gt;May 2, 2017&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async=&quot;&quot; src=&quot;//platform.twitter.com/widgets.js&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;
+
+&lt;p&gt;A few people then started asking questions, and looking for a follow up, so here it is…&lt;/p&gt;
+
+&lt;p&gt;First, a quick recap. I had 4 machines, all running Linux. Three of them were in 1 time zone (GMT+1) and one was in another (GMT). Looking at the &lt;a href=&quot;https://docs.minio.io/docs/distributed-minio-quickstart-guide&quot;&gt;Distributed Minio Quickstart Guide&lt;/a&gt; again, there is a mention of times being in sync… which is probably why this did not work as planned… and by “not work as planed”, I mean that Minio would crash, or not be responsive, or not write data in the place it should have… which was a pain. But looking at the documentation again, they do mention that Windows support is “experimental” which means, hopefully, some day it will be not so experimental, and might work… Given that most of my machines in house are Windows boxes, this would be a nice feature.&lt;/p&gt;
+
+&lt;p&gt;Now, what about ZeroTier? Given they posted it to their twitter? Well, it worked. it did the inter connect stuff well, and, given bandwidth limitations on a home broadband connection, it was still quite fast.&lt;/p&gt;
+
+&lt;p&gt;So, the question is, how fast? Well, on my &lt;a href=&quot;https://www.tiernanotoole.ie/Computers/surfacebook.html&quot;&gt;Surface Book&lt;/a&gt; on a WiFi connection in the house, behind a &lt;a href=&quot;http://www.meraki.com&quot;&gt;Meraki&lt;/a&gt; &lt;a href=&quot;https://meraki.cisco.com/products/appliances/mx64&quot;&gt;MX64&lt;/a&gt; firewall, connecting to &lt;a href=&quot;https://www.tiernanotoole.ie/Computers/GodBoxV2.html&quot;&gt;the GodBoxV2&lt;/a&gt; over FTP though ZeroTier, i get the following result:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://www.tiernanotoole.ie/post_images/2017/05/05/ftpdownload-zerotier-rs.png&quot; alt=&quot;FTP over ZeroTier&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;the same download over FTP direct (no ZeroTier) does the following:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://www.tiernanotoole.ie/post_images/2017/05/05/ftpdownload-direct-rs.png&quot; alt=&quot;FTP direct&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;So, direct over FTP is faster… in this instance by about 70%, but, over the download, it did get slower (seen it hit 12 at one stage) and because its over WiFi, those are a bit wonky…&lt;/p&gt;
+
+&lt;p&gt;I did get one last screen shot:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://www.tiernanotoole.ie/post_images/2017/05/05/networkseed-rs.png&quot; alt=&quot;network speed&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;as you can see, the Zerotier network adapter is showing 77.3Mbps, but the main network adapter is showing 80.8Mbps. There would be other traffic there, but if we assume there is nothing but ZeroTier traffic being sent, there is about 5% of an overhead.&lt;/p&gt;
+
+&lt;p&gt;So, to wrap up: Minio and its distributed storage system over ZeroTier needs more testing. Ideally, all hosts need to be in the same time zone, or at least have the same time… Will try work on that soon. As for ZeroTier? I am extremely happy with them. Its fast, easy to setup, and easy to configure. What more could you ask for? Oh, and free, unless you need a pro account!&lt;/p&gt;
+
+</content>
+	</entry>
 	
 	<entry>
 		<title>Business Class Broadband... finally here....</title>
