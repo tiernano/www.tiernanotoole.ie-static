@@ -4,7 +4,7 @@
 	<title>TiernanOToole</title>
 	<link href="https://feeds.feedburner.com/tiernanotoole" rel="self"/>
 	<link href="https://www.tiernanotoole.ie/"/>
-	<updated>2017-05-06T13:46:19+00:00</updated>
+	<updated>2017-05-06T13:59:47+00:00</updated>
 	<id>https://www.tiernanotoole.ie/</id>
 	<author>
 		<name>Tiernan OToole</name>
@@ -16,24 +16,24 @@
 		<link href="https://www.tiernanotoole.ie/2017/05/06/vscode-with-powershell.html"/>
 		<updated>2017-05-06T13:00:00+00:00</updated>
 		<id>https://www.tiernanotoole.ie{ post.id }}</id>
-		<content type="html">&lt;p&gt;A few years back, i created a post showing you how to add an Alias to PowerShell &lt;a href=&quot;https://www.tiernanotoole.ie/2012/08/30/SublimeText-With-Powershell.html&quot;&gt;to easily start Sublime Text&lt;/a&gt; from a command line. This worked well, but this is 2017 (that post is from 2012!) and my daily text editor has changed. I have moved to &lt;a href=&quot;https://code.visualstudio.com/&quot;&gt;Visual Studio Code&lt;/a&gt; for most of my daily work. It works well for 95% of my daily work. I still use &lt;a href=&quot;https://www.visualstudio.com/vs/&quot;&gt;Visual Studio Pro&lt;/a&gt; for Development, but for quick fixes, Code is great. For blogging, on the other hand, I am moving more and more towards &lt;a href=&quot;https://markdownmonster.west-wind.com/&quot;&gt;MarkDown Monster&lt;/a&gt;.&lt;/p&gt;
+		<content type="html">&lt;p&gt;A few years back, i created a post showing you how to add an Alias to PowerShell &lt;a href=&quot;https://www.tiernanotoole.ie/2012/08/30/SublimeText-With-Powershell.html&quot;&gt;to easily start Sublime Text from a PowerShell command line&lt;/a&gt; . This worked well, but this is 2017 (that post is from 2012!) and my daily text editor has changed. I have moved to &lt;a href=&quot;https://code.visualstudio.com/&quot;&gt;Visual Studio Code&lt;/a&gt; for most of my daily work. It works well 95% of the time. I still use &lt;a href=&quot;https://www.visualstudio.com/vs/&quot;&gt;Visual Studio Pro&lt;/a&gt; for C# Development, but for quick fixes and work on, say &lt;a href=&quot;https://golang.org/&quot;&gt;Go&lt;/a&gt; or smaller edits, Code is great. For blogging, on the other hand, I am trying out &lt;a href=&quot;https://markdownmonster.west-wind.com/&quot;&gt;MarkDown Monster&lt;/a&gt; but code still has some nice features. We will see how tests go.&lt;/p&gt;
 
-&lt;p&gt;Anyway, to upgrade the post, and to be able to use VS Code and MarkDown Monster from your PowerShell command line, i added the following:&lt;/p&gt;
+&lt;p&gt;Anyway, to upgrade the post, and to be able to use VS Code and MarkDown Monster from your PowerShell command line, I added the following:&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;Set-Alias code &quot;C:\Program Files (x86)\Microsoft VS Code\Code.exe&quot;
 Set-Alias mm &quot;C:\Program Files (x86)\Markdown Monster\MarkdownMonster.exe&quot;
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;You can either run this each time you open PowerShell (pain) or you can add it to your &lt;code&gt;Microsoft.PowerShell_profile.ps1&lt;/code&gt; which lives in your &lt;code&gt;Document\WindowsPowerShell&lt;/code&gt; folder. If you dont have one, just create the file, add that piece of text, and next time you open PowerShell, you are good to go.&lt;/p&gt;
+&lt;p&gt;You can either run this each time you open PowerShell (a bit of pain) or you can add it to your &lt;code&gt;Microsoft.PowerShell_profile.ps1&lt;/code&gt; which lives in your &lt;code&gt;Document\WindowsPowerShell&lt;/code&gt; folder. If you dont have one, just create the file, add that piece of text, and next time you open PowerShell, you are good to go.&lt;/p&gt;
 
-&lt;p&gt;in my case, i am actually in the &lt;a href=&quot;https://code.visualstudio.com/insiders&quot;&gt;Visual Studio Code Insiders&lt;/a&gt; group, do my alias is:&lt;/p&gt;
+&lt;p&gt;In my case, i am actually in the &lt;a href=&quot;https://code.visualstudio.com/insiders&quot;&gt;Visual Studio Code Insiders&lt;/a&gt; group, so my alias is:&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;Set-Alias code &quot;C:\Program Files (x86)\Microsoft VS Code Insiders\Code - Insiders.exe&quot;
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;When these are set, you can now run the following commands:&lt;/p&gt;
+&lt;p&gt;When these are set (and you have restarted your PowerShell windows), you can now run the following commands:&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;code filename.txt 
+&lt;pre&gt;&lt;code&gt;code filename.txt
 code folder
 mm filename.txt
 &lt;/code&gt;&lt;/pre&gt;
