@@ -21,28 +21,28 @@
   <link rel="webmention" href="https://webmention.io/tiernanotoole.ie/webmention" />
 
   <!-- Begin Jekyll SEO tag v2.1.0 -->
-<title>More Jekyll Stuff - Tiernan’s Comms Closet</title>
-<meta property="og:title" content="More Jekyll Stuff" />
-<meta name="description" content="Couple of bits and pieces on Jekyll stuff today… I am tweaking the outline of the site, so i am surfing around finding stuff… here is what i have found Host a static site on Amazon S3: Interesting idea, and something i would look into eventually… And with the help of CloudFront you could host your whole blog on a CDN! Rake tasks for Jekyll: Rake is the Ruby version of make… and a RakeFile can have tasks, which are in Ruby… They can do, from what i can gather, pretty much anything… So, some examples of what you can do with them are linked here… I especially like the New Post generator… very handy! Jekyll Plugins: Various different plugins for Jekyll… I am interested in a few of these, mainly the Generate_projects one, which generates a page for your projects based on your GitHub projects… very cool stuff… Strictly speaking, this is not just a Jekyll how to, but Migrating from Wordpress to Jekyll is a handy read. my main blog, my podcast and photography blog both run WordPress. migrating them to Jekyll would mean i could move them directly to a CDN and make things a lot faster… Maybe something i plan doing soon… If you have any tips or tricks, why not leave a comment and i can add them to the post." />
-<meta property="og:description" content="Couple of bits and pieces on Jekyll stuff today… I am tweaking the outline of the site, so i am surfing around finding stuff… here is what i have found Host a static site on Amazon S3: Interesting idea, and something i would look into eventually… And with the help of CloudFront you could host your whole blog on a CDN! Rake tasks for Jekyll: Rake is the Ruby version of make… and a RakeFile can have tasks, which are in Ruby… They can do, from what i can gather, pretty much anything… So, some examples of what you can do with them are linked here… I especially like the New Post generator… very handy! Jekyll Plugins: Various different plugins for Jekyll… I am interested in a few of these, mainly the Generate_projects one, which generates a page for your projects based on your GitHub projects… very cool stuff… Strictly speaking, this is not just a Jekyll how to, but Migrating from Wordpress to Jekyll is a handy read. my main blog, my podcast and photography blog both run WordPress. migrating them to Jekyll would mean i could move them directly to a CDN and make things a lot faster… Maybe something i plan doing soon… If you have any tips or tricks, why not leave a comment and i can add them to the post." />
-<link rel="canonical" href="https://www.tiernanotoole.ie/2012/10/04/more_jekyll_stuff.html" />
-<meta property="og:url" content="https://www.tiernanotoole.ie/2012/10/04/more_jekyll_stuff.html" />
+<title>VSCode and Markdown Monster with Powershell - Tiernan’s Comms Closet</title>
+<meta property="og:title" content="VSCode and Markdown Monster with Powershell" />
+<meta name="description" content="A few years back, i created a post showing you how to add an Alias to PowerShell to easily start Sublime Text from a command line. This worked well, but this is 2017 (that post is from 2012!) and my daily text editor has changed. I have moved to Visual Studio Code for most of my daily work. It works well for 95% of my daily work. I still use Visual Studio Pro for Development, but for quick fixes, Code is great. For blogging, on the other hand, I am moving more and more towards MarkDown Monster. Anyway, to upgrade the post, and to be able to use VS Code and MarkDown Monster from your PowerShell command line, i added the following: Set-Alias code &quot;C:\Program Files (x86)\Microsoft VS Code\Code.exe&quot; Set-Alias mm &quot;C:\Program Files (x86)\Markdown Monster\MarkdownMonster.exe&quot; You can either run this each time you open PowerShell (pain) or you can add it to your Microsoft.PowerShell_profile.ps1 which lives in your Document\WindowsPowerShell folder. If you dont have one, just create the file, add that piece of text, and next time you open PowerShell, you are good to go. in my case, i am actually in the Visual Studio Code Insiders group, do my alias is: Set-Alias code &quot;C:\Program Files (x86)\Microsoft VS Code Insiders\Code - Insiders.exe&quot; When these are set, you can now run the following commands: code filename.txt code folder mm filename.txt VSCode will open either files or folders, but it seems Markdown Monster only opens files." />
+<meta property="og:description" content="A few years back, i created a post showing you how to add an Alias to PowerShell to easily start Sublime Text from a command line. This worked well, but this is 2017 (that post is from 2012!) and my daily text editor has changed. I have moved to Visual Studio Code for most of my daily work. It works well for 95% of my daily work. I still use Visual Studio Pro for Development, but for quick fixes, Code is great. For blogging, on the other hand, I am moving more and more towards MarkDown Monster. Anyway, to upgrade the post, and to be able to use VS Code and MarkDown Monster from your PowerShell command line, i added the following: Set-Alias code &quot;C:\Program Files (x86)\Microsoft VS Code\Code.exe&quot; Set-Alias mm &quot;C:\Program Files (x86)\Markdown Monster\MarkdownMonster.exe&quot; You can either run this each time you open PowerShell (pain) or you can add it to your Microsoft.PowerShell_profile.ps1 which lives in your Document\WindowsPowerShell folder. If you dont have one, just create the file, add that piece of text, and next time you open PowerShell, you are good to go. in my case, i am actually in the Visual Studio Code Insiders group, do my alias is: Set-Alias code &quot;C:\Program Files (x86)\Microsoft VS Code Insiders\Code - Insiders.exe&quot; When these are set, you can now run the following commands: code filename.txt code folder mm filename.txt VSCode will open either files or folders, but it seems Markdown Monster only opens files." />
+<link rel="canonical" href="https://www.tiernanotoole.ie/2017/05/06/vscode-with-powershell.html" />
+<meta property="og:url" content="https://www.tiernanotoole.ie/2017/05/06/vscode-with-powershell.html" />
 <meta property="og:site_name" content="Tiernan’s Comms Closet" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2012-10-04T20:57:52+00:00" />
+<meta property="article:published_time" content="2017-05-06T13:00:00+00:00" />
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:site" content="@tiernano" />
 <meta name="twitter:creator" content="@tiernano" />
 <script type="application/ld+json">
 {"@context": "http://schema.org",
 "@type": "BlogPosting",
-"headline": "More Jekyll Stuff",
-"datePublished": "2012-10-04T20:57:52+00:00",
-"description": "Couple of bits and pieces on Jekyll stuff today… I am tweaking the outline of the site, so i am surfing around finding stuff… here is what i have found Host a static site on Amazon S3: Interesting idea, and something i would look into eventually… And with the help of CloudFront you could host your whole blog on a CDN! Rake tasks for Jekyll: Rake is the Ruby version of make… and a RakeFile can have tasks, which are in Ruby… They can do, from what i can gather, pretty much anything… So, some examples of what you can do with them are linked here… I especially like the New Post generator… very handy! Jekyll Plugins: Various different plugins for Jekyll… I am interested in a few of these, mainly the Generate_projects one, which generates a page for your projects based on your GitHub projects… very cool stuff… Strictly speaking, this is not just a Jekyll how to, but Migrating from Wordpress to Jekyll is a handy read. my main blog, my podcast and photography blog both run WordPress. migrating them to Jekyll would mean i could move them directly to a CDN and make things a lot faster… Maybe something i plan doing soon… If you have any tips or tricks, why not leave a comment and i can add them to the post.",
+"headline": "VSCode and Markdown Monster with Powershell",
+"datePublished": "2017-05-06T13:00:00+00:00",
+"description": "A few years back, i created a post showing you how to add an Alias to PowerShell to easily start Sublime Text from a command line. This worked well, but this is 2017 (that post is from 2012!) and my daily text editor has changed. I have moved to Visual Studio Code for most of my daily work. It works well for 95% of my daily work. I still use Visual Studio Pro for Development, but for quick fixes, Code is great. For blogging, on the other hand, I am moving more and more towards MarkDown Monster. Anyway, to upgrade the post, and to be able to use VS Code and MarkDown Monster from your PowerShell command line, i added the following: Set-Alias code &quot;C:\\Program Files (x86)\\Microsoft VS Code\\Code.exe&quot; Set-Alias mm &quot;C:\\Program Files (x86)\\Markdown Monster\\MarkdownMonster.exe&quot; You can either run this each time you open PowerShell (pain) or you can add it to your Microsoft.PowerShell_profile.ps1 which lives in your Document\\WindowsPowerShell folder. If you dont have one, just create the file, add that piece of text, and next time you open PowerShell, you are good to go. in my case, i am actually in the Visual Studio Code Insiders group, do my alias is: Set-Alias code &quot;C:\\Program Files (x86)\\Microsoft VS Code Insiders\\Code - Insiders.exe&quot; When these are set, you can now run the following commands: code filename.txt code folder mm filename.txt VSCode will open either files or folders, but it seems Markdown Monster only opens files.",
 "publisher": {"@type": "Organization",
 "logo": {"@type": "ImageObject",
 "url": "https://www.tiernanotoole.ie/images/f13a7d94b648a3a15655f0ec1dc3284e.jpeg"}},
-"url": "https://www.tiernanotoole.ie/2012/10/04/more_jekyll_stuff.html"}</script>
+"url": "https://www.tiernanotoole.ie/2017/05/06/vscode-with-powershell.html"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -235,13 +235,13 @@
     <div class="eleven columns content">
       <h1 class="title"><a href="https://www.tiernanotoole.ie">Tiernan's Comms Closet</h1>
 <p class="meta">
-  October 04, 2012 
+  May 06, 2017 
   <a href="/">
     <i class="home fa fa-home"></i>
   </a>
 </p>
 
-<h1 class="title">More Jekyll Stuff</h1>
+<h1 class="title">VSCode and Markdown Monster with Powershell</h1>
 
 <!-- post_lead_in -->
 <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
@@ -256,16 +256,29 @@
 </script>
 
 <div id="post">
-  <p>Couple of bits and pieces on Jekyll stuff today… I am tweaking the outline of the site, so i am surfing around finding stuff… here is what i have found</p>
+  <p>A few years back, i created a post showing you how to add an Alias to PowerShell <a href="https://www.tiernanotoole.ie/2012/08/30/SublimeText-With-Powershell.html">to easily start Sublime Text</a> from a command line. This worked well, but this is 2017 (that post is from 2012!) and my daily text editor has changed. I have moved to <a href="https://code.visualstudio.com/">Visual Studio Code</a> for most of my daily work. It works well for 95% of my daily work. I still use <a href="https://www.visualstudio.com/vs/">Visual Studio Pro</a> for Development, but for quick fixes, Code is great. For blogging, on the other hand, I am moving more and more towards <a href="https://markdownmonster.west-wind.com/">MarkDown Monster</a>.</p>
 
-<ul>
-  <li><a href="http://www.layouts-the.me/2011/03/16/hosting-on-amazon-s3/">Host a static site on Amazon S3</a>: Interesting idea, and something i would look into eventually… And with the help of <a href="http://aws.amazon.com/cloudfront">CloudFront</a> you could host your whole blog on a CDN!</li>
-  <li><a href="http://www.layouts-the.me/rake/2011/04/23/rake_tasks_for_jekyll/">Rake tasks for Jekyll</a>: Rake is the Ruby version of make… and a RakeFile can have tasks, which are in Ruby… They can do, from what i can gather, pretty much anything… So, some examples of what you can do with them are linked here… I especially like the New Post generator… very handy!</li>
-  <li><a href="http://recursive-design.com/projects/jekyll-plugins/">Jekyll Plugins</a>: Various different plugins for Jekyll… I am interested in a few of these, mainly the Generate_projects one, which generates a page for your projects based on your <a href="http://vitobotta.com/how-to-migrate-from-wordpress-to-jekyll/">GitHub</a> projects… very cool stuff…</li>
-  <li>Strictly speaking, this is not just a Jekyll how to, but <a href="http://vitobotta.com/how-to-migrate-from-wordpress-to-jekyll/">Migrating from Wordpress to Jekyll</a> is a handy read. my <a href="http://blog.lotas-smartman.net">main blog</a>, <a href="http://podcast.tiernanotoole.ie">my podcast</a> and <a href="http://geekphotographer.com">photography blog</a> both run WordPress. migrating them to Jekyll would mean i could move them directly to a CDN and make things a lot faster… Maybe something i plan doing soon…</li>
-</ul>
+<p>Anyway, to upgrade the post, and to be able to use VS Code and MarkDown Monster from your PowerShell command line, i added the following:</p>
 
-<p>If you have any tips or tricks, why not leave a comment and i can add them to the post.</p>
+<pre><code>Set-Alias code "C:\Program Files (x86)\Microsoft VS Code\Code.exe"
+Set-Alias mm "C:\Program Files (x86)\Markdown Monster\MarkdownMonster.exe"
+</code></pre>
+
+<p>You can either run this each time you open PowerShell (pain) or you can add it to your <code>Microsoft.PowerShell_profile.ps1</code> which lives in your <code>Document\WindowsPowerShell</code> folder. If you dont have one, just create the file, add that piece of text, and next time you open PowerShell, you are good to go.</p>
+
+<p>in my case, i am actually in the <a href="https://code.visualstudio.com/insiders">Visual Studio Code Insiders</a> group, do my alias is:</p>
+
+<pre><code>Set-Alias code "C:\Program Files (x86)\Microsoft VS Code Insiders\Code - Insiders.exe"
+</code></pre>
+
+<p>When these are set, you can now run the following commands:</p>
+
+<pre><code>code filename.txt 
+code folder
+mm filename.txt
+</code></pre>
+
+<p>VSCode will open either files or folders, but it seems Markdown Monster only opens files.</p>
 
 
 <br>
@@ -289,15 +302,15 @@
   <ul class="posts">
     
     <li>
-      <span>06 May 2017 &raquo;</span> <a href="/2017/05/06/vscode-with-powershell.html">VSCode and Markdown Monster with Powershell</a>
-    </li>
-    
-    <li>
       <span>05 May 2017 &raquo;</span> <a href="/2017/05/05/zerotier-minio-update.html">Zerotier and Mini Followup</a>
     </li>
     
     <li>
       <span>09 Mar 2017 &raquo;</span> <a href="/2017/03/09/business-class-broadband.html">Business Class Broadband... finally here....</a>
+    </li>
+    
+    <li>
+      <span>19 Jan 2017 &raquo;</span> <a href="/2017/01/19/distributed-s3-storage-minio-zerotier.html">Distributed S3 data storage using Minio (and Zerotier)</a>
     </li>
     
   </ul>
@@ -307,8 +320,8 @@
 <div id="disqus_thread"></div>
 <script>
     var disqus_config = function () {
-        this.page.url = "https://www.tiernanotoole.ie/2012/10/04/more_jekyll_stuff.html";  // Replace PAGE_URL with your page's canonical URL variable
-        this.page.identifier = "https://www.tiernanotoole.ie/2012/10/04/more_jekyll_stuff.html"; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+        this.page.url = "https://www.tiernanotoole.ie/2017/05/06/vscode-with-powershell.html";  // Replace PAGE_URL with your page's canonical URL variable
+        this.page.identifier = "https://www.tiernanotoole.ie/2017/05/06/vscode-with-powershell.html"; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
     };
     (function() {  // DON'T EDIT BELOW THIS LINE
         var d = document, s = d.createElement('script');
@@ -328,7 +341,7 @@
     
     <p>
         © Tiernan OToole, 2017 &mdash; built with <a href="http://jekyllrb.com/">Jekyll</a> using <a href="https://github.com/swanson/lagom">Lagom theme</a> hosted on <a href="http://www.azure.com">Azure</a> and protected by <a href="http://www.cloudflare.com">CloudFlare</a>.
-        Page generated at:  2017-05-06 13:46:30 +0000
+        Page generated at:  2017-05-06 13:46:35 +0000
     </p>
 </div>
       </div>

@@ -4,12 +4,44 @@
 	<title>TiernanOToole</title>
 	<link href="https://feeds.feedburner.com/tiernanotoole" rel="self"/>
 	<link href="https://www.tiernanotoole.ie/"/>
-	<updated>2017-05-05T20:07:17+00:00</updated>
+	<updated>2017-05-06T13:46:19+00:00</updated>
 	<id>https://www.tiernanotoole.ie/</id>
 	<author>
 		<name>Tiernan OToole</name>
 		<email>tiernan@tiernanotoole.ie</email>
 	</author>
+	
+	<entry>
+		<title>VSCode and Markdown Monster with Powershell</title>
+		<link href="https://www.tiernanotoole.ie/2017/05/06/vscode-with-powershell.html"/>
+		<updated>2017-05-06T13:00:00+00:00</updated>
+		<id>https://www.tiernanotoole.ie{ post.id }}</id>
+		<content type="html">&lt;p&gt;A few years back, i created a post showing you how to add an Alias to PowerShell &lt;a href=&quot;https://www.tiernanotoole.ie/2012/08/30/SublimeText-With-Powershell.html&quot;&gt;to easily start Sublime Text&lt;/a&gt; from a command line. This worked well, but this is 2017 (that post is from 2012!) and my daily text editor has changed. I have moved to &lt;a href=&quot;https://code.visualstudio.com/&quot;&gt;Visual Studio Code&lt;/a&gt; for most of my daily work. It works well for 95% of my daily work. I still use &lt;a href=&quot;https://www.visualstudio.com/vs/&quot;&gt;Visual Studio Pro&lt;/a&gt; for Development, but for quick fixes, Code is great. For blogging, on the other hand, I am moving more and more towards &lt;a href=&quot;https://markdownmonster.west-wind.com/&quot;&gt;MarkDown Monster&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Anyway, to upgrade the post, and to be able to use VS Code and MarkDown Monster from your PowerShell command line, i added the following:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;Set-Alias code &quot;C:\Program Files (x86)\Microsoft VS Code\Code.exe&quot;
+Set-Alias mm &quot;C:\Program Files (x86)\Markdown Monster\MarkdownMonster.exe&quot;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;You can either run this each time you open PowerShell (pain) or you can add it to your &lt;code&gt;Microsoft.PowerShell_profile.ps1&lt;/code&gt; which lives in your &lt;code&gt;Document\WindowsPowerShell&lt;/code&gt; folder. If you dont have one, just create the file, add that piece of text, and next time you open PowerShell, you are good to go.&lt;/p&gt;
+
+&lt;p&gt;in my case, i am actually in the &lt;a href=&quot;https://code.visualstudio.com/insiders&quot;&gt;Visual Studio Code Insiders&lt;/a&gt; group, do my alias is:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;Set-Alias code &quot;C:\Program Files (x86)\Microsoft VS Code Insiders\Code - Insiders.exe&quot;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;When these are set, you can now run the following commands:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;code filename.txt 
+code folder
+mm filename.txt
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;VSCode will open either files or folders, but it seems Markdown Monster only opens files.&lt;/p&gt;
+
+</content>
+	</entry>
 	
 	<entry>
 		<title>Zerotier and Mini Followup</title>
@@ -2004,7 +2036,7 @@ make
 		<link href="https://www.tiernanotoole.ie/2012/08/30/SublimeText-With-Powershell.html"/>
 		<updated>2012-08-30T09:00:13+00:00</updated>
 		<id>https://www.tiernanotoole.ie{ post.id }}</id>
-		<content type="html">&lt;p&gt;Ny new Favorite cross platform text editor is &lt;a href=&quot;http://www.sublimetext.com/2&quot;&gt;Sublime Text 2&lt;/a&gt;. It works on Windows, Mac OS and Linux, and i am very happy with it. My only problem is the path to start it is not exactly easy to type… So, with the help of PowerShell, my new favorite command line tool on Windows, i added an alias:&lt;/p&gt;
+		<content type="html">&lt;p&gt;My new Favorite cross platform text editor is &lt;a href=&quot;http://www.sublimetext.com/2&quot;&gt;Sublime Text 2&lt;/a&gt;. It works on Windows, Mac OS and Linux, and i am very happy with it. My only problem is the path to start it is not exactly easy to type… So, with the help of PowerShell, my new favorite command line tool on Windows, i added an alias:&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;Set-Alias subl 'c:\program files\sublime text 2\sublime_text.exe'
 &lt;/code&gt;&lt;/pre&gt;
