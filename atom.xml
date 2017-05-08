@@ -4,7 +4,7 @@
 	<title>TiernanOToole</title>
 	<link href="https://feeds.feedburner.com/tiernanotoole" rel="self"/>
 	<link href="https://www.tiernanotoole.ie/"/>
-	<updated>2017-05-06T13:59:47+00:00</updated>
+	<updated>2017-05-08T14:44:52+00:00</updated>
 	<id>https://www.tiernanotoole.ie/</id>
 	<author>
 		<name>Tiernan OToole</name>
@@ -44,7 +44,7 @@ mm filename.txt
 	</entry>
 	
 	<entry>
-		<title>Zerotier and Mini Followup</title>
+		<title>Zerotier and Minio Followup</title>
 		<link href="https://www.tiernanotoole.ie/2017/05/05/zerotier-minio-update.html"/>
 		<updated>2017-05-05T16:00:00+00:00</updated>
 		<id>https://www.tiernanotoole.ie{ post.id }}</id>
