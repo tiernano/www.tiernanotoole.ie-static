@@ -4,12 +4,25 @@
 	<title>TiernanOToole</title>
 	<link href="https://feeds.feedburner.com/tiernanotoole" rel="self"/>
 	<link href="https://www.tiernanotoole.ie/"/>
-	<updated>2017-08-09T17:58:39+00:00</updated>
+	<updated>2017-08-16T07:24:46+00:00</updated>
 	<id>https://www.tiernanotoole.ie/</id>
 	<author>
 		<name>Tiernan OToole</name>
 		<email>tiernan@tiernanotoole.ie</email>
 	</author>
+	
+	<entry>
+		<title>Testing Forestry</title>
+		<link href="https://www.tiernanotoole.ie/2017/08/16/testing-forestry.html"/>
+		<updated>2017-08-16T00:00:00+00:00</updated>
+		<id>https://www.tiernanotoole.ie{ post.id }}</id>
+		<content type="html">&lt;p&gt;So, as you probably know, this site is built with &lt;a href=&quot;https://jekyllrb.com/&quot;&gt;Jekyll&lt;/a&gt;. Jekyll is a Static Site Generator, basically taking an input of a load of text files (see the source repo for this site on &lt;a href=&quot;https://github.com/tiernano/www.tiernanotoole.ie/&quot;&gt;Github here&lt;/a&gt;) and generating a load more HTML (the static HTML is hosted on &lt;a href=&quot;https://github.com/tiernano/www.tiernanotoole.ie-static&quot;&gt;Github here&lt;/a&gt;, which auto publishes to &lt;a href=&quot;https://azure.microsoft.com/en-us/services/app-service/web/&quot;&gt;Azure App Service&lt;/a&gt;).&lt;/p&gt;
+
+&lt;p&gt;In previous posts, i have talked about using the likes of &lt;a href=&quot;https://www.tiernanotoole.ie/2017/05/06/vscode-with-powershell.html&quot;&gt;Visual Studio Code and Mark Down Monster&lt;/a&gt; to build the site. Well, a few days back, i found &lt;a href=&quot;https://forestry.io&quot;&gt;Forestry.io&lt;/a&gt;. Its a web application which, in my case, is linked with my GitHub repo (the Jekyll source one) and allows me to make changes to the code easily. Because the way i build my site is a little different, i manually build the site and push to the destination github project, but they have features allowing you to push directly to SFTP or FTP servers, github, or some other options.&lt;/p&gt;
+
+&lt;p&gt;The interface is nice and easy to use, and you can use drafts, etc. Mind you, even with drafts, because files are written into a public repo, they are not fully private… I suppose I could just make the source repo private… Anyway, they are free for single user sites (like this) or they have paid plans for teams (say, your business blog with more than 1 user updating it, for example).&lt;/p&gt;
+</content>
+	</entry>
 	
 	<entry>
 		<title>VSCode and Markdown Monster with Powershell</title>
