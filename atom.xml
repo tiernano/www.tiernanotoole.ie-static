@@ -4,7 +4,7 @@
 	<title>TiernanOToole</title>
 	<link href="https://feeds.feedburner.com/tiernanotoole" rel="self"/>
 	<link href="https://www.tiernanotoole.ie/"/>
-	<updated>2018-03-06T08:22:06+00:00</updated>
+	<updated>2018-03-06T19:37:58+00:00</updated>
 	<id>https://www.tiernanotoole.ie/</id>
 	<author>
 		<name>Tiernan OToole</name>
@@ -22,9 +22,9 @@
 
 &lt;ul&gt;
   &lt;li&gt;&lt;a href=&quot;https://itunes.apple.com/ai/app/microsoft-remote-desktop/id714464092?mt=8&quot;&gt;Microsoft’s Remote Desktop Connection&lt;/a&gt; works perfect on the iPad Pro. I have RDPed into machines (with the help of &lt;a href=&quot;http://www.zerotier.com&quot;&gt;ZeroTier&lt;/a&gt;)&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://panic.com/prompt/&quot;&gt;Panic’s Prompt&lt;/a&gt; works well too… again, with ZeroTier, i can SSH into boxes and remote manage them. Handy for checking on docker instances…&lt;/li&gt;
-  &lt;li&gt;Panic also have &lt;a href=&quot;https://panic.com/coda-ios/&quot;&gt;Coda for iOS&lt;/a&gt;. its a very nice (if somewhat expensive at $25) editor for the iPad. This post is being written on there now.&lt;/li&gt;
-  &lt;li&gt;for Git stuff, i am using an app called &lt;a href=&quot;https://workingcopyapp.com&quot;&gt;Working Copy&lt;/a&gt;. Its free, to an extend, but if you need to do stuff like push changes, which is kind of important, then you need to pay a fee.&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://itunes.apple.com/us/app/prompt-2/id917437289?mt=8&amp;amp;uo=4&amp;amp;at=11l4BV&quot;&gt;Panic’s Prompt&lt;/a&gt; works well too… again, with ZeroTier, i can SSH into boxes and remote manage them. Handy for checking on docker instances…&lt;/li&gt;
+  &lt;li&gt;Panic also have &lt;a href=&quot;https://itunes.apple.com/us/app/coda/id500906297?mt=8&amp;amp;at=11l4BV&quot;&gt;Coda for iOS&lt;/a&gt;. its a very nice (if somewhat expensive at $25) editor for the iPad. This post is being written on there now.&lt;/li&gt;
+  &lt;li&gt;for Git stuff, i am using an app called &lt;a href=&quot;https://itunes.apple.com/us/app/working-copy/id896694807?mt=8&amp;amp;uo=6&amp;amp;at=1000lHq&amp;amp;ct=workingcopyapp&quot;&gt;Working Copy&lt;/a&gt;. Its free, to an extend, but if you need to do stuff like push changes, which is kind of important, then you need to pay a fee.&lt;/li&gt;
   &lt;li&gt;Coda and Working Copy work together with some magic built into Working Copy. It can act as a &lt;a href=&quot;https://workingcopyapp.com/manual/webdav-server&quot;&gt;WebDav server&lt;/a&gt;, which Coda can the connect to. you open, edit, change and create docs, and Working Copy keeps note. then you swap to them and checkin. You need to have both apps on the screen at the same time (the docking feature works well for that) since iOS seems to kill some background tasks.&lt;/li&gt;
   &lt;li&gt;Unrelated to blogging, but i have also tried editing photos using &lt;a href=&quot;https://itunes.apple.com/ai/app/adobe-lightroom-cc-for-ipad/id804177739?mt=8&quot;&gt;Lightroom&lt;/a&gt;, and so far so good. I have used the &lt;a href=&quot;https://www.apple.com/ie/shop/product/MJYT2ZM/A/lightning-to-sd-card-camera-reader&quot;&gt;Apple SD Card adapter&lt;/a&gt; to download 50MP photos (upwards of 60MB) from my &lt;a href=&quot;https://www.usa.canon.com/internet/portal/us/home/products/details/cameras/dslr/eos-5ds&quot;&gt;Canon 5Ds&lt;/a&gt; quick enough, add them to Lightroom, make some changes and send them to &lt;a href=&quot;https://twitter.com/tiernano&quot;&gt;Twitter&lt;/a&gt;, Facebook (not Instagram just yet…) and it works well. I have managed to hook it to my &lt;a href=&quot;http://www.gnarbox.com&quot;&gt;Gnarbox&lt;/a&gt; too.&lt;/li&gt;
 &lt;/ul&gt;
