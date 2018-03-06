@@ -4,12 +4,45 @@
 	<title>TiernanOToole</title>
 	<link href="https://feeds.feedburner.com/tiernanotoole" rel="self"/>
 	<link href="https://www.tiernanotoole.ie/"/>
-	<updated>2018-02-23T11:21:50+00:00</updated>
+	<updated>2018-03-06T08:22:06+00:00</updated>
 	<id>https://www.tiernanotoole.ie/</id>
 	<author>
 		<name>Tiernan OToole</name>
 		<email>tiernan@tiernanotoole.ie</email>
 	</author>
+	
+	<entry>
+		<title>Blogging on an iPad Pro</title>
+		<link href="https://www.tiernanotoole.ie/2018/03/06/blogging-on-ipad.html"/>
+		<updated>2018-03-06T07:00:00+00:00</updated>
+		<id>https://www.tiernanotoole.ie{ post.id }}</id>
+		<content type="html">&lt;p&gt;So, a few months back I bought myself an &lt;a href=&quot;http://www.apple.com/ipad-pro&quot;&gt;iPad Pro&lt;/a&gt;. I got a 10.5” with 64GB Storage and the &lt;a href=&quot;https://www.apple.com/shop/product/MPTL2LL/A/smart-keyboard-for-105‑inch-ipad-pro-us-english?fnode=37&quot;&gt;Smart Keyboard&lt;/a&gt;. Since then, i have been mostly using it for playing around: watching YouTube, Netflix, surfing on the couch, etc. but i started to wonder how “Pro” this was…so i went and did some testing, and in the end nearly all of this post is being written on it…&lt;/p&gt;
+
+&lt;p&gt;first, the good stuff:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://itunes.apple.com/ai/app/microsoft-remote-desktop/id714464092?mt=8&quot;&gt;Microsoft’s Remote Desktop Connection&lt;/a&gt; works perfect on the iPad Pro. I have RDPed into machines (with the help of &lt;a href=&quot;http://www.zerotier.com&quot;&gt;ZeroTier&lt;/a&gt;)&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://panic.com/prompt/&quot;&gt;Panic’s Prompt&lt;/a&gt; works well too… again, with ZeroTier, i can SSH into boxes and remote manage them. Handy for checking on docker instances…&lt;/li&gt;
+  &lt;li&gt;Panic also have &lt;a href=&quot;https://panic.com/coda-ios/&quot;&gt;Coda for iOS&lt;/a&gt;. its a very nice (if somewhat expensive at $25) editor for the iPad. This post is being written on there now.&lt;/li&gt;
+  &lt;li&gt;for Git stuff, i am using an app called &lt;a href=&quot;https://workingcopyapp.com&quot;&gt;Working Copy&lt;/a&gt;. Its free, to an extend, but if you need to do stuff like push changes, which is kind of important, then you need to pay a fee.&lt;/li&gt;
+  &lt;li&gt;Coda and Working Copy work together with some magic built into Working Copy. It can act as a &lt;a href=&quot;https://workingcopyapp.com/manual/webdav-server&quot;&gt;WebDav server&lt;/a&gt;, which Coda can the connect to. you open, edit, change and create docs, and Working Copy keeps note. then you swap to them and checkin. You need to have both apps on the screen at the same time (the docking feature works well for that) since iOS seems to kill some background tasks.&lt;/li&gt;
+  &lt;li&gt;Unrelated to blogging, but i have also tried editing photos using &lt;a href=&quot;https://itunes.apple.com/ai/app/adobe-lightroom-cc-for-ipad/id804177739?mt=8&quot;&gt;Lightroom&lt;/a&gt;, and so far so good. I have used the &lt;a href=&quot;https://www.apple.com/ie/shop/product/MJYT2ZM/A/lightning-to-sd-card-camera-reader&quot;&gt;Apple SD Card adapter&lt;/a&gt; to download 50MP photos (upwards of 60MB) from my &lt;a href=&quot;https://www.usa.canon.com/internet/portal/us/home/products/details/cameras/dslr/eos-5ds&quot;&gt;Canon 5Ds&lt;/a&gt; quick enough, add them to Lightroom, make some changes and send them to &lt;a href=&quot;https://twitter.com/tiernano&quot;&gt;Twitter&lt;/a&gt;, Facebook (not Instagram just yet…) and it works well. I have managed to hook it to my &lt;a href=&quot;http://www.gnarbox.com&quot;&gt;Gnarbox&lt;/a&gt; too.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Bad Stuff?&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;keyboard takes a bit of getting used to. the Stupid “Global” button to swap keyboards (from 
+English to Emoji) is in the place you would expect to find CTRL. and CTRL, Option and Cmd (remember, this is a “Mac” style keyboard) and all shifted one place… I would have preferred if they moved that somewhere else, or removed it altogether…&lt;/li&gt;
+  &lt;li&gt;a mouse would be very handy! I have tried pairing a bluetooth mouse to it, and no luck… it would be handy especially for editing documents and code, since touchscreen is “handy” some of the time, but not all the time…&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;So, there you have it. Blogging on an iPad. Would i give up my daily driver of my Surface Book and GodBoxV2 and just uses an iPad? Hell No… for basic stuff, it works well. Basic photo editing, blogging, surfing, etc, yes. But there is a reason my workstation has 16 processor cores and 160GB RAM: I need it. I have multiple copies of Visual Studio running, SQL Server, multiple VMs running different tasks, multiple web browsers, multiple monitors, etc. the iPad can do a good chunk of stuff, but not the major stuff… not yet. Don’t get me wrong: Word, Excel, Power Point, Outlook. all the major office tools work grand. But Visual Studio? SQL Management Studio? just not there yet…&lt;/p&gt;
+
+&lt;p&gt;So, what did i not do on the iPad, and ended up doing on the PC? Well, so far, nothing… using Coda and Working Copy, i wrote the text, previewed it and checked it into GitHub. Then, Prompt is being used to build it on my docker box, check into the static site and push, which will then publish. unless you see an update below, all went as planned and all was done on an iPad…&lt;/p&gt;
+
+</content>
+	</entry>
 	
 	<entry>
 		<title>New Backup Plans</title>
@@ -24,7 +57,7 @@
 
 &lt;p&gt;Just checking their site now, i would have to go for a minimum of the Plus plan, and that only allows me to backup 1 machine… I have 2 (currently) that get backed up… and probably more at a later date… and, given their yearly price for Plus is $75 per year, thats $150 for 2 current machines, and an extra $75 per machine after… Granted, they are saying its unlimited storage. but the extra fee per machine puts it out of contention…&lt;/p&gt;
 
-&lt;p&gt;&lt;span style=&quot;font-size: 1rem;&quot;&gt;For CrashPlans Small Business Plan, their plan is $10 per machine per month… So, my 2 machines would cost $240 per year to backup. They are giving me the next few months for free, and then for the first year, they are offering a discount of 75%, but we will see what happens when renewal comes along…&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;For CrashPlans Small Business Plan, their plan is $10 per machine per month… So, my 2 machines would cost $240 per year to backup. They are giving me the next few months for free, and then for the first year, they are offering a discount of 75%, but we will see what happens when renewal comes along…&lt;/p&gt;
 
 &lt;p&gt;So, where does that leave me? Well, its looking like i will be using a mix of &lt;a href=&quot;https://secure.backblaze.com/r/01px2w&quot;&gt;BackBlaze&lt;/a&gt; and &lt;a href=&quot;http://www.hubic.com&quot;&gt;Hubic&lt;/a&gt;. The current idea is as follows:&lt;/p&gt;
 
@@ -33,7 +66,7 @@
     &lt;p&gt;GodBoxV2 and the Mac Mini both have &lt;a href=&quot;http://www.drobo.com&quot;&gt;Drobos&lt;/a&gt; plugged into them: the GodBoxV2 has a Drobo 5D, and the mini has a Drobo mini. There is also a Drobo FS on the network. I know they are not backup solutions, but its better than having stuff on single drives…&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
-    &lt;p&gt;For Windows boxes, i am backing up files to the cloud using &lt;a href=&quot;https://www.duplicati.com/&quot;&gt;Duplicati&lt;/a&gt;. These are backed up to both Hubic and BackBlaze B2. Photos and importing files are backed up to both, and stuff i want backed up, but not in 2 places, is just backed up on Hubic.&lt;/p&gt;
+    &lt;p&gt;For Windows boxes, I am backing up files to the cloud using &lt;a href=&quot;https://www.duplicati.com/&quot;&gt;Duplicati&lt;/a&gt;. These are backed up to both Hubic and BackBlaze B2. Photos and importing files are backed up to both, and stuff i want backed up, but not in 2 places, is just backed up on Hubic.&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
     &lt;p&gt;For my Mac mini, i use a a mix of Duplicati and &lt;a href=&quot;https://www.arqbackup.com/&quot;&gt;Arq Backup&lt;/a&gt;. Arq got B2 support recently, so its very handy for that.&lt;/p&gt;
@@ -56,7 +89,7 @@
     &lt;p&gt;I did, for a while, use the BackBlaze app and service. I just didn’t renew because of the move to B2. If you don’t want to mess with stuff, their App works great.And if you use &lt;a href=&quot;https://secure.backblaze.com/r/01px2w&quot;&gt;this referal link&lt;/a&gt; you get a free month… Also, its FAST AF! it actually manged to max out my upload connection to their server! wont complain about that!&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
-    &lt;p&gt;B2 is cheap. 0.5c per gig stored… So, it works out at about $5 per TB per month, minus your usual bandwith fees…&lt;/p&gt;
+    &lt;p&gt;B2 is cheap. 0.5c per gig stored… So, it works out at about $5 per TB per month, minus your usual bandwidth fees…&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
     &lt;p&gt;Duplicati and Duplicity both have options to send emails on success or failure, or the like. I recommend having the emails on failure turned on at a minimum… also, on headless boxes, like my Linux box, i recommend checking the backup every week…&lt;/p&gt;
