@@ -2,29 +2,26 @@
 <!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
 <!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
 <!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
-<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html lang="en">
+<!--<![endif]-->
+
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="author" content="Tiernan OToole" />
-  <meta name="description" content="The blog of Tiernan OToole" />
-  <!-- verifications -->
-  <!-- TradeDoubler site verification 2179170 -->
-  <meta content="1955CF7038386AB823BB2A22F26C7F2F" name="msvalidate.01" />
-  <!-- end verifications -->
- 
-  <link rel="alternate" type="application/atom+xml" title="Tiernan OToole" href="https://feeds.feedburner.com/tiernanotoole" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Tiernan OToole" />
+    <meta name="description" content="The blog of Tiernan OToole" />
+    <!-- verifications -->
+    <!-- TradeDoubler site verification 2179170 -->
+    <meta content="1955CF7038386AB823BB2A22F26C7F2F" name="msvalidate.01" />
+    <!-- end verifications -->
 
-  <link rel="stylesheet" href="/assets/css/all.css">
+    <link rel="alternate" type="application/atom+xml" title="Tiernan OToole" href="https://feeds.feedburner.com/tiernanotoole" />
 
-  <link rel="pingback" href="https://webmention.io/tiernanotoole.ie/xmlrpc" />
-  <link rel="webmention" href="https://webmention.io/tiernanotoole.ie/webmention" />
-<script
-    type="application/javascript"
-    src="https://sig.edgeno.de/edgemesh.client.min.js"
-    onload="window.edgemesh = new Edgemesh()">
-</script>
-  <!-- Begin Jekyll SEO tag v2.1.0 -->
+    <link rel="stylesheet" href="/assets/css/all.css">
+
+    <link rel="pingback" href="https://webmention.io/tiernanotoole.ie/xmlrpc" />
+    <link rel="webmention" href="https://webmention.io/tiernanotoole.ie/webmention" /> <!-- Begin Jekyll SEO tag v2.1.0 -->
 <title>AutoScaling with Amazon - Tiernan’s Comms Closet</title>
 <meta property="og:title" content="AutoScaling with Amazon" />
 <meta name="description" content="I have a few Amazon EC2 instances running on a project, and one of these instances was known as the Zombie Instance! Every time i killed it, it came back to life a few min later… I found out that i, at some point, set that instance to be in an AutoScaling group. Any time the instance died, Amazon would check and restart the instance. So, how did I kill this undead instance? Check out “Auto Scaling with Amazon EC2 II” on LLOVIZNA’s blog. They had the same issue i had (trying to kill the Auto Scaling group gives an error) and figured out how to do it. Handy stuff. Now the instance is dead, and hopefully it wont come back any time soon… Mind you, When AutoScaling works correctly, it can be very cool indeed!" />
@@ -50,11 +47,58 @@
 <!-- End Jekyll SEO tag -->
 
 
+    <!-- 
+To collect end-user usage analytics about your application, 
+insert the following script into each page you want to track.
+Place this code immediately before the closing </head> tag,
+and before any other scripts. Your first data will appear 
+automatically in just a few seconds.
+-->
+    <script type="text/javascript">
+        var appInsights = window.appInsights || function(a) {
+            function b(a) {
+                c[a] = function() {
+                    var b = arguments;
+                    c.queue.push(function() {
+                        c[a].apply(c, b)
+                    })
+                }
+            }
+            var c = {
+                    config: a
+                },
+                d = document,
+                e = window;
+            setTimeout(function() {
+                var b = d.createElement("script");
+                b.src = a.url || "https://az416426.vo.msecnd.net/scripts/a/ai.0.js", d.getElementsByTagName("script")[0].parentNode.appendChild(b)
+            });
+            try {
+                c.cookie = d.cookie
+            } catch (a) {}
+            c.queue = [];
+            for (var f = ["Event", "Exception", "Metric", "PageView", "Trace", "Dependency"]; f.length;) b("track" + f.pop());
+            if (b("setAuthenticatedUserContext"), b("clearAuthenticatedUserContext"), b("startTrackEvent"), b("stopTrackEvent"), b("startTrackPage"), b("stopTrackPage"), b("flush"), !a.disableExceptionTracking) {
+                f = "onerror", b("_" + f);
+                var g = e[f];
+                e[f] = function(a, b, d, e, h) {
+                    var i = g && g(a, b, d, e, h);
+                    return !0 !== i && c["_" + f](a, b, d, e, h), i
+                }
+            }
+            return c
+        }({
+            instrumentationKey: "6ba6d0d3-8f0c-43c9-bea2-1547cb66b576"
+        });
+
+        window.appInsights = appInsights, appInsights.queue && 0 === appInsights.queue.length && appInsights.trackPageView();
+    </script>
 </head>
+
 <body>
-  <div class="container">
-    <div class="four columns sidebar">
-      <nav>
+    <div class="container">
+        <div class="four columns sidebar">
+            <nav>
   <h1>Hi.</h1>
   <a href="/">
     <img src="/images/f13a7d94b648a3a15655f0ec1dc3284e.jpeg" id="gravatar" alt="Tiernan OToole"/>
@@ -234,10 +278,10 @@
   </div>
 </nav>
 
-    </div>
+        </div>
 
-    <div class="eleven columns content">
-      <h1 class="title"><a href="https://www.tiernanotoole.ie">Tiernan's Comms Closet</h1>
+        <div class="eleven columns content">
+            <h1 class="title"><a href="https://www.tiernanotoole.ie">Tiernan's Comms Closet</h1>
 <p class="meta">
   August 30, 2012 
   <a href="/">
@@ -314,8 +358,8 @@
 </script>
 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
 </div>
-      <div class="footer">
-        <div class="disclaimer">
+            <div class="footer">
+                <div class="disclaimer">
     
     <p>
         The postings on this site are my own and don't necessarily represent my employer’s positions, strategies or opinions.
@@ -323,38 +367,45 @@
     
     <p>
         © Tiernan OToole, 2017 &mdash; built with <a href="http://jekyllrb.com/">Jekyll</a> using <a href="https://github.com/swanson/lagom">Lagom theme</a> hosted on <a href="http://www.azure.com">Azure</a> and protected by <a href="http://www.cloudflare.com">CloudFlare</a>.
-        Page generated at:  2018-03-06 19:38:02 +0000
+        Page generated at:  2018-03-14 11:30:09 +0000
     </p>
 </div>
-      </div>
+            </div>
+        </div>
     </div>
-  </div>
 
-
+    
 <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-220614-15']);
+    _gaq.push(['_trackPageview']);
 
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-220614-15']);
-  _gaq.push(['_trackPageview']);
-
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
-
+    (function() {
+        var ga = document.createElement('script');
+        ga.type = 'text/javascript';
+        ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(ga, s);
+    })();
 </script>
 
 
 
 <script type="text/javascript">
-  var vglnk = { key: 'aecb90add8b6f7192e42ddfa3e65b611' };
+    var vglnk = {
+        key: 'aecb90add8b6f7192e42ddfa3e65b611'
+    };
 
-  (function(d, t) {
-    var s = d.createElement(t); s.type = 'text/javascript'; s.async = true;
-    s.src = '//cdn.viglink.com/api/vglnk.js';
-    var r = d.getElementsByTagName(t)[0]; r.parentNode.insertBefore(s, r);
-  }(document, 'script'));
+    (function(d, t) {
+        var s = d.createElement(t);
+        s.type = 'text/javascript';
+        s.async = true;
+        s.src = '//cdn.viglink.com/api/vglnk.js';
+        var r = d.getElementsByTagName(t)[0];
+        r.parentNode.insertBefore(s, r);
+    }(document, 'script'));
 </script>
 </body>
+
 </html>
