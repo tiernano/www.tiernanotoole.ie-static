@@ -4,7 +4,7 @@
 	<title>TiernanOToole</title>
 	<link href="https://feeds.feedburner.com/tiernanotoole" rel="self"/>
 	<link href="https://www.tiernanotoole.ie/"/>
-	<updated>2018-03-14T11:30:04+00:00</updated>
+	<updated>2018-03-15T16:07:24+00:00</updated>
 	<id>https://www.tiernanotoole.ie/</id>
 	<author>
 		<name>Tiernan OToole</name>
@@ -300,7 +300,7 @@ mm filename.txt
 		<link href="https://www.tiernanotoole.ie/2016/07/20/double-speed-internet-part-9-going-back.html"/>
 		<updated>2016-07-20T12:00:00+00:00</updated>
 		<id>https://www.tiernanotoole.ie{ post.id }}</id>
-		<content type="html">&lt;p&gt;[NOTE] This part 9 in a series of posts. The rest can be found &lt;a href=&quot;https://www.tiernanotoole.ie/tag/Double%20Internet/&quot;&gt;here&lt;/a&gt;&lt;/p&gt;
+		<content type="html">&lt;p&gt;[NOTE] This part 9 in a series of posts. The rest can be found &lt;a href=&quot;https://www.tiernanotoole.ie/tag/Double_Internet/&quot;&gt;here&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;Well, the double internet experiment is about ready to be finished… After 9 posts, 4 months, lots of sweating, many painful nights trying to figure out why something stopped using, shouting when &lt;a href=&quot;http://www.netflix.com&quot;&gt;Netflix&lt;/a&gt; did not work, wondering why my internet connection was so slow, and many, many other problems, i have decided to wind down the project. in the last 9 posts, i have learned a lot, and i hope i have helped someone figure out some stuff on their end. Even though this is a wind up of the project, there are still new things i have to share.&lt;/p&gt;
 
@@ -320,7 +320,7 @@ mm filename.txt
 		<link href="https://www.tiernanotoole.ie/2016/06/20/meraki-gear-update.html"/>
 		<updated>2016-06-20T08:00:00+00:00</updated>
 		<id>https://www.tiernanotoole.ie{ post.id }}</id>
-		<content type="html">&lt;p&gt;In &lt;a href=&quot;https://www.tiernanotoole.ie/2016/05/17/double-speed-internet-part-6-hetzner-edition.html&quot;&gt;part 6&lt;/a&gt; of my &lt;a href=&quot;https://www.tiernanotoole.ie/tag/Double%20Internet/&quot;&gt;Double Internet Series&lt;/a&gt; I mentioned i was running a &lt;a href=&quot;https://meraki.cisco.com/&quot;&gt;Meraki&lt;/a&gt; &lt;a href=&quot;https://meraki.cisco.com/products/appliances/mx64&quot;&gt;MX64&lt;/a&gt; in the network, and said i would write up about it. I am taking this oppertunity to also write up about the &lt;a href=&quot;http://www.ubnt.com&quot;&gt;Ubiquiti networks&lt;/a&gt; gear in the house also.&lt;/p&gt;
+		<content type="html">&lt;p&gt;In &lt;a href=&quot;https://www.tiernanotoole.ie/2016/05/17/double-speed-internet-part-6-hetzner-edition.html&quot;&gt;part 6&lt;/a&gt; of my &lt;a href=&quot;https://www.tiernanotoole.ie/tag/Double_Internet/&quot;&gt;Double Internet Series&lt;/a&gt; I mentioned i was running a &lt;a href=&quot;https://meraki.cisco.com/&quot;&gt;Meraki&lt;/a&gt; &lt;a href=&quot;https://meraki.cisco.com/products/appliances/mx64&quot;&gt;MX64&lt;/a&gt; in the network, and said i would write up about it. I am taking this oppertunity to also write up about the &lt;a href=&quot;http://www.ubnt.com&quot;&gt;Ubiquiti networks&lt;/a&gt; gear in the house also.&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;First on the list is my older &lt;a href=&quot;https://www.ubnt.com/edgemax/edgerouter-poe/&quot;&gt;Ubiquiti Edgerouter POE&lt;/a&gt;. It currently in the process of being decommissioned, or used for something else. It was the main edge router for the network: it had both internet connections connected, and did routing, firewalls, etc, but with the &lt;a href=&quot;https://www.tiernanotoole.ie/Computers/proliantml110.html&quot;&gt;Proliant&lt;/a&gt; taking over as a router, it is not requried as much any more… Its still on, mainly because its still a DHCP server, but not much else.&lt;/li&gt;
@@ -343,7 +343,7 @@ mm filename.txt
 		<link href="https://www.tiernanotoole.ie/2016/06/08/double-speed-internet-part-8-routing-around.html"/>
 		<updated>2016-06-08T08:00:00+00:00</updated>
 		<id>https://www.tiernanotoole.ie{ post.id }}</id>
-		<content type="html">&lt;p&gt;[NOTE] This part 8 in a series of posts. The rest can be found &lt;a href=&quot;https://www.tiernanotoole.ie/tag/Double%20Internet/&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+		<content type="html">&lt;p&gt;[NOTE] This part 8 in a series of posts. The rest can be found &lt;a href=&quot;https://www.tiernanotoole.ie/tag/Double_Internet/&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;At the end of my &lt;a href=&quot;https://www.tiernanotoole.ie/2016/05/31/double-speed-internet-part-7-ecmp-kind-of.html&quot;&gt;last post&lt;/a&gt; I asked the question about routing traffic to different servers based on thier distances, etc… Well, after a bit of messing, i can say it kind of works! here is a quick over view:&lt;/p&gt;
 
@@ -365,7 +365,7 @@ mm filename.txt
 		<link href="https://www.tiernanotoole.ie/2016/05/31/double-speed-internet-part-7-ecmp-kind-of.html"/>
 		<updated>2016-05-31T06:00:00+00:00</updated>
 		<id>https://www.tiernanotoole.ie{ post.id }}</id>
-		<content type="html">&lt;p&gt;[NOTE] This part 7 in a series of posts. The rest can be found &lt;a href=&quot;https://www.tiernanotoole.ie/tag/Double%20Internet/&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+		<content type="html">&lt;p&gt;[NOTE] This part 7 in a series of posts. The rest can be found &lt;a href=&quot;https://www.tiernanotoole.ie/tag/Double_Internet/&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;In the &lt;a href=&quot;https://www.tiernanotoole.ie/2016/05/17/double-speed-internet-part-6-hetzner-edition.html&quot;&gt;last post&lt;/a&gt; I mentioned I am now using &lt;a href=&quot;http://www.hetzner.de/en&quot;&gt;Hetzner&lt;/a&gt; for hosting a dedicated box. Thats still live, and going well. I have a /29 IP range (6 usable) and also 2 other IPs. So far, so good… But because i was using a Socks Server, I was not fully able to use the /29 ips… I use something like as follows:&lt;/p&gt;
 
@@ -385,7 +385,7 @@ mm filename.txt
 		<link href="https://www.tiernanotoole.ie/2016/05/17/double-speed-internet-part-6-hetzner-edition.html"/>
 		<updated>2016-05-17T13:00:00+00:00</updated>
 		<id>https://www.tiernanotoole.ie{ post.id }}</id>
-		<content type="html">&lt;p&gt;[NOTE] This part 6 in a series of posts. The rest can be found &lt;a href=&quot;https://www.tiernanotoole.ie/tag/Double%20Internet/&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+		<content type="html">&lt;p&gt;[NOTE] This part 6 in a series of posts. The rest can be found &lt;a href=&quot;https://www.tiernanotoole.ie/tag/Double_Internet/&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;Its been a while, since I posted, and there are some, well, pretty major changes since the last time… Lets start are the beginning.&lt;/p&gt;
 
@@ -417,7 +417,7 @@ mm filename.txt
 		<link href="https://www.tiernanotoole.ie/2016/04/21/2-cable-modems-double-speed-part-5.html"/>
 		<updated>2016-04-21T21:33:00+00:00</updated>
 		<id>https://www.tiernanotoole.ie{ post.id }}</id>
-		<content type="html">&lt;p&gt;[NOTE] This part 5 in a series of posts. The rest can be found &lt;a href=&quot;https://www.tiernanotoole.ie/tag/Double Internet/&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+		<content type="html">&lt;p&gt;[NOTE] This part 5 in a series of posts. The rest can be found &lt;a href=&quot;https://www.tiernanotoole.ie/tag/Double_Internet/&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;This post is going to be an update and theoretical post. probably very little “new” stuff going on here, mostly updates, and what I am planning on doing later on.&lt;/p&gt;
 
@@ -562,7 +562,7 @@ bash: /usr/bin/jekyll: No such file or directory
 		<link href="https://www.tiernanotoole.ie/2016/04/02/2-cable-modems-double-speed-part-3.html"/>
 		<updated>2016-04-02T17:48:00+00:00</updated>
 		<id>https://www.tiernanotoole.ie{ post.id }}</id>
-		<content type="html">&lt;p&gt;[NOTE] This part 3 in a series of posts. The rest can be found &lt;a href=&quot;https://www.tiernanotoole.ie/tag/Double Internet/&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+		<content type="html">&lt;p&gt;[NOTE] This part 3 in a series of posts. The rest can be found &lt;a href=&quot;https://www.tiernanotoole.ie/tag/Double_Internet/&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;In &lt;a href=&quot;https://www.tiernanotoole.ie/2016/03/22/2-Cable-Modems-Double-Internet-Speed-part1.html&quot;&gt;Part 1 of this series&lt;/a&gt; I explained the why and what I wanted to do for this “project”. In &lt;a href=&quot;https://www.tiernanotoole.ie/2016/03/30/mptcp-ssh-squid-openvpn-double-speed-part-2.html&quot;&gt;Part 2&lt;/a&gt; I did some basic testing of both &lt;a href=&quot;http://www.multipath-tcp.org&quot;&gt;MPTCP&lt;/a&gt; and &lt;a href=&quot;http://zehome.github.io/MLVPN&quot;&gt;MLVPN&lt;/a&gt;. I also mentioned trying &lt;a href=&quot;https://en.wikipedia.org/wiki/Point-to-Point_Protocol#PPP_Configuration_Options&quot;&gt;MMPPP&lt;/a&gt; using &lt;a href=&quot;http://vtun.sourceforge.net/&quot;&gt;vtund&lt;/a&gt; but it has been a while since I did that testing, and it had not been on bare metal. So, this post is a follow up, where I am using bare metal.&lt;/p&gt;
 
@@ -643,7 +643,7 @@ bash: /usr/bin/jekyll: No such file or directory
 		<link href="https://www.tiernanotoole.ie/2016/03/30/mptcp-ssh-squid-openvpn-double-speed-part-2.html"/>
 		<updated>2016-03-30T20:00:00+00:00</updated>
 		<id>https://www.tiernanotoole.ie{ post.id }}</id>
-		<content type="html">&lt;p&gt;[NOTE] This part 2 in a series of posts. The rest can be found &lt;a href=&quot;https://www.tiernanotoole.ie/tag/Double Internet/&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+		<content type="html">&lt;p&gt;[NOTE] This part 2 in a series of posts. The rest can be found &lt;a href=&quot;https://www.tiernanotoole.ie/tag/Double_Internet/&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;In &lt;a href=&quot;https://www.tiernanotoole.ie/2016/03/22/2-Cable-Modems-Double-Internet-Speed-part1.html&quot;&gt;my previous post&lt;/a&gt; I explained what i was trying to do… This post explains what i have been working on recently, and performance results…
 So, first, what have i tried… There are 3 different things i have tried, and here are some of their details. Some will need to be updated (other parts of this series), and others i will try get back to eventually.&lt;/p&gt;
@@ -655,7 +655,7 @@ So, first, what have i tried… There are 3 different things i have tried, and h
 
 &lt;p&gt;Ping wise, Digital Ocean is about 20-30ms away from the house (I picked London to host the servers) and Scaleway is a little further at about 50ms (They are based in France).&lt;/p&gt;
 
-&lt;h2 id=&quot;mptcp-multipath-tcp5&quot;&gt;MPTCP (&lt;a href=&quot;http://www.multipath-tcp.org&quot;&gt;MultiPath TCP&lt;/a&gt;)&lt;/h2&gt;
+&lt;h2 id=&quot;mptcp-multipath-tcp&quot;&gt;MPTCP (&lt;a href=&quot;http://www.multipath-tcp.org&quot;&gt;MultiPath TCP&lt;/a&gt;)&lt;/h2&gt;
 &lt;p&gt;MPTCP (their site is a bit wonky as of writing, so bare with me…) is a Linux Kernel patch that allows TCP connections to use multiple paths… Essentially, if you have Wifi and 4G in a phone, and MPTCP is enabled, it should allow you to use both connections for TCP traffic, as long as the server upstream supports it. It also allows for easy fail over if, say, you lose your wifi connection. There is an example &lt;a href=&quot;https://youtu.be/VWN0ctPi5cw&quot;&gt;video of it on YouTube&lt;/a&gt; which should show the fail over parts and &lt;a href=&quot;https://www.youtube.com/watch?v=VMdPI9Cfi9k&quot;&gt;this video&lt;/a&gt; shows how they managed to get 50Gbit/s out of a 6 10Gb Ethernet connections.&lt;/p&gt;
 
 &lt;p&gt;When i was using MPTCP, I had a copy of &lt;a href=&quot;http://www.squid-cache.org&quot;&gt;Squid&lt;/a&gt; on both boxes, and told Squid locally to use Squid on the upstream box (over a SSH tunnel, which was over the MPTCP link) as a parent cache. Using this method, i could see (using &lt;a href=&quot;http://www.ex-parrot.com/pdw/iftop/&quot;&gt;iftop&lt;/a&gt;) that both connections were being used. When trying proper performace testing, I setup a RAM disk on both machines and copied a Linux ISO to the Digtial Ocean Box. Then, using wget and &lt;a href=&quot;http://axel.alioth.debian.org/&quot;&gt;Axel&lt;/a&gt; I downloaded the files using &lt;a href=&quot;https://www.nginx.com/&quot;&gt;Nginx&lt;/a&gt; on the server, and checked the results. I can max out 1 single connection, plus use about 60-80mbit/s from the second. about 420-440mbit/s total. Disk was not the bottleneck, since I was writing to RAM, so more tests are required.&lt;/p&gt;
@@ -709,7 +709,7 @@ So, first, what have i tried… There are 3 different things i have tried, and h
 		<link href="https://www.tiernanotoole.ie/2016/03/22/2-Cable-Modems-Double-Internet-Speed-part1.html"/>
 		<updated>2016-03-22T18:00:00+00:00</updated>
 		<id>https://www.tiernanotoole.ie{ post.id }}</id>
-		<content type="html">&lt;p&gt;[NOTE] This part 1 in a series of posts. The rest can be found &lt;a href=&quot;https://www.tiernanotoole.ie/tag/Double Internet/&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+		<content type="html">&lt;p&gt;[NOTE] This part 1 in a series of posts. The rest can be found &lt;a href=&quot;https://www.tiernanotoole.ie/tag/Double_Internet/&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;First, a bit of background, and then I will explain what I am currently running in &lt;a href=&quot;https://www.tiernanotoole.ie/2016/03/30/mptcp-ssh-squid-openvpn-double-speed-part-2.html&quot;&gt;Part 2&lt;/a&gt;…&lt;/p&gt;
 

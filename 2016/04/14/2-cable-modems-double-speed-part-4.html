@@ -21,11 +21,12 @@
     <link rel="stylesheet" href="/assets/css/all.css">
 
     <link rel="pingback" href="https://webmention.io/tiernanotoole.ie/xmlrpc" />
-    <link rel="webmention" href="https://webmention.io/tiernanotoole.ie/webmention" /> <!-- Begin Jekyll SEO tag v2.1.0 -->
-<title>2 Cable Modems = Double Speed? Part 4 - Tiernan’s Comms Closet</title>
+    <link rel="webmention" href="https://webmention.io/tiernanotoole.ie/webmention" /> <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>2 Cable Modems = Double Speed? Part 4 | Tiernan’s Comms Closet</title>
 <meta property="og:title" content="2 Cable Modems = Double Speed? Part 4" />
-<meta name="description" content="[NOTE] This part 4 in a series of posts. The rest can be found here." />
-<meta property="og:description" content="[NOTE] This part 4 in a series of posts. The rest can be found here." />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="[NOTE] This part 4 in a series of posts. The rest can be found here. So, this week I went in a completely different direction that I have been thinking recently… So, the basic theory is as follows: I am still using MPTCP kernels on both upstream and local machine now have 2 P2P UDP OpenVPN tunnels between house and cloud. Example config is here all TCP traffic (bar port 80) that hits the router in house is redirected to RedSocks RedSocks uses a socks server, Dante, as an upstream server on the cloud box since the socks traffic is over TCP (inside the UDP OpenVPN tunnel) it uses MPTCP having socks running, gives me quite the download speed, turning it off does not, hence the following tweet Hmmmm... If I have socks on, the Internet is fast 400mb/s+). But without socks, it&#39;s down to 60... Feck...&mdash; Tiernan (@tiernano) April 13, 2016 I am also noticing that I am starting to hit the limits of my upstream VM. If downloading or uploading at speed, the processor cores (2 in the case of the box I am currently running) are pegged at pretty much 100% full… Well, 80ish, but that because the other 20% is being used by Dante. I am noticing I can hit a full 72Mbit/s up, but the max currently downloading is about 400, maybe 450… Need a faster box now… I mentioned port 80 not being set over socks. That’s because its redirected to Squid. Squid (in house) then uses Squid (in cloud) as a parent. There are 2 round-robin parents for squid, one on each OpenVPN connection IP address. all other traffic (UDP, ICMP, etc.) are sent over the OpenVPN connection… currently only one is picked, but I have a cunning plan… The cunning plan? Well, if I am reading the internet correctly, and I would like to think I am, I think ECMP, or Equal Cost Multi-Path Routing, could help… Again, it’s a fledgling idea currently, and I am still reading the documentation, but if it works… Well… I not sure… let’s see…" />
+<meta property="og:description" content="[NOTE] This part 4 in a series of posts. The rest can be found here. So, this week I went in a completely different direction that I have been thinking recently… So, the basic theory is as follows: I am still using MPTCP kernels on both upstream and local machine now have 2 P2P UDP OpenVPN tunnels between house and cloud. Example config is here all TCP traffic (bar port 80) that hits the router in house is redirected to RedSocks RedSocks uses a socks server, Dante, as an upstream server on the cloud box since the socks traffic is over TCP (inside the UDP OpenVPN tunnel) it uses MPTCP having socks running, gives me quite the download speed, turning it off does not, hence the following tweet Hmmmm... If I have socks on, the Internet is fast 400mb/s+). But without socks, it&#39;s down to 60... Feck...&mdash; Tiernan (@tiernano) April 13, 2016 I am also noticing that I am starting to hit the limits of my upstream VM. If downloading or uploading at speed, the processor cores (2 in the case of the box I am currently running) are pegged at pretty much 100% full… Well, 80ish, but that because the other 20% is being used by Dante. I am noticing I can hit a full 72Mbit/s up, but the max currently downloading is about 400, maybe 450… Need a faster box now… I mentioned port 80 not being set over socks. That’s because its redirected to Squid. Squid (in house) then uses Squid (in cloud) as a parent. There are 2 round-robin parents for squid, one on each OpenVPN connection IP address. all other traffic (UDP, ICMP, etc.) are sent over the OpenVPN connection… currently only one is picked, but I have a cunning plan… The cunning plan? Well, if I am reading the internet correctly, and I would like to think I am, I think ECMP, or Equal Cost Multi-Path Routing, could help… Again, it’s a fledgling idea currently, and I am still reading the documentation, but if it works… Well… I not sure… let’s see…" />
 <link rel="canonical" href="https://www.tiernanotoole.ie/2016/04/14/2-cable-modems-double-speed-part-4.html" />
 <meta property="og:url" content="https://www.tiernanotoole.ie/2016/04/14/2-cable-modems-double-speed-part-4.html" />
 <meta property="og:site_name" content="Tiernan’s Comms Closet" />
@@ -35,15 +36,7 @@
 <meta name="twitter:site" content="@tiernano" />
 <meta name="twitter:creator" content="@tiernano" />
 <script type="application/ld+json">
-{"@context": "http://schema.org",
-"@type": "BlogPosting",
-"headline": "2 Cable Modems = Double Speed? Part 4",
-"datePublished": "2016-04-14T08:55:00+00:00",
-"description": "[NOTE] This part 4 in a series of posts. The rest can be found here.",
-"publisher": {"@type": "Organization",
-"logo": {"@type": "ImageObject",
-"url": "https://www.tiernanotoole.ie/images/f13a7d94b648a3a15655f0ec1dc3284e.jpeg"}},
-"url": "https://www.tiernanotoole.ie/2016/04/14/2-cable-modems-double-speed-part-4.html"}</script>
+{"name":null,"description":"[NOTE] This part 4 in a series of posts. The rest can be found here. So, this week I went in a completely different direction that I have been thinking recently… So, the basic theory is as follows: I am still using MPTCP kernels on both upstream and local machine now have 2 P2P UDP OpenVPN tunnels between house and cloud. Example config is here all TCP traffic (bar port 80) that hits the router in house is redirected to RedSocks RedSocks uses a socks server, Dante, as an upstream server on the cloud box since the socks traffic is over TCP (inside the UDP OpenVPN tunnel) it uses MPTCP having socks running, gives me quite the download speed, turning it off does not, hence the following tweet Hmmmm... If I have socks on, the Internet is fast 400mb/s+). But without socks, it&#39;s down to 60... Feck...&mdash; Tiernan (@tiernano) April 13, 2016 I am also noticing that I am starting to hit the limits of my upstream VM. If downloading or uploading at speed, the processor cores (2 in the case of the box I am currently running) are pegged at pretty much 100% full… Well, 80ish, but that because the other 20% is being used by Dante. I am noticing I can hit a full 72Mbit/s up, but the max currently downloading is about 400, maybe 450… Need a faster box now… I mentioned port 80 not being set over socks. That’s because its redirected to Squid. Squid (in house) then uses Squid (in cloud) as a parent. There are 2 round-robin parents for squid, one on each OpenVPN connection IP address. all other traffic (UDP, ICMP, etc.) are sent over the OpenVPN connection… currently only one is picked, but I have a cunning plan… The cunning plan? Well, if I am reading the internet correctly, and I would like to think I am, I think ECMP, or Equal Cost Multi-Path Routing, could help… Again, it’s a fledgling idea currently, and I am still reading the documentation, but if it works… Well… I not sure… let’s see…","author":null,"@type":"BlogPosting","url":"https://www.tiernanotoole.ie/2016/04/14/2-cable-modems-double-speed-part-4.html","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://www.tiernanotoole.ie/images/f13a7d94b648a3a15655f0ec1dc3284e.jpeg"}},"image":null,"headline":"2 Cable Modems = Double Speed? Part 4","dateModified":"2016-04-14T08:55:00+00:00","datePublished":"2016-04-14T08:55:00+00:00","sameAs":null,"mainEntityOfPage":{"@type":"WebPage","@id":"https://www.tiernanotoole.ie/2016/04/14/2-cable-modems-double-speed-part-4.html"},"@context":"http://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -133,14 +126,14 @@ automatically in just a few seconds.
       </script>
         <h2>Interesting tags</h2>
       <ul>
+          <li><a href="/tag/HomeLab">HomeLab Stuff</a></li>
           <li><a href="/tag/VoIP/">VoIP stuff</a></li>
           <li><a href="/tag/Projects/">Projects</a></li>
           <li><a href="/tag/Programming/">Programming</a></li>
-          <li><a href="/tag/Media%20Center/">Media Center</a></li>
-          <li><a href="/tag/Raspberry%20Pi/">Raspberry Pi Stuff</a></li>
+          <li><a href="/tag/Raspberry_Pi/">Raspberry Pi Stuff</a></li>
           <li><a href="/tag/Networking/">Networking</a></li>
           <li><a href="/tag/IPv6/">IPv6</a></li>
-          <li><a href="/tag/Announcement/">Announcements</a></li>
+          <li><a href="/tag/Announcements/">Announcements</a></li>
           <li><a href="/tag/Development">Development</a></li>
       </ul>
       <h2>My HomeLab</h2>
@@ -393,7 +386,7 @@ automatically in just a few seconds.
     
     <p>
         © Tiernan OToole, 2017 &mdash; built with <a href="http://jekyllrb.com/">Jekyll</a> using <a href="https://github.com/swanson/lagom">Lagom theme</a> hosted on <a href="http://www.azure.com">Azure</a> and protected by <a href="http://www.cloudflare.com">CloudFlare</a>.
-        Page generated at:  2018-03-14 11:30:12 +0000
+        Page generated at:  2018-03-15 16:07:34 +0000
     </p>
 </div>
             </div>

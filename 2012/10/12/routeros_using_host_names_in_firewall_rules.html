@@ -21,11 +21,12 @@
     <link rel="stylesheet" href="/assets/css/all.css">
 
     <link rel="pingback" href="https://webmention.io/tiernanotoole.ie/xmlrpc" />
-    <link rel="webmention" href="https://webmention.io/tiernanotoole.ie/webmention" /> <!-- Begin Jekyll SEO tag v2.1.0 -->
-<title>RouterOS Using Host names in Firewall Rules - Tiernan’s Comms Closet</title>
+    <link rel="webmention" href="https://webmention.io/tiernanotoole.ie/webmention" /> <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>RouterOS Using Host names in Firewall Rules | Tiernan’s Comms Closet</title>
 <meta property="og:title" content="RouterOS Using Host names in Firewall Rules" />
-<meta name="description" content="As a follow up to yesterday’s post on RouterOS Blocking Machine access to all but one IP I tought i would show how to add extra IPs to that list, without having a shedload of firewall filters." />
-<meta property="og:description" content="As a follow up to yesterday’s post on RouterOS Blocking Machine access to all but one IP I tought i would show how to add extra IPs to that list, without having a shedload of firewall filters." />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="As a follow up to yesterday’s post on RouterOS Blocking Machine access to all but one IP I tought i would show how to add extra IPs to that list, without having a shedload of firewall filters. First things first, get your list of IPs you allow access to. In my case, i just did an NSLOOKUP on the name and got the IPs. Create an “Address List” in RouterOS. This can be done on the Web Interface by going to IP / Firewall / Address List and clicking Add. I had none previously, so i created a new rule, naming it ExpressVPN (the lads i use for VPN access) and added the first address. this is where things get interesting. for extra IP (for ExpressVPN, i have 4) you create a new address with the SAME name, but different IP. in your firewall rule, you should have either a src address or dst address. in my case, i had both, but this was a change for the dst address. I removed the address from the rule, i added it as a dst address list entry. If you have multiple address lists, you will see them here. to do this at the command prompt: this will block any traffic, other than the IPs in the expressVPN address list, for the machine 192.168.0.123." />
+<meta property="og:description" content="As a follow up to yesterday’s post on RouterOS Blocking Machine access to all but one IP I tought i would show how to add extra IPs to that list, without having a shedload of firewall filters. First things first, get your list of IPs you allow access to. In my case, i just did an NSLOOKUP on the name and got the IPs. Create an “Address List” in RouterOS. This can be done on the Web Interface by going to IP / Firewall / Address List and clicking Add. I had none previously, so i created a new rule, naming it ExpressVPN (the lads i use for VPN access) and added the first address. this is where things get interesting. for extra IP (for ExpressVPN, i have 4) you create a new address with the SAME name, but different IP. in your firewall rule, you should have either a src address or dst address. in my case, i had both, but this was a change for the dst address. I removed the address from the rule, i added it as a dst address list entry. If you have multiple address lists, you will see them here. to do this at the command prompt: this will block any traffic, other than the IPs in the expressVPN address list, for the machine 192.168.0.123." />
 <link rel="canonical" href="https://www.tiernanotoole.ie/2012/10/12/routeros_using_host_names_in_firewall_rules.html" />
 <meta property="og:url" content="https://www.tiernanotoole.ie/2012/10/12/routeros_using_host_names_in_firewall_rules.html" />
 <meta property="og:site_name" content="Tiernan’s Comms Closet" />
@@ -35,15 +36,7 @@
 <meta name="twitter:site" content="@tiernano" />
 <meta name="twitter:creator" content="@tiernano" />
 <script type="application/ld+json">
-{"@context": "http://schema.org",
-"@type": "BlogPosting",
-"headline": "RouterOS Using Host names in Firewall Rules",
-"datePublished": "2012-10-12T07:43:17+00:00",
-"description": "As a follow up to yesterday’s post on RouterOS Blocking Machine access to all but one IP I tought i would show how to add extra IPs to that list, without having a shedload of firewall filters.",
-"publisher": {"@type": "Organization",
-"logo": {"@type": "ImageObject",
-"url": "https://www.tiernanotoole.ie/images/f13a7d94b648a3a15655f0ec1dc3284e.jpeg"}},
-"url": "https://www.tiernanotoole.ie/2012/10/12/routeros_using_host_names_in_firewall_rules.html"}</script>
+{"name":null,"description":"As a follow up to yesterday’s post on RouterOS Blocking Machine access to all but one IP I tought i would show how to add extra IPs to that list, without having a shedload of firewall filters. First things first, get your list of IPs you allow access to. In my case, i just did an NSLOOKUP on the name and got the IPs. Create an “Address List” in RouterOS. This can be done on the Web Interface by going to IP / Firewall / Address List and clicking Add. I had none previously, so i created a new rule, naming it ExpressVPN (the lads i use for VPN access) and added the first address. this is where things get interesting. for extra IP (for ExpressVPN, i have 4) you create a new address with the SAME name, but different IP. in your firewall rule, you should have either a src address or dst address. in my case, i had both, but this was a change for the dst address. I removed the address from the rule, i added it as a dst address list entry. If you have multiple address lists, you will see them here. to do this at the command prompt: this will block any traffic, other than the IPs in the expressVPN address list, for the machine 192.168.0.123.","author":null,"@type":"BlogPosting","url":"https://www.tiernanotoole.ie/2012/10/12/routeros_using_host_names_in_firewall_rules.html","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://www.tiernanotoole.ie/images/f13a7d94b648a3a15655f0ec1dc3284e.jpeg"}},"image":null,"headline":"RouterOS Using Host names in Firewall Rules","dateModified":"2012-10-12T07:43:17+00:00","datePublished":"2012-10-12T07:43:17+00:00","sameAs":null,"mainEntityOfPage":{"@type":"WebPage","@id":"https://www.tiernanotoole.ie/2012/10/12/routeros_using_host_names_in_firewall_rules.html"},"@context":"http://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -133,14 +126,14 @@ automatically in just a few seconds.
       </script>
         <h2>Interesting tags</h2>
       <ul>
+          <li><a href="/tag/HomeLab">HomeLab Stuff</a></li>
           <li><a href="/tag/VoIP/">VoIP stuff</a></li>
           <li><a href="/tag/Projects/">Projects</a></li>
           <li><a href="/tag/Programming/">Programming</a></li>
-          <li><a href="/tag/Media%20Center/">Media Center</a></li>
-          <li><a href="/tag/Raspberry%20Pi/">Raspberry Pi Stuff</a></li>
+          <li><a href="/tag/Raspberry_Pi/">Raspberry Pi Stuff</a></li>
           <li><a href="/tag/Networking/">Networking</a></li>
           <li><a href="/tag/IPv6/">IPv6</a></li>
-          <li><a href="/tag/Announcement/">Announcements</a></li>
+          <li><a href="/tag/Announcements/">Announcements</a></li>
           <li><a href="/tag/Development">Development</a></li>
       </ul>
       <h2>My HomeLab</h2>
@@ -381,7 +374,7 @@ automatically in just a few seconds.
     
     <p>
         © Tiernan OToole, 2017 &mdash; built with <a href="http://jekyllrb.com/">Jekyll</a> using <a href="https://github.com/swanson/lagom">Lagom theme</a> hosted on <a href="http://www.azure.com">Azure</a> and protected by <a href="http://www.cloudflare.com">CloudFlare</a>.
-        Page generated at:  2018-03-14 11:30:10 +0000
+        Page generated at:  2018-03-15 16:07:32 +0000
     </p>
 </div>
             </div>

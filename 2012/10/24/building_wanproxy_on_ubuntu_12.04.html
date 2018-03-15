@@ -21,11 +21,12 @@
     <link rel="stylesheet" href="/assets/css/all.css">
 
     <link rel="pingback" href="https://webmention.io/tiernanotoole.ie/xmlrpc" />
-    <link rel="webmention" href="https://webmention.io/tiernanotoole.ie/webmention" /> <!-- Begin Jekyll SEO tag v2.1.0 -->
-<title>Building WANProxy on Ubuntu 12.04 - Tiernan’s Comms Closet</title>
+    <link rel="webmention" href="https://webmention.io/tiernanotoole.ie/webmention" /> <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Building WANProxy on Ubuntu 12.04 | Tiernan’s Comms Closet</title>
 <meta property="og:title" content="Building WANProxy on Ubuntu 12.04" />
-<meta name="description" content="[Updated 2016/04/09] I had to use this today to build on Debian 8.3 for 2 different boxes. So, making minor changes (url to git proxy, and where you build from) to make sure this works now." />
-<meta property="og:description" content="[Updated 2016/04/09] I had to use this today to build on Debian 8.3 for 2 different boxes. So, making minor changes (url to git proxy, and where you build from) to make sure this works now." />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="[Updated 2016/04/09] I had to use this today to build on Debian 8.3 for 2 different boxes. So, making minor changes (url to git proxy, and where you build from) to make sure this works now. I have been looking into WANProxy for a while now, but never successfully got it to build… I have been more successfull reciently, so here is what you need to do. ** NOTE **: I built this on Ubuntu 12.04, so these are the tips for that… Not sure about other Distros… ** Second NOTE ** : I am using the Digows GitHub Repo for downloads… There is also the WANProxy SVN Server and their official downloads page. sudo apt-get install build-essential git-core libssl-dev uuid-dev git clone https://github.com/wanproxy/wanproxy.git cd wanproxy/programs/wanproxy make Note -: git-core is needed to checkout code, build-essentails gives you your essential build utils, and the -dev files are needed for the build *- NOTE -: I have tried it on a couple VMs and they take about 5 min to build… If you are building on Physical hardware, it may be faster. Also, as a general note, if you are building with multiple processors, try add the -jX option, where x is your CPU count +1. for example, make -j5 if you have CPUs or Cores. or make -j17 if you have 16 cores… cp wanproxy ~/local/bin ~~Now, this is, so far, as far as i have gotten… but given its building, and its further than I was a few weeks back, i though i would post incase i can help someone else… ~~ ** UPDATE ** I have successfully managed to get a WANProxy working. The way i have it setup is as follows: ** UPDATE 2016 ** as part of my series on getting double internet speed, I am back looking at WANProxy… more on that later.. Linux box in house, and VM on laptop. both have WANProxy installed use the ** Proxying over SSH ** example from the WANProxy examples site which shows you how to proxy a single web server over SSH. in my case, i pointed the port at my proxy server inhouse. I also changed the if0.host address from 127.0.0.1 (only accessable from that machine) to its internal IP address (can be seen by anyone on that network) finally, I told my browser to use the WANProxy ip and port 3300 (see the if0 config section) as its proxy. Works grand so far. no idea yet if its “faster” but its working, which is a start…" />
+<meta property="og:description" content="[Updated 2016/04/09] I had to use this today to build on Debian 8.3 for 2 different boxes. So, making minor changes (url to git proxy, and where you build from) to make sure this works now. I have been looking into WANProxy for a while now, but never successfully got it to build… I have been more successfull reciently, so here is what you need to do. ** NOTE **: I built this on Ubuntu 12.04, so these are the tips for that… Not sure about other Distros… ** Second NOTE ** : I am using the Digows GitHub Repo for downloads… There is also the WANProxy SVN Server and their official downloads page. sudo apt-get install build-essential git-core libssl-dev uuid-dev git clone https://github.com/wanproxy/wanproxy.git cd wanproxy/programs/wanproxy make Note -: git-core is needed to checkout code, build-essentails gives you your essential build utils, and the -dev files are needed for the build *- NOTE -: I have tried it on a couple VMs and they take about 5 min to build… If you are building on Physical hardware, it may be faster. Also, as a general note, if you are building with multiple processors, try add the -jX option, where x is your CPU count +1. for example, make -j5 if you have CPUs or Cores. or make -j17 if you have 16 cores… cp wanproxy ~/local/bin ~~Now, this is, so far, as far as i have gotten… but given its building, and its further than I was a few weeks back, i though i would post incase i can help someone else… ~~ ** UPDATE ** I have successfully managed to get a WANProxy working. The way i have it setup is as follows: ** UPDATE 2016 ** as part of my series on getting double internet speed, I am back looking at WANProxy… more on that later.. Linux box in house, and VM on laptop. both have WANProxy installed use the ** Proxying over SSH ** example from the WANProxy examples site which shows you how to proxy a single web server over SSH. in my case, i pointed the port at my proxy server inhouse. I also changed the if0.host address from 127.0.0.1 (only accessable from that machine) to its internal IP address (can be seen by anyone on that network) finally, I told my browser to use the WANProxy ip and port 3300 (see the if0 config section) as its proxy. Works grand so far. no idea yet if its “faster” but its working, which is a start…" />
 <link rel="canonical" href="https://www.tiernanotoole.ie/2012/10/24/building_wanproxy_on_ubuntu_12.04.html" />
 <meta property="og:url" content="https://www.tiernanotoole.ie/2012/10/24/building_wanproxy_on_ubuntu_12.04.html" />
 <meta property="og:site_name" content="Tiernan’s Comms Closet" />
@@ -35,15 +36,7 @@
 <meta name="twitter:site" content="@tiernano" />
 <meta name="twitter:creator" content="@tiernano" />
 <script type="application/ld+json">
-{"@context": "http://schema.org",
-"@type": "BlogPosting",
-"headline": "Building WANProxy on Ubuntu 12.04",
-"datePublished": "2012-10-24T14:28:07+00:00",
-"description": "[Updated 2016/04/09] I had to use this today to build on Debian 8.3 for 2 different boxes. So, making minor changes (url to git proxy, and where you build from) to make sure this works now.",
-"publisher": {"@type": "Organization",
-"logo": {"@type": "ImageObject",
-"url": "https://www.tiernanotoole.ie/images/f13a7d94b648a3a15655f0ec1dc3284e.jpeg"}},
-"url": "https://www.tiernanotoole.ie/2012/10/24/building_wanproxy_on_ubuntu_12.04.html"}</script>
+{"name":null,"description":"[Updated 2016/04/09] I had to use this today to build on Debian 8.3 for 2 different boxes. So, making minor changes (url to git proxy, and where you build from) to make sure this works now. I have been looking into WANProxy for a while now, but never successfully got it to build… I have been more successfull reciently, so here is what you need to do. ** NOTE **: I built this on Ubuntu 12.04, so these are the tips for that… Not sure about other Distros… ** Second NOTE ** : I am using the Digows GitHub Repo for downloads… There is also the WANProxy SVN Server and their official downloads page. sudo apt-get install build-essential git-core libssl-dev uuid-dev git clone https://github.com/wanproxy/wanproxy.git cd wanproxy/programs/wanproxy make Note -: git-core is needed to checkout code, build-essentails gives you your essential build utils, and the -dev files are needed for the build *- NOTE -: I have tried it on a couple VMs and they take about 5 min to build… If you are building on Physical hardware, it may be faster. Also, as a general note, if you are building with multiple processors, try add the -jX option, where x is your CPU count +1. for example, make -j5 if you have CPUs or Cores. or make -j17 if you have 16 cores… cp wanproxy ~/local/bin ~~Now, this is, so far, as far as i have gotten… but given its building, and its further than I was a few weeks back, i though i would post incase i can help someone else… ~~ ** UPDATE ** I have successfully managed to get a WANProxy working. The way i have it setup is as follows: ** UPDATE 2016 ** as part of my series on getting double internet speed, I am back looking at WANProxy… more on that later.. Linux box in house, and VM on laptop. both have WANProxy installed use the ** Proxying over SSH ** example from the WANProxy examples site which shows you how to proxy a single web server over SSH. in my case, i pointed the port at my proxy server inhouse. I also changed the if0.host address from 127.0.0.1 (only accessable from that machine) to its internal IP address (can be seen by anyone on that network) finally, I told my browser to use the WANProxy ip and port 3300 (see the if0 config section) as its proxy. Works grand so far. no idea yet if its “faster” but its working, which is a start…","author":null,"@type":"BlogPosting","url":"https://www.tiernanotoole.ie/2012/10/24/building_wanproxy_on_ubuntu_12.04.html","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://www.tiernanotoole.ie/images/f13a7d94b648a3a15655f0ec1dc3284e.jpeg"}},"image":null,"headline":"Building WANProxy on Ubuntu 12.04","dateModified":"2012-10-24T14:28:07+00:00","datePublished":"2012-10-24T14:28:07+00:00","sameAs":null,"mainEntityOfPage":{"@type":"WebPage","@id":"https://www.tiernanotoole.ie/2012/10/24/building_wanproxy_on_ubuntu_12.04.html"},"@context":"http://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -133,14 +126,14 @@ automatically in just a few seconds.
       </script>
         <h2>Interesting tags</h2>
       <ul>
+          <li><a href="/tag/HomeLab">HomeLab Stuff</a></li>
           <li><a href="/tag/VoIP/">VoIP stuff</a></li>
           <li><a href="/tag/Projects/">Projects</a></li>
           <li><a href="/tag/Programming/">Programming</a></li>
-          <li><a href="/tag/Media%20Center/">Media Center</a></li>
-          <li><a href="/tag/Raspberry%20Pi/">Raspberry Pi Stuff</a></li>
+          <li><a href="/tag/Raspberry_Pi/">Raspberry Pi Stuff</a></li>
           <li><a href="/tag/Networking/">Networking</a></li>
           <li><a href="/tag/IPv6/">IPv6</a></li>
-          <li><a href="/tag/Announcement/">Announcements</a></li>
+          <li><a href="/tag/Announcements/">Announcements</a></li>
           <li><a href="/tag/Development">Development</a></li>
       </ul>
       <h2>My HomeLab</h2>
@@ -405,7 +398,7 @@ make
     
     <p>
         © Tiernan OToole, 2017 &mdash; built with <a href="http://jekyllrb.com/">Jekyll</a> using <a href="https://github.com/swanson/lagom">Lagom theme</a> hosted on <a href="http://www.azure.com">Azure</a> and protected by <a href="http://www.cloudflare.com">CloudFlare</a>.
-        Page generated at:  2018-03-14 11:30:10 +0000
+        Page generated at:  2018-03-15 16:07:32 +0000
     </p>
 </div>
             </div>

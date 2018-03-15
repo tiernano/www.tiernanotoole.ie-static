@@ -21,11 +21,12 @@
     <link rel="stylesheet" href="/assets/css/all.css">
 
     <link rel="pingback" href="https://webmention.io/tiernanotoole.ie/xmlrpc" />
-    <link rel="webmention" href="https://webmention.io/tiernanotoole.ie/webmention" /> <!-- Begin Jekyll SEO tag v2.1.0 -->
-<title>Edge Router, Sophos UTM, DMZ and LAN Networks - Tiernan’s Comms Closet</title>
+    <link rel="webmention" href="https://webmention.io/tiernanotoole.ie/webmention" /> <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Edge Router, Sophos UTM, DMZ and LAN Networks | Tiernan’s Comms Closet</title>
 <meta property="og:title" content="Edge Router, Sophos UTM, DMZ and LAN Networks" />
-<meta name="description" content="I have been using an EdgeRouer POE as my main router for most of the network (some of the network still uses PFSense as a router, but thats being removed soon) for the last few weeks, and i am quite happy with it. I also have a second router, a Sophos UTM VM between my first LAN (essentially a DMZ) and my client LAN (there will be more “LANs” over there soon). The Client LAN is NATed between the DMZ and the LAN, which means anything on the LAN i want to access from the DMZ has to be port forwarded… Ideally, not much from the LAN should be accessible though the DMZ, but in my initial setup, stuff like Plex, etc, is…" />
-<meta property="og:description" content="I have been using an EdgeRouer POE as my main router for most of the network (some of the network still uses PFSense as a router, but thats being removed soon) for the last few weeks, and i am quite happy with it. I also have a second router, a Sophos UTM VM between my first LAN (essentially a DMZ) and my client LAN (there will be more “LANs” over there soon). The Client LAN is NATed between the DMZ and the LAN, which means anything on the LAN i want to access from the DMZ has to be port forwarded… Ideally, not much from the LAN should be accessible though the DMZ, but in my initial setup, stuff like Plex, etc, is…" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="I have been using an EdgeRouer POE as my main router for most of the network (some of the network still uses PFSense as a router, but thats being removed soon) for the last few weeks, and i am quite happy with it. I also have a second router, a Sophos UTM VM between my first LAN (essentially a DMZ) and my client LAN (there will be more “LANs” over there soon). The Client LAN is NATed between the DMZ and the LAN, which means anything on the LAN i want to access from the DMZ has to be port forwarded… Ideally, not much from the LAN should be accessible though the DMZ, but in my initial setup, stuff like Plex, etc, is… What i wanted to do was setup a proper firewall between both networks, without the use of NAT… Do do this, i first had to disable th masquerading rules in Sophos: next, on the EdgeRouter, i added a static route to point at the new network: And finally, under firewall rules, i allowed what i wanted to allow (in this case, SSH from any DMZ client (not advised) to my Mac Mini). And that, as they say, is that! So far, so good!" />
+<meta property="og:description" content="I have been using an EdgeRouer POE as my main router for most of the network (some of the network still uses PFSense as a router, but thats being removed soon) for the last few weeks, and i am quite happy with it. I also have a second router, a Sophos UTM VM between my first LAN (essentially a DMZ) and my client LAN (there will be more “LANs” over there soon). The Client LAN is NATed between the DMZ and the LAN, which means anything on the LAN i want to access from the DMZ has to be port forwarded… Ideally, not much from the LAN should be accessible though the DMZ, but in my initial setup, stuff like Plex, etc, is… What i wanted to do was setup a proper firewall between both networks, without the use of NAT… Do do this, i first had to disable th masquerading rules in Sophos: next, on the EdgeRouter, i added a static route to point at the new network: And finally, under firewall rules, i allowed what i wanted to allow (in this case, SSH from any DMZ client (not advised) to my Mac Mini). And that, as they say, is that! So far, so good!" />
 <link rel="canonical" href="https://www.tiernanotoole.ie/2015/09/30/EdgeRouter-SophosUTM-DMZ-LAN-Firwwalls.html" />
 <meta property="og:url" content="https://www.tiernanotoole.ie/2015/09/30/EdgeRouter-SophosUTM-DMZ-LAN-Firwwalls.html" />
 <meta property="og:site_name" content="Tiernan’s Comms Closet" />
@@ -35,15 +36,7 @@
 <meta name="twitter:site" content="@tiernano" />
 <meta name="twitter:creator" content="@tiernano" />
 <script type="application/ld+json">
-{"@context": "http://schema.org",
-"@type": "BlogPosting",
-"headline": "Edge Router, Sophos UTM, DMZ and LAN Networks",
-"datePublished": "2015-09-30T20:00:00+00:00",
-"description": "I have been using an EdgeRouer POE as my main router for most of the network (some of the network still uses PFSense as a router, but thats being removed soon) for the last few weeks, and i am quite happy with it. I also have a second router, a Sophos UTM VM between my first LAN (essentially a DMZ) and my client LAN (there will be more “LANs” over there soon). The Client LAN is NATed between the DMZ and the LAN, which means anything on the LAN i want to access from the DMZ has to be port forwarded… Ideally, not much from the LAN should be accessible though the DMZ, but in my initial setup, stuff like Plex, etc, is…",
-"publisher": {"@type": "Organization",
-"logo": {"@type": "ImageObject",
-"url": "https://www.tiernanotoole.ie/images/f13a7d94b648a3a15655f0ec1dc3284e.jpeg"}},
-"url": "https://www.tiernanotoole.ie/2015/09/30/EdgeRouter-SophosUTM-DMZ-LAN-Firwwalls.html"}</script>
+{"name":null,"description":"I have been using an EdgeRouer POE as my main router for most of the network (some of the network still uses PFSense as a router, but thats being removed soon) for the last few weeks, and i am quite happy with it. I also have a second router, a Sophos UTM VM between my first LAN (essentially a DMZ) and my client LAN (there will be more “LANs” over there soon). The Client LAN is NATed between the DMZ and the LAN, which means anything on the LAN i want to access from the DMZ has to be port forwarded… Ideally, not much from the LAN should be accessible though the DMZ, but in my initial setup, stuff like Plex, etc, is… What i wanted to do was setup a proper firewall between both networks, without the use of NAT… Do do this, i first had to disable th masquerading rules in Sophos: next, on the EdgeRouter, i added a static route to point at the new network: And finally, under firewall rules, i allowed what i wanted to allow (in this case, SSH from any DMZ client (not advised) to my Mac Mini). And that, as they say, is that! So far, so good!","author":null,"@type":"BlogPosting","url":"https://www.tiernanotoole.ie/2015/09/30/EdgeRouter-SophosUTM-DMZ-LAN-Firwwalls.html","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://www.tiernanotoole.ie/images/f13a7d94b648a3a15655f0ec1dc3284e.jpeg"}},"image":null,"headline":"Edge Router, Sophos UTM, DMZ and LAN Networks","dateModified":"2015-09-30T20:00:00+00:00","datePublished":"2015-09-30T20:00:00+00:00","sameAs":null,"mainEntityOfPage":{"@type":"WebPage","@id":"https://www.tiernanotoole.ie/2015/09/30/EdgeRouter-SophosUTM-DMZ-LAN-Firwwalls.html"},"@context":"http://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -133,14 +126,14 @@ automatically in just a few seconds.
       </script>
         <h2>Interesting tags</h2>
       <ul>
+          <li><a href="/tag/HomeLab">HomeLab Stuff</a></li>
           <li><a href="/tag/VoIP/">VoIP stuff</a></li>
           <li><a href="/tag/Projects/">Projects</a></li>
           <li><a href="/tag/Programming/">Programming</a></li>
-          <li><a href="/tag/Media%20Center/">Media Center</a></li>
-          <li><a href="/tag/Raspberry%20Pi/">Raspberry Pi Stuff</a></li>
+          <li><a href="/tag/Raspberry_Pi/">Raspberry Pi Stuff</a></li>
           <li><a href="/tag/Networking/">Networking</a></li>
           <li><a href="/tag/IPv6/">IPv6</a></li>
-          <li><a href="/tag/Announcement/">Announcements</a></li>
+          <li><a href="/tag/Announcements/">Announcements</a></li>
           <li><a href="/tag/Development">Development</a></li>
       </ul>
       <h2>My HomeLab</h2>
@@ -381,7 +374,7 @@ automatically in just a few seconds.
     
     <p>
         © Tiernan OToole, 2017 &mdash; built with <a href="http://jekyllrb.com/">Jekyll</a> using <a href="https://github.com/swanson/lagom">Lagom theme</a> hosted on <a href="http://www.azure.com">Azure</a> and protected by <a href="http://www.cloudflare.com">CloudFlare</a>.
-        Page generated at:  2018-03-14 11:30:12 +0000
+        Page generated at:  2018-03-15 16:07:34 +0000
     </p>
 </div>
             </div>

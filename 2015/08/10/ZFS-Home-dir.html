@@ -21,11 +21,12 @@
     <link rel="stylesheet" href="/assets/css/all.css">
 
     <link rel="pingback" href="https://webmention.io/tiernanotoole.ie/xmlrpc" />
-    <link rel="webmention" href="https://webmention.io/tiernanotoole.ie/webmention" /> <!-- Begin Jekyll SEO tag v2.1.0 -->
-<title>ZFS Home storage pool - Tiernan’s Comms Closet</title>
+    <link rel="webmention" href="https://webmention.io/tiernanotoole.ie/webmention" /> <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>ZFS Home storage pool | Tiernan’s Comms Closet</title>
 <meta property="og:title" content="ZFS Home storage pool" />
-<meta name="description" content="Over the weekend, my BTRFS pool for my /home directory on Linux failed… Not sure what happened, but it made me do something i wanted to do for a while: Build a ZFS pool for my home dir." />
-<meta property="og:description" content="Over the weekend, my BTRFS pool for my /home directory on Linux failed… Not sure what happened, but it made me do something i wanted to do for a while: Build a ZFS pool for my home dir." />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Over the weekend, my BTRFS pool for my /home directory on Linux failed… Not sure what happened, but it made me do something i wanted to do for a while: Build a ZFS pool for my home dir. First things first, the pool consists of 4 2Tb hard drives and 1 128Gb SSD. Its setup in RAIDZ1 (equivilent of RAID 5) and then the SSD is set for caching. To create the pool i ran zpool create home raidz sda sde sdf sdg then, to add the cache drive zpool add home cache sdd the pool (in my case) got mounted to /home, and then i restored my backup to it. to do some tests, i can the following… 614MB/s write and 5.3GB a second read is nothing to be sniffed at! :)" />
+<meta property="og:description" content="Over the weekend, my BTRFS pool for my /home directory on Linux failed… Not sure what happened, but it made me do something i wanted to do for a while: Build a ZFS pool for my home dir. First things first, the pool consists of 4 2Tb hard drives and 1 128Gb SSD. Its setup in RAIDZ1 (equivilent of RAID 5) and then the SSD is set for caching. To create the pool i ran zpool create home raidz sda sde sdf sdg then, to add the cache drive zpool add home cache sdd the pool (in my case) got mounted to /home, and then i restored my backup to it. to do some tests, i can the following… 614MB/s write and 5.3GB a second read is nothing to be sniffed at! :)" />
 <link rel="canonical" href="https://www.tiernanotoole.ie/2015/08/10/ZFS-Home-dir.html" />
 <meta property="og:url" content="https://www.tiernanotoole.ie/2015/08/10/ZFS-Home-dir.html" />
 <meta property="og:site_name" content="Tiernan’s Comms Closet" />
@@ -35,15 +36,7 @@
 <meta name="twitter:site" content="@tiernano" />
 <meta name="twitter:creator" content="@tiernano" />
 <script type="application/ld+json">
-{"@context": "http://schema.org",
-"@type": "BlogPosting",
-"headline": "ZFS Home storage pool",
-"datePublished": "2015-08-10T11:40:00+00:00",
-"description": "Over the weekend, my BTRFS pool for my /home directory on Linux failed… Not sure what happened, but it made me do something i wanted to do for a while: Build a ZFS pool for my home dir.",
-"publisher": {"@type": "Organization",
-"logo": {"@type": "ImageObject",
-"url": "https://www.tiernanotoole.ie/images/f13a7d94b648a3a15655f0ec1dc3284e.jpeg"}},
-"url": "https://www.tiernanotoole.ie/2015/08/10/ZFS-Home-dir.html"}</script>
+{"name":null,"description":"Over the weekend, my BTRFS pool for my /home directory on Linux failed… Not sure what happened, but it made me do something i wanted to do for a while: Build a ZFS pool for my home dir. First things first, the pool consists of 4 2Tb hard drives and 1 128Gb SSD. Its setup in RAIDZ1 (equivilent of RAID 5) and then the SSD is set for caching. To create the pool i ran zpool create home raidz sda sde sdf sdg then, to add the cache drive zpool add home cache sdd the pool (in my case) got mounted to /home, and then i restored my backup to it. to do some tests, i can the following… 614MB/s write and 5.3GB a second read is nothing to be sniffed at! :)","author":null,"@type":"BlogPosting","url":"https://www.tiernanotoole.ie/2015/08/10/ZFS-Home-dir.html","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://www.tiernanotoole.ie/images/f13a7d94b648a3a15655f0ec1dc3284e.jpeg"}},"image":null,"headline":"ZFS Home storage pool","dateModified":"2015-08-10T11:40:00+00:00","datePublished":"2015-08-10T11:40:00+00:00","sameAs":null,"mainEntityOfPage":{"@type":"WebPage","@id":"https://www.tiernanotoole.ie/2015/08/10/ZFS-Home-dir.html"},"@context":"http://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -133,14 +126,14 @@ automatically in just a few seconds.
       </script>
         <h2>Interesting tags</h2>
       <ul>
+          <li><a href="/tag/HomeLab">HomeLab Stuff</a></li>
           <li><a href="/tag/VoIP/">VoIP stuff</a></li>
           <li><a href="/tag/Projects/">Projects</a></li>
           <li><a href="/tag/Programming/">Programming</a></li>
-          <li><a href="/tag/Media%20Center/">Media Center</a></li>
-          <li><a href="/tag/Raspberry%20Pi/">Raspberry Pi Stuff</a></li>
+          <li><a href="/tag/Raspberry_Pi/">Raspberry Pi Stuff</a></li>
           <li><a href="/tag/Networking/">Networking</a></li>
           <li><a href="/tag/IPv6/">IPv6</a></li>
-          <li><a href="/tag/Announcement/">Announcements</a></li>
+          <li><a href="/tag/Announcements/">Announcements</a></li>
           <li><a href="/tag/Development">Development</a></li>
       </ul>
       <h2>My HomeLab</h2>
@@ -389,7 +382,7 @@ following…</p>
     
     <p>
         © Tiernan OToole, 2017 &mdash; built with <a href="http://jekyllrb.com/">Jekyll</a> using <a href="https://github.com/swanson/lagom">Lagom theme</a> hosted on <a href="http://www.azure.com">Azure</a> and protected by <a href="http://www.cloudflare.com">CloudFlare</a>.
-        Page generated at:  2018-03-14 11:30:11 +0000
+        Page generated at:  2018-03-15 16:07:34 +0000
     </p>
 </div>
             </div>

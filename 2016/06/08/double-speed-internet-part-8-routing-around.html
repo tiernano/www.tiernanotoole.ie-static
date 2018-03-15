@@ -21,11 +21,12 @@
     <link rel="stylesheet" href="/assets/css/all.css">
 
     <link rel="pingback" href="https://webmention.io/tiernanotoole.ie/xmlrpc" />
-    <link rel="webmention" href="https://webmention.io/tiernanotoole.ie/webmention" /> <!-- Begin Jekyll SEO tag v2.1.0 -->
-<title>double speed Internet Part 8 - Routing Around - Tiernan’s Comms Closet</title>
+    <link rel="webmention" href="https://webmention.io/tiernanotoole.ie/webmention" /> <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>double speed Internet Part 8 - Routing Around | Tiernan’s Comms Closet</title>
 <meta property="og:title" content="double speed Internet Part 8 - Routing Around" />
-<meta name="description" content="[NOTE] This part 8 in a series of posts. The rest can be found here." />
-<meta property="og:description" content="[NOTE] This part 8 in a series of posts. The rest can be found here." />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="[NOTE] This part 8 in a series of posts. The rest can be found here. At the end of my last post I asked the question about routing traffic to different servers based on thier distances, etc… Well, after a bit of messing, i can say it kind of works! here is a quick over view: server in the house has now got multiple OpenVPN connections (2 to Hetzner, 1 to OVH (with a plan to double), 1 to Digital Ocean (again, to be doubled) and i am planning 2 to Azure as well). Quagga/Zebra has static routes (currently static, planing on dynamic soon… more eventually) to different servers depending on where they are. for example, all traffic to the hetzner network (including their Storage Boxes) go though the hetzner link. Hubic traffic goes though OVH, Azure (currently) and AWS traffic, aswell as some CDNs go direct over either WAN1 or WAN2 in the house, and some other stuff (CrashPlan currently) goes though Digital Ocean. Everything that has no static route goes though Hetzner… Ideally, the static side of things should be removed, and a more dynamic setup done. How that works, i have no idea… Spotify have 2 posts about their SDN Internet Router (part 1 and part 2) which is an interesting idea… More digging and research is required. So, there you have it. Everything currently seems to be working, mostly, and tweaks can be made easily… I have a couple posts i have in my head, including something to do with automating bringing up new machines (probably with Ansible or something like it), more monitoring, and some other stuff too… Any questions, leave a comment, and i will get back. [UPDATE] I wrote a quick and dirty app called WhoIsToZebraConfig which takes an AS Number, looks up the info in the Merit RADb (with the help of some code from Coder Buddy) and outputs what you need to put into your Zebra Config… should save me some time, and it might save you time too… shout if you have questions!" />
+<meta property="og:description" content="[NOTE] This part 8 in a series of posts. The rest can be found here. At the end of my last post I asked the question about routing traffic to different servers based on thier distances, etc… Well, after a bit of messing, i can say it kind of works! here is a quick over view: server in the house has now got multiple OpenVPN connections (2 to Hetzner, 1 to OVH (with a plan to double), 1 to Digital Ocean (again, to be doubled) and i am planning 2 to Azure as well). Quagga/Zebra has static routes (currently static, planing on dynamic soon… more eventually) to different servers depending on where they are. for example, all traffic to the hetzner network (including their Storage Boxes) go though the hetzner link. Hubic traffic goes though OVH, Azure (currently) and AWS traffic, aswell as some CDNs go direct over either WAN1 or WAN2 in the house, and some other stuff (CrashPlan currently) goes though Digital Ocean. Everything that has no static route goes though Hetzner… Ideally, the static side of things should be removed, and a more dynamic setup done. How that works, i have no idea… Spotify have 2 posts about their SDN Internet Router (part 1 and part 2) which is an interesting idea… More digging and research is required. So, there you have it. Everything currently seems to be working, mostly, and tweaks can be made easily… I have a couple posts i have in my head, including something to do with automating bringing up new machines (probably with Ansible or something like it), more monitoring, and some other stuff too… Any questions, leave a comment, and i will get back. [UPDATE] I wrote a quick and dirty app called WhoIsToZebraConfig which takes an AS Number, looks up the info in the Merit RADb (with the help of some code from Coder Buddy) and outputs what you need to put into your Zebra Config… should save me some time, and it might save you time too… shout if you have questions!" />
 <link rel="canonical" href="https://www.tiernanotoole.ie/2016/06/08/double-speed-internet-part-8-routing-around.html" />
 <meta property="og:url" content="https://www.tiernanotoole.ie/2016/06/08/double-speed-internet-part-8-routing-around.html" />
 <meta property="og:site_name" content="Tiernan’s Comms Closet" />
@@ -35,15 +36,7 @@
 <meta name="twitter:site" content="@tiernano" />
 <meta name="twitter:creator" content="@tiernano" />
 <script type="application/ld+json">
-{"@context": "http://schema.org",
-"@type": "BlogPosting",
-"headline": "double speed Internet Part 8 - Routing Around",
-"datePublished": "2016-06-08T08:00:00+00:00",
-"description": "[NOTE] This part 8 in a series of posts. The rest can be found here.",
-"publisher": {"@type": "Organization",
-"logo": {"@type": "ImageObject",
-"url": "https://www.tiernanotoole.ie/images/f13a7d94b648a3a15655f0ec1dc3284e.jpeg"}},
-"url": "https://www.tiernanotoole.ie/2016/06/08/double-speed-internet-part-8-routing-around.html"}</script>
+{"name":null,"description":"[NOTE] This part 8 in a series of posts. The rest can be found here. At the end of my last post I asked the question about routing traffic to different servers based on thier distances, etc… Well, after a bit of messing, i can say it kind of works! here is a quick over view: server in the house has now got multiple OpenVPN connections (2 to Hetzner, 1 to OVH (with a plan to double), 1 to Digital Ocean (again, to be doubled) and i am planning 2 to Azure as well). Quagga/Zebra has static routes (currently static, planing on dynamic soon… more eventually) to different servers depending on where they are. for example, all traffic to the hetzner network (including their Storage Boxes) go though the hetzner link. Hubic traffic goes though OVH, Azure (currently) and AWS traffic, aswell as some CDNs go direct over either WAN1 or WAN2 in the house, and some other stuff (CrashPlan currently) goes though Digital Ocean. Everything that has no static route goes though Hetzner… Ideally, the static side of things should be removed, and a more dynamic setup done. How that works, i have no idea… Spotify have 2 posts about their SDN Internet Router (part 1 and part 2) which is an interesting idea… More digging and research is required. So, there you have it. Everything currently seems to be working, mostly, and tweaks can be made easily… I have a couple posts i have in my head, including something to do with automating bringing up new machines (probably with Ansible or something like it), more monitoring, and some other stuff too… Any questions, leave a comment, and i will get back. [UPDATE] I wrote a quick and dirty app called WhoIsToZebraConfig which takes an AS Number, looks up the info in the Merit RADb (with the help of some code from Coder Buddy) and outputs what you need to put into your Zebra Config… should save me some time, and it might save you time too… shout if you have questions!","author":null,"@type":"BlogPosting","url":"https://www.tiernanotoole.ie/2016/06/08/double-speed-internet-part-8-routing-around.html","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://www.tiernanotoole.ie/images/f13a7d94b648a3a15655f0ec1dc3284e.jpeg"}},"image":null,"headline":"double speed Internet Part 8 - Routing Around","dateModified":"2016-06-08T08:00:00+00:00","datePublished":"2016-06-08T08:00:00+00:00","sameAs":null,"mainEntityOfPage":{"@type":"WebPage","@id":"https://www.tiernanotoole.ie/2016/06/08/double-speed-internet-part-8-routing-around.html"},"@context":"http://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -133,14 +126,14 @@ automatically in just a few seconds.
       </script>
         <h2>Interesting tags</h2>
       <ul>
+          <li><a href="/tag/HomeLab">HomeLab Stuff</a></li>
           <li><a href="/tag/VoIP/">VoIP stuff</a></li>
           <li><a href="/tag/Projects/">Projects</a></li>
           <li><a href="/tag/Programming/">Programming</a></li>
-          <li><a href="/tag/Media%20Center/">Media Center</a></li>
-          <li><a href="/tag/Raspberry%20Pi/">Raspberry Pi Stuff</a></li>
+          <li><a href="/tag/Raspberry_Pi/">Raspberry Pi Stuff</a></li>
           <li><a href="/tag/Networking/">Networking</a></li>
           <li><a href="/tag/IPv6/">IPv6</a></li>
-          <li><a href="/tag/Announcement/">Announcements</a></li>
+          <li><a href="/tag/Announcements/">Announcements</a></li>
           <li><a href="/tag/Development">Development</a></li>
       </ul>
       <h2>My HomeLab</h2>
@@ -304,7 +297,7 @@ automatically in just a few seconds.
 </script>
 
 <div id="post">
-  <p>[NOTE] This part 8 in a series of posts. The rest can be found <a href="https://www.tiernanotoole.ie/tag/Double%20Internet/">here</a>.</p>
+  <p>[NOTE] This part 8 in a series of posts. The rest can be found <a href="https://www.tiernanotoole.ie/tag/Double_Internet/">here</a>.</p>
 
 <p>At the end of my <a href="https://www.tiernanotoole.ie/2016/05/31/double-speed-internet-part-7-ecmp-kind-of.html">last post</a> I asked the question about routing traffic to different servers based on thier distances, etc… Well, after a bit of messing, i can say it kind of works! here is a quick over view:</p>
 
@@ -379,7 +372,7 @@ automatically in just a few seconds.
     
     <p>
         © Tiernan OToole, 2017 &mdash; built with <a href="http://jekyllrb.com/">Jekyll</a> using <a href="https://github.com/swanson/lagom">Lagom theme</a> hosted on <a href="http://www.azure.com">Azure</a> and protected by <a href="http://www.cloudflare.com">CloudFlare</a>.
-        Page generated at:  2018-03-14 11:30:12 +0000
+        Page generated at:  2018-03-15 16:07:34 +0000
     </p>
 </div>
             </div>

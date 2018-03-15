@@ -21,11 +21,12 @@
     <link rel="stylesheet" href="/assets/css/all.css">
 
     <link rel="pingback" href="https://webmention.io/tiernanotoole.ie/xmlrpc" />
-    <link rel="webmention" href="https://webmention.io/tiernanotoole.ie/webmention" /> <!-- Begin Jekyll SEO tag v2.1.0 -->
-<title>Zerotier and Minio Followup - Tiernan’s Comms Closet</title>
+    <link rel="webmention" href="https://webmention.io/tiernanotoole.ie/webmention" /> <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Zerotier and Minio Followup | Tiernan’s Comms Closet</title>
 <meta property="og:title" content="Zerotier and Minio Followup" />
-<meta name="description" content="in a previous post, I talked about setting up a distributed S3 like data storage system using Minio and ZeroTier. Well, this week, the ZeroTier guys tweeted about this." />
-<meta property="og:description" content="in a previous post, I talked about setting up a distributed S3 like data storage system using Minio and ZeroTier. Well, this week, the ZeroTier guys tweeted about this." />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="in a previous post, I talked about setting up a distributed S3 like data storage system using Minio and ZeroTier. Well, this week, the ZeroTier guys tweeted about this. Distributed S3 data storage using @minio and #ZeroTier -- https://t.co/MAXTjo3muh&mdash; ZeroTier, Inc. (@ZeroTier) May 2, 2017 A few people then started asking questions, and looking for a follow up, so here it is… First, a quick recap. I had 4 machines, all running Linux. Three of them were in 1 time zone (GMT+1) and one was in another (GMT). Looking at the Distributed Minio Quickstart Guide again, there is a mention of times being in sync… which is probably why this did not work as planned… and by “not work as planed”, I mean that Minio would crash, or not be responsive, or not write data in the place it should have… which was a pain. But looking at the documentation again, they do mention that Windows support is “experimental” which means, hopefully, some day it will be not so experimental, and might work… Given that most of my machines in house are Windows boxes, this would be a nice feature. Now, what about ZeroTier? Given they posted it to their twitter? Well, it worked. it did the inter connect stuff well, and, given bandwidth limitations on a home broadband connection, it was still quite fast. So, the question is, how fast? Well, on my Surface Book on a WiFi connection in the house, behind a Meraki MX64 firewall, connecting to the GodBoxV2 over FTP though ZeroTier, i get the following result: the same download over FTP direct (no ZeroTier) does the following: So, direct over FTP is faster… in this instance by about 70%, but, over the download, it did get slower (seen it hit 12 at one stage) and because its over WiFi, those are a bit wonky… I did get one last screen shot: as you can see, the Zerotier network adapter is showing 77.3Mbps, but the main network adapter is showing 80.8Mbps. There would be other traffic there, but if we assume there is nothing but ZeroTier traffic being sent, there is about 5% of an overhead. So, to wrap up: Minio and its distributed storage system over ZeroTier needs more testing. Ideally, all hosts need to be in the same time zone, or at least have the same time… Will try work on that soon. As for ZeroTier? I am extremely happy with them. Its fast, easy to setup, and easy to configure. What more could you ask for? Oh, and free, unless you need a pro account!" />
+<meta property="og:description" content="in a previous post, I talked about setting up a distributed S3 like data storage system using Minio and ZeroTier. Well, this week, the ZeroTier guys tweeted about this. Distributed S3 data storage using @minio and #ZeroTier -- https://t.co/MAXTjo3muh&mdash; ZeroTier, Inc. (@ZeroTier) May 2, 2017 A few people then started asking questions, and looking for a follow up, so here it is… First, a quick recap. I had 4 machines, all running Linux. Three of them were in 1 time zone (GMT+1) and one was in another (GMT). Looking at the Distributed Minio Quickstart Guide again, there is a mention of times being in sync… which is probably why this did not work as planned… and by “not work as planed”, I mean that Minio would crash, or not be responsive, or not write data in the place it should have… which was a pain. But looking at the documentation again, they do mention that Windows support is “experimental” which means, hopefully, some day it will be not so experimental, and might work… Given that most of my machines in house are Windows boxes, this would be a nice feature. Now, what about ZeroTier? Given they posted it to their twitter? Well, it worked. it did the inter connect stuff well, and, given bandwidth limitations on a home broadband connection, it was still quite fast. So, the question is, how fast? Well, on my Surface Book on a WiFi connection in the house, behind a Meraki MX64 firewall, connecting to the GodBoxV2 over FTP though ZeroTier, i get the following result: the same download over FTP direct (no ZeroTier) does the following: So, direct over FTP is faster… in this instance by about 70%, but, over the download, it did get slower (seen it hit 12 at one stage) and because its over WiFi, those are a bit wonky… I did get one last screen shot: as you can see, the Zerotier network adapter is showing 77.3Mbps, but the main network adapter is showing 80.8Mbps. There would be other traffic there, but if we assume there is nothing but ZeroTier traffic being sent, there is about 5% of an overhead. So, to wrap up: Minio and its distributed storage system over ZeroTier needs more testing. Ideally, all hosts need to be in the same time zone, or at least have the same time… Will try work on that soon. As for ZeroTier? I am extremely happy with them. Its fast, easy to setup, and easy to configure. What more could you ask for? Oh, and free, unless you need a pro account!" />
 <link rel="canonical" href="https://www.tiernanotoole.ie/2017/05/05/zerotier-minio-update.html" />
 <meta property="og:url" content="https://www.tiernanotoole.ie/2017/05/05/zerotier-minio-update.html" />
 <meta property="og:site_name" content="Tiernan’s Comms Closet" />
@@ -35,15 +36,7 @@
 <meta name="twitter:site" content="@tiernano" />
 <meta name="twitter:creator" content="@tiernano" />
 <script type="application/ld+json">
-{"@context": "http://schema.org",
-"@type": "BlogPosting",
-"headline": "Zerotier and Minio Followup",
-"datePublished": "2017-05-05T16:00:00+00:00",
-"description": "in a previous post, I talked about setting up a distributed S3 like data storage system using Minio and ZeroTier. Well, this week, the ZeroTier guys tweeted about this.",
-"publisher": {"@type": "Organization",
-"logo": {"@type": "ImageObject",
-"url": "https://www.tiernanotoole.ie/images/f13a7d94b648a3a15655f0ec1dc3284e.jpeg"}},
-"url": "https://www.tiernanotoole.ie/2017/05/05/zerotier-minio-update.html"}</script>
+{"name":null,"description":"in a previous post, I talked about setting up a distributed S3 like data storage system using Minio and ZeroTier. Well, this week, the ZeroTier guys tweeted about this. Distributed S3 data storage using @minio and #ZeroTier -- https://t.co/MAXTjo3muh&mdash; ZeroTier, Inc. (@ZeroTier) May 2, 2017 A few people then started asking questions, and looking for a follow up, so here it is… First, a quick recap. I had 4 machines, all running Linux. Three of them were in 1 time zone (GMT+1) and one was in another (GMT). Looking at the Distributed Minio Quickstart Guide again, there is a mention of times being in sync… which is probably why this did not work as planned… and by “not work as planed”, I mean that Minio would crash, or not be responsive, or not write data in the place it should have… which was a pain. But looking at the documentation again, they do mention that Windows support is “experimental” which means, hopefully, some day it will be not so experimental, and might work… Given that most of my machines in house are Windows boxes, this would be a nice feature. Now, what about ZeroTier? Given they posted it to their twitter? Well, it worked. it did the inter connect stuff well, and, given bandwidth limitations on a home broadband connection, it was still quite fast. So, the question is, how fast? Well, on my Surface Book on a WiFi connection in the house, behind a Meraki MX64 firewall, connecting to the GodBoxV2 over FTP though ZeroTier, i get the following result: the same download over FTP direct (no ZeroTier) does the following: So, direct over FTP is faster… in this instance by about 70%, but, over the download, it did get slower (seen it hit 12 at one stage) and because its over WiFi, those are a bit wonky… I did get one last screen shot: as you can see, the Zerotier network adapter is showing 77.3Mbps, but the main network adapter is showing 80.8Mbps. There would be other traffic there, but if we assume there is nothing but ZeroTier traffic being sent, there is about 5% of an overhead. So, to wrap up: Minio and its distributed storage system over ZeroTier needs more testing. Ideally, all hosts need to be in the same time zone, or at least have the same time… Will try work on that soon. As for ZeroTier? I am extremely happy with them. Its fast, easy to setup, and easy to configure. What more could you ask for? Oh, and free, unless you need a pro account!","author":null,"@type":"BlogPosting","url":"https://www.tiernanotoole.ie/2017/05/05/zerotier-minio-update.html","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://www.tiernanotoole.ie/images/f13a7d94b648a3a15655f0ec1dc3284e.jpeg"}},"image":null,"headline":"Zerotier and Minio Followup","dateModified":"2017-05-05T16:00:00+00:00","datePublished":"2017-05-05T16:00:00+00:00","sameAs":null,"mainEntityOfPage":{"@type":"WebPage","@id":"https://www.tiernanotoole.ie/2017/05/05/zerotier-minio-update.html"},"@context":"http://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -133,14 +126,14 @@ automatically in just a few seconds.
       </script>
         <h2>Interesting tags</h2>
       <ul>
+          <li><a href="/tag/HomeLab">HomeLab Stuff</a></li>
           <li><a href="/tag/VoIP/">VoIP stuff</a></li>
           <li><a href="/tag/Projects/">Projects</a></li>
           <li><a href="/tag/Programming/">Programming</a></li>
-          <li><a href="/tag/Media%20Center/">Media Center</a></li>
-          <li><a href="/tag/Raspberry%20Pi/">Raspberry Pi Stuff</a></li>
+          <li><a href="/tag/Raspberry_Pi/">Raspberry Pi Stuff</a></li>
           <li><a href="/tag/Networking/">Networking</a></li>
           <li><a href="/tag/IPv6/">IPv6</a></li>
-          <li><a href="/tag/Announcement/">Announcements</a></li>
+          <li><a href="/tag/Announcements/">Announcements</a></li>
           <li><a href="/tag/Development">Development</a></li>
       </ul>
       <h2>My HomeLab</h2>
@@ -394,7 +387,7 @@ automatically in just a few seconds.
     
     <p>
         © Tiernan OToole, 2017 &mdash; built with <a href="http://jekyllrb.com/">Jekyll</a> using <a href="https://github.com/swanson/lagom">Lagom theme</a> hosted on <a href="http://www.azure.com">Azure</a> and protected by <a href="http://www.cloudflare.com">CloudFlare</a>.
-        Page generated at:  2018-03-14 11:30:13 +0000
+        Page generated at:  2018-03-15 16:07:35 +0000
     </p>
 </div>
             </div>

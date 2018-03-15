@@ -21,11 +21,12 @@
     <link rel="stylesheet" href="/assets/css/all.css">
 
     <link rel="pingback" href="https://webmention.io/tiernanotoole.ie/xmlrpc" />
-    <link rel="webmention" href="https://webmention.io/tiernanotoole.ie/webmention" /> <!-- Begin Jekyll SEO tag v2.1.0 -->
-<title>PowerShell + HandBrake + AppleTV + iTunes = Automatic TV… Ish… - Tiernan’s Comms Closet</title>
+    <link rel="webmention" href="https://webmention.io/tiernanotoole.ie/webmention" /> <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>PowerShell + HandBrake + AppleTV + iTunes = Automatic TV… Ish… | Tiernan’s Comms Closet</title>
 <meta property="og:title" content="PowerShell + HandBrake + AppleTV + iTunes = Automatic TV… Ish…" />
-<meta name="description" content="I have an AppleTV in the house (3, actually) and i am very happy with its ease of use, size and cost… You cant really argue with the small price!" />
-<meta property="og:description" content="I have an AppleTV in the house (3, actually) and i am very happy with its ease of use, size and cost… You cant really argue with the small price!" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="I have an AppleTV in the house (3, actually) and i am very happy with its ease of use, size and cost… You cant really argue with the small price! I also have a lot of content that works great with the AppleTV in iTunes, but i have content which does not work so great with the AppleTV… So, i needed to find a way to convert files quickly and easily… thats where PowerShell and Handbrake come in… in the code above, you need to set the path of where your files live. in my case they live on a NAS. next, set the location of HandBrake… i have a 64 bit copy of Windows, and a 64 bit copy of HandBrake. set the new file name to where you want the file to go. in my case i have it set to my “Automatically Add to iTunes” folder, which is a magic folder for iTunes that copies any files dropped in there to your iTunes library. finally, conversion is run… This may take a few min, depending on a few factors: how many files you are converting how fast your machine in how fast your machine can read and write the files… etc… I have set files to convert on 3 different machines (the GodBox and 2 other servers) and i am getting speeds of anywhere between 250FPS (on the GodBox running 2 instances of HandBrake CLI) and 40 - 60 FPS on the older servers… on the remote machines, they are sending files to the GodBox folder also, so once everything completes, its just a matter of opening iTunes and we are good to go… Now to figure out how to automate the Metadata import…" />
+<meta property="og:description" content="I have an AppleTV in the house (3, actually) and i am very happy with its ease of use, size and cost… You cant really argue with the small price! I also have a lot of content that works great with the AppleTV in iTunes, but i have content which does not work so great with the AppleTV… So, i needed to find a way to convert files quickly and easily… thats where PowerShell and Handbrake come in… in the code above, you need to set the path of where your files live. in my case they live on a NAS. next, set the location of HandBrake… i have a 64 bit copy of Windows, and a 64 bit copy of HandBrake. set the new file name to where you want the file to go. in my case i have it set to my “Automatically Add to iTunes” folder, which is a magic folder for iTunes that copies any files dropped in there to your iTunes library. finally, conversion is run… This may take a few min, depending on a few factors: how many files you are converting how fast your machine in how fast your machine can read and write the files… etc… I have set files to convert on 3 different machines (the GodBox and 2 other servers) and i am getting speeds of anywhere between 250FPS (on the GodBox running 2 instances of HandBrake CLI) and 40 - 60 FPS on the older servers… on the remote machines, they are sending files to the GodBox folder also, so once everything completes, its just a matter of opening iTunes and we are good to go… Now to figure out how to automate the Metadata import…" />
 <link rel="canonical" href="https://www.tiernanotoole.ie/2012/09/28/Powershell-HandBrake-AppleTV-iTunes.html" />
 <meta property="og:url" content="https://www.tiernanotoole.ie/2012/09/28/Powershell-HandBrake-AppleTV-iTunes.html" />
 <meta property="og:site_name" content="Tiernan’s Comms Closet" />
@@ -35,15 +36,7 @@
 <meta name="twitter:site" content="@tiernano" />
 <meta name="twitter:creator" content="@tiernano" />
 <script type="application/ld+json">
-{"@context": "http://schema.org",
-"@type": "BlogPosting",
-"headline": "PowerShell + HandBrake + AppleTV + iTunes = Automatic TV… Ish…",
-"datePublished": "2012-09-28T00:00:00+00:00",
-"description": "I have an AppleTV in the house (3, actually) and i am very happy with its ease of use, size and cost… You cant really argue with the small price!",
-"publisher": {"@type": "Organization",
-"logo": {"@type": "ImageObject",
-"url": "https://www.tiernanotoole.ie/images/f13a7d94b648a3a15655f0ec1dc3284e.jpeg"}},
-"url": "https://www.tiernanotoole.ie/2012/09/28/Powershell-HandBrake-AppleTV-iTunes.html"}</script>
+{"name":null,"description":"I have an AppleTV in the house (3, actually) and i am very happy with its ease of use, size and cost… You cant really argue with the small price! I also have a lot of content that works great with the AppleTV in iTunes, but i have content which does not work so great with the AppleTV… So, i needed to find a way to convert files quickly and easily… thats where PowerShell and Handbrake come in… in the code above, you need to set the path of where your files live. in my case they live on a NAS. next, set the location of HandBrake… i have a 64 bit copy of Windows, and a 64 bit copy of HandBrake. set the new file name to where you want the file to go. in my case i have it set to my “Automatically Add to iTunes” folder, which is a magic folder for iTunes that copies any files dropped in there to your iTunes library. finally, conversion is run… This may take a few min, depending on a few factors: how many files you are converting how fast your machine in how fast your machine can read and write the files… etc… I have set files to convert on 3 different machines (the GodBox and 2 other servers) and i am getting speeds of anywhere between 250FPS (on the GodBox running 2 instances of HandBrake CLI) and 40 - 60 FPS on the older servers… on the remote machines, they are sending files to the GodBox folder also, so once everything completes, its just a matter of opening iTunes and we are good to go… Now to figure out how to automate the Metadata import…","author":null,"@type":"BlogPosting","url":"https://www.tiernanotoole.ie/2012/09/28/Powershell-HandBrake-AppleTV-iTunes.html","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://www.tiernanotoole.ie/images/f13a7d94b648a3a15655f0ec1dc3284e.jpeg"}},"image":null,"headline":"PowerShell + HandBrake + AppleTV + iTunes = Automatic TV… Ish…","dateModified":"2012-09-28T00:00:00+00:00","datePublished":"2012-09-28T00:00:00+00:00","sameAs":null,"mainEntityOfPage":{"@type":"WebPage","@id":"https://www.tiernanotoole.ie/2012/09/28/Powershell-HandBrake-AppleTV-iTunes.html"},"@context":"http://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -133,14 +126,14 @@ automatically in just a few seconds.
       </script>
         <h2>Interesting tags</h2>
       <ul>
+          <li><a href="/tag/HomeLab">HomeLab Stuff</a></li>
           <li><a href="/tag/VoIP/">VoIP stuff</a></li>
           <li><a href="/tag/Projects/">Projects</a></li>
           <li><a href="/tag/Programming/">Programming</a></li>
-          <li><a href="/tag/Media%20Center/">Media Center</a></li>
-          <li><a href="/tag/Raspberry%20Pi/">Raspberry Pi Stuff</a></li>
+          <li><a href="/tag/Raspberry_Pi/">Raspberry Pi Stuff</a></li>
           <li><a href="/tag/Networking/">Networking</a></li>
           <li><a href="/tag/IPv6/">IPv6</a></li>
-          <li><a href="/tag/Announcement/">Announcements</a></li>
+          <li><a href="/tag/Announcements/">Announcements</a></li>
           <li><a href="/tag/Development">Development</a></li>
       </ul>
       <h2>My HomeLab</h2>
@@ -390,7 +383,7 @@ automatically in just a few seconds.
     
     <p>
         © Tiernan OToole, 2017 &mdash; built with <a href="http://jekyllrb.com/">Jekyll</a> using <a href="https://github.com/swanson/lagom">Lagom theme</a> hosted on <a href="http://www.azure.com">Azure</a> and protected by <a href="http://www.cloudflare.com">CloudFlare</a>.
-        Page generated at:  2018-03-14 11:30:09 +0000
+        Page generated at:  2018-03-15 16:07:32 +0000
     </p>
 </div>
             </div>
