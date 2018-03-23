@@ -39,6 +39,7 @@
 {"name":null,"description":"so, earlier on today, i was talking about using Git with a DNS service called LuaDNS to update your DNS records. Well, thing is, i have 30+ domains registered, and of them about 25 are hosted on Amazon’s Route53. So, moving ALL of them seems, well at the moment, excessive… So, i went digging… there is a tool called cli53 which will allow you to manage route53 objects from the command line. It can also export your zones to BIND format and then re-import them if you have made changes… This all came out of a blog post by the guys and gals at netguru who showed how they integrate their DNS records with their Continuous Integration… Now, i have not gotten to that stage, just yet, but its only 1 step more down the road… but I don’t have my zones in bind format… So, how do i do that? I tweaked their block of ruby code (first time playing with ruby, be gentle with me) and got the following: essentially, it runs cli53 (you may need to change your path) and then creates .bind files for each zone. then, using their code below, you can re-import them to Route53: i have exported all mine, added them to git and done some testing… All seems to be in order… once i do some tweaks, i can get that CI piece working and it should be all magic…","author":null,"@type":"BlogPosting","url":"https://www.tiernanotoole.ie/2015/05/07/using-git-and-route53.html","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://www.tiernanotoole.ie/images/f13a7d94b648a3a15655f0ec1dc3284e.jpeg"}},"image":null,"headline":"Using git and Route53 together","dateModified":"2015-05-07T20:00:00+00:00","datePublished":"2015-05-07T20:00:00+00:00","sameAs":null,"mainEntityOfPage":{"@type":"WebPage","@id":"https://www.tiernanotoole.ie/2015/05/07/using-git-and-route53.html"},"@context":"http://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 
     <!-- 
 To collect end-user usage analytics about your application, 
@@ -376,7 +377,7 @@ automatically in just a few seconds.
     
     <p>
         © Tiernan OToole, 2017 &mdash; built with <a href="http://jekyllrb.com/">Jekyll</a> using <a href="https://github.com/swanson/lagom">Lagom theme</a> hosted on <a href="http://www.azure.com">Azure</a> and protected by <a href="http://www.cloudflare.com">CloudFlare</a>.
-        Page generated at:  2018-03-15 16:07:34 +0000
+        Page generated at:  2018-03-23 13:29:13 +0000
     </p>
 </div>
             </div>
@@ -398,8 +399,6 @@ automatically in just a few seconds.
         s.parentNode.insertBefore(ga, s);
     })();
 </script>
-
-
 
 <script type="text/javascript">
     var vglnk = {

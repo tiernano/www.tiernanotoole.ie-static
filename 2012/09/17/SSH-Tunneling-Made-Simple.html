@@ -39,6 +39,7 @@
 {"name":null,"description":"Something I do on a regular basis is use the internet while “out and about”. This could be college, which has a semi open network, or it could be a coffee shop, which also usually has a semi open connection. There is also the possibility of using the a mobile internet connection on my iPhone, which can be slow, but at least its only shared with me… Anyway, over on RevSys.com, there is a post SSH Tunneling made simple which shows you how to open an SSH tunnel to your machine somewhere else (could be at home, as is my case, or a VPS/Dedicated server somewhere, or even on Amazon…) and use that for different things… In the case he shows, its for SMTP access. For my case, i am forwarding my local port 3128 to my Microsoft TMG 2010 Server in house on port 8080. Then my system proxy on my laptop is set to use localhost:3128 for all web and HTTPS requests. Very handy. One other tip: Using the -C flag, so your command may look like: ssh yourname@remotemachine -L 3128:remoteMachine:8080 -C will compress data between you and the SSH server, which for basic web browsing (HTML, CSS, JS) will make things faster, but for stuff like images, etc, may not work so well… Your Mileage may Vary… Also, while on the subject of SSH, Linux Journal has an article on Eleven SSH tricks which mentions compression, Encryption Cyphers, X11 Forwarding, Config files and other interesting bits.","author":null,"@type":"BlogPosting","url":"https://www.tiernanotoole.ie/2012/09/17/SSH-Tunneling-Made-Simple.html","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://www.tiernanotoole.ie/images/f13a7d94b648a3a15655f0ec1dc3284e.jpeg"}},"image":null,"headline":"SSH Tunneling made simple","dateModified":"2012-09-17T00:00:00+00:00","datePublished":"2012-09-17T00:00:00+00:00","sameAs":null,"mainEntityOfPage":{"@type":"WebPage","@id":"https://www.tiernanotoole.ie/2012/09/17/SSH-Tunneling-Made-Simple.html"},"@context":"http://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 
     <!-- 
 To collect end-user usage analytics about your application, 
@@ -367,7 +368,7 @@ automatically in just a few seconds.
     
     <p>
         © Tiernan OToole, 2017 &mdash; built with <a href="http://jekyllrb.com/">Jekyll</a> using <a href="https://github.com/swanson/lagom">Lagom theme</a> hosted on <a href="http://www.azure.com">Azure</a> and protected by <a href="http://www.cloudflare.com">CloudFlare</a>.
-        Page generated at:  2018-03-15 16:07:32 +0000
+        Page generated at:  2018-03-23 13:29:12 +0000
     </p>
 </div>
             </div>
@@ -389,8 +390,6 @@ automatically in just a few seconds.
         s.parentNode.insertBefore(ga, s);
     })();
 </script>
-
-
 
 <script type="text/javascript">
     var vglnk = {

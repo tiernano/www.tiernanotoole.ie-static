@@ -39,6 +39,7 @@
 {"name":null,"description":"In part 6 of my Double Internet Series I mentioned i was running a Meraki MX64 in the network, and said i would write up about it. I am taking this oppertunity to also write up about the Ubiquiti networks gear in the house also. First on the list is my older Ubiquiti Edgerouter POE. It currently in the process of being decommissioned, or used for something else. It was the main edge router for the network: it had both internet connections connected, and did routing, firewalls, etc, but with the Proliant taking over as a router, it is not requried as much any more… Its still on, mainly because its still a DHCP server, but not much else. There are 2 Meraki MS220-8 switches next. GodBox1 and Godbox2 both connect in here, and are bonded, as is everything else on the network. The MS220-8 has 8 GigE ports, but also has 2 SFP ports. I bought 4 SFP Ethernet adapters and have a short calbe running between the switches. That uplink is also bonded. All going well so far! All meraki hardware can be managed though the meraki dashboard. check out their site for more details and examples of how to use it. I bought one of the MS220’s from ebay a few months back, and loved it. Then i realized that you can get your hands on free gear, the MX64, an MS220 and a Wifi Access point if you attend their webinars. Terms and conditions apply, but check them out! I have 2 Ubiquiti UniFi APs, one in the front of the house, one in the back. They are connected to one of the MS220’s, but dont work with its POE (maybe the EdgeRouter could do that, since its POE…) so there are injectors for them. Anyway, the network ports on there are VLANed to the MX64 (more on that later) and the detault traffic is going to a management VLAN. The MX64 has a static internal IP on my DMZ network, and uses the Proliant as an upstream connection. Upstream on the Hetzner server, all traffic coming from the MX64 ip uses one of my /29 ip block. all traffic to that ip is also forwarded directly to the MX64. I has 2 small, unmanaged switches (a cheap 8 port Linksys and a 8 port TP Link) which are used for seperate things: the Linksys has 4 Raspberry Pi’s, which run a [GlusterFS] cluster, plugged into it and the TP Link connects to my printers. I also have a Mikrotik CRS226-24G-2S+IN which has 2 10Gbit SFP+ Ports, and plan on using this for higher speed networking soon, aswell as a Cisco 48 port 3560 which also has 4 SFP ports (GigE) and may come in handy for something soon… So, thats the network currently. any questions, please leave a comment.","author":null,"@type":"BlogPosting","url":"https://www.tiernanotoole.ie/2016/06/20/meraki-gear-update.html","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://www.tiernanotoole.ie/images/f13a7d94b648a3a15655f0ec1dc3284e.jpeg"}},"image":null,"headline":"Meraki and Ubiquiti networks gear Update","dateModified":"2016-06-20T08:00:00+00:00","datePublished":"2016-06-20T08:00:00+00:00","sameAs":null,"mainEntityOfPage":{"@type":"WebPage","@id":"https://www.tiernanotoole.ie/2016/06/20/meraki-gear-update.html"},"@context":"http://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 
     <!-- 
 To collect end-user usage analytics about your application, 
@@ -373,7 +374,7 @@ automatically in just a few seconds.
     
     <p>
         © Tiernan OToole, 2017 &mdash; built with <a href="http://jekyllrb.com/">Jekyll</a> using <a href="https://github.com/swanson/lagom">Lagom theme</a> hosted on <a href="http://www.azure.com">Azure</a> and protected by <a href="http://www.cloudflare.com">CloudFlare</a>.
-        Page generated at:  2018-03-15 16:07:34 +0000
+        Page generated at:  2018-03-23 13:29:14 +0000
     </p>
 </div>
             </div>
@@ -395,8 +396,6 @@ automatically in just a few seconds.
         s.parentNode.insertBefore(ga, s);
     })();
 </script>
-
-
 
 <script type="text/javascript">
     var vglnk = {

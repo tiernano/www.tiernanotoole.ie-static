@@ -39,6 +39,7 @@
 {"name":null,"description":"[NOTE] This part 6 in a series of posts. The rest can be found here. Its been a while, since I posted, and there are some, well, pretty major changes since the last time… Lets start are the beginning. Last time I was using Digital Ocean for my hosting provider. I was using their $20 a month server (2 cores, 2GB RAM, 40GB SSD, 3TB transfer), and it was all good… But I noticed that every now and again I would need to reboot the box. I also noticed that when transferring large files or using higher bandwidth (400mb/s+) the 100% of both cores were being used. So, I wanted to move to something with more power… I also was limited to IP addresses. Yes, Digital Ocean do offer IPv6, but I could only get 1 IPv4 address… and I wanted more… So, I went back to some old friends of mine, Hetzner, and bought a dedicated server with a Quad Core Xeon E3, 32GB RAM, 4*3 TB HDDs, 1Gbit/s network connection with 30TB transfer per month and a KVMoIP plugged in. I also got 2 extra standard IPs and a /29 (8 IPs, 6 usable). I will explain that next. I installed Debian 8.4 on the first disk, and I am planning on using the other 3 for storage of some sort. I then installed the MPTCP kernel, OpenVPN, Squid and a Socks server (same as the Digital Ocean box) and reconfigured the home machine… All good! Now when browsing the web, everywhere thinks I am in Germany, but so far, so good… Speed tests are about the same, but I have my theory about ECMP to try this weekend. Because of the extra IPs, I am working on doing full IP forwarding, not just port forwarding. One of my IPs in pointing directly at my Meraki MX64 in house (a post on the Meraki stuff is coming, eventually…) and another at the Proliant box, and I plan on pointing other IPs at machines in the DMZ or a firewall of some sort. the /29 is routed though the IP pointing at the Proliant, so that makes life easier. The original IP is only used for SSH and OVPN from the house. it should not do much else. All network traffic in house is coming from other of the other IPs. Again, so far, so good. Hopefully the ECMP stuff works correctly, so I will do an updated post soon.","author":null,"@type":"BlogPosting","url":"https://www.tiernanotoole.ie/2016/05/17/double-speed-internet-part-6-hetzner-edition.html","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://www.tiernanotoole.ie/images/f13a7d94b648a3a15655f0ec1dc3284e.jpeg"}},"image":null,"headline":"double speed Internet Part 6 - Hetzner Edition","dateModified":"2016-05-17T13:00:00+00:00","datePublished":"2016-05-17T13:00:00+00:00","sameAs":null,"mainEntityOfPage":{"@type":"WebPage","@id":"https://www.tiernanotoole.ie/2016/05/17/double-speed-internet-part-6-hetzner-edition.html"},"@context":"http://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 
     <!-- 
 To collect end-user usage analytics about your application, 
@@ -372,7 +373,7 @@ automatically in just a few seconds.
     
     <p>
         © Tiernan OToole, 2017 &mdash; built with <a href="http://jekyllrb.com/">Jekyll</a> using <a href="https://github.com/swanson/lagom">Lagom theme</a> hosted on <a href="http://www.azure.com">Azure</a> and protected by <a href="http://www.cloudflare.com">CloudFlare</a>.
-        Page generated at:  2018-03-15 16:07:34 +0000
+        Page generated at:  2018-03-23 13:29:14 +0000
     </p>
 </div>
             </div>
@@ -394,8 +395,6 @@ automatically in just a few seconds.
         s.parentNode.insertBefore(ga, s);
     })();
 </script>
-
-
 
 <script type="text/javascript">
     var vglnk = {

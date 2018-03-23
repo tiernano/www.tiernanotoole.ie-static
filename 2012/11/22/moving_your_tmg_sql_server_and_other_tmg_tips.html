@@ -39,6 +39,7 @@
 {"name":null,"description":"In house, I have been using Microsoft TMG 2010 Server for a while now. I use it as a firewall for some of the machines on the network, and also as a proxy for most, if not all, machines. When acting as a Firewall, all traffic flows though the machine, be it HTTP/HTTPS, SMTP/POP3/IMAP, or anything for that matter. You can also lock down ports on the box, which is a feature of most firewalls, but i like TMG due to its relitive ease of use… Anyway, one problem with routing all traffic from different machines though TMG is after a while, the logging starts getting big. Single TMG by default is set to use SQL Server, it can start using lots of memory, hard drive space, etc. So, there are a couple of articles which should make moving your TMG’s SQL DB to a different machine easier… Configuring Forefront TMG Logs Configuring (TMG) logging to a remote server How to configure Forefront TMG logging into a central Microsoft SQL Server database Some other tips you may find useful If you have Malware Inspection turned on, but you know there are certain sites that wont serve Malware (for example, Ubutnu Archives or YouTube.com) you can add these to the “Destination Exceptions” list. Under “Web Access Policy”, click “Malware Inspection” and click “Destination Exceptions”. Double click on the “Sites Exempt from Malware Inspection” and add your URL. I put *.ubuntu.com and *.youtube.com in here (Microsoft Updates are already on the list). Now, when downloading files from these locations, they do not run though inspection and save CPU cycles. WANRING You need to trust these sites! There is a nice little app to add into TMG called Bandwidth Splitter which allows you to not only monitor what traffic is going though your network, but also put limits on different machine sets, users, etc. There is a Free editon which works with only 10 clients, but does what i need it to do to start with.","author":null,"@type":"BlogPosting","url":"https://www.tiernanotoole.ie/2012/11/22/moving_your_tmg_sql_server_and_other_tmg_tips.html","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://www.tiernanotoole.ie/images/f13a7d94b648a3a15655f0ec1dc3284e.jpeg"}},"image":null,"headline":"moving your TMG SQL server Logs DB and other TMG tips","dateModified":"2012-11-22T08:27:55+00:00","datePublished":"2012-11-22T08:27:55+00:00","sameAs":null,"mainEntityOfPage":{"@type":"WebPage","@id":"https://www.tiernanotoole.ie/2012/11/22/moving_your_tmg_sql_server_and_other_tmg_tips.html"},"@context":"http://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 
     <!-- 
 To collect end-user usage analytics about your application, 
@@ -375,7 +376,7 @@ automatically in just a few seconds.
     
     <p>
         © Tiernan OToole, 2017 &mdash; built with <a href="http://jekyllrb.com/">Jekyll</a> using <a href="https://github.com/swanson/lagom">Lagom theme</a> hosted on <a href="http://www.azure.com">Azure</a> and protected by <a href="http://www.cloudflare.com">CloudFlare</a>.
-        Page generated at:  2018-03-15 16:07:33 +0000
+        Page generated at:  2018-03-23 13:29:13 +0000
     </p>
 </div>
             </div>
@@ -397,8 +398,6 @@ automatically in just a few seconds.
         s.parentNode.insertBefore(ga, s);
     })();
 </script>
-
-
 
 <script type="text/javascript">
     var vglnk = {

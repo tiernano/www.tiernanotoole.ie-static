@@ -39,6 +39,7 @@
 {"name":null,"description":"So, after some messing, tweaking, and thinking, I have made some progress with the home lab… or at least broken some stuff… I mentioned previously that i had a Ubiqititi networks EdgeRouter POE in the home lab. Originally, the plan was to use a Virtual PFSense box for my core router… Given the power usage of the current PfSense Box (I have 2 MPower Pro’s watching power in the lab) I am now thinking of moving to just the EdgeRouter for, well, edge routing… below is the usage of the ProLiant for the last 12 hours or so: for the same period, here is the usage for the Edge Router: I am also setting up a DMZ for front facing services, and then a LAN for inside facing machines. There will be a firewall (currently thinking Sophos UTM or similar) between the DMZ and the network. Some machines will be able to access the DMZ, and there may be machines allowed into the LAN, but only some things… not even sure if that would be done… I also need to work out the VLAN side of things. I have currently though of the following VLAN setup: WAN 1 (connected directly to the Cable modem) WAN 2 (again, direct to cable modem) LAN Network DMZ Network VoIP Network IOT (stuff for running the house, like Nest, the MPower devices or the like) Media Network (Plex, Roku, Apple TV, Chrome Cast, etc. Not sure if i need to separate this, but it might be done…) The current Cisco 3560G switch should do all that, without problems, so no new switch needed… lets see what i can break over the next while…","author":null,"@type":"BlogPosting","url":"https://www.tiernanotoole.ie/2015/09/16/Network-and-HomeLab-vnext-part-4.html","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://www.tiernanotoole.ie/images/f13a7d94b648a3a15655f0ec1dc3284e.jpeg"}},"image":null,"headline":"Network and HomeLab V.Next (Part 4)","dateModified":"2015-09-16T14:15:00+00:00","datePublished":"2015-09-16T14:15:00+00:00","sameAs":null,"mainEntityOfPage":{"@type":"WebPage","@id":"https://www.tiernanotoole.ie/2015/09/16/Network-and-HomeLab-vnext-part-4.html"},"@context":"http://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 
     <!-- 
 To collect end-user usage analytics about your application, 
@@ -382,7 +383,7 @@ automatically in just a few seconds.
     
     <p>
         © Tiernan OToole, 2017 &mdash; built with <a href="http://jekyllrb.com/">Jekyll</a> using <a href="https://github.com/swanson/lagom">Lagom theme</a> hosted on <a href="http://www.azure.com">Azure</a> and protected by <a href="http://www.cloudflare.com">CloudFlare</a>.
-        Page generated at:  2018-03-15 16:07:34 +0000
+        Page generated at:  2018-03-23 13:29:13 +0000
     </p>
 </div>
             </div>
@@ -404,8 +405,6 @@ automatically in just a few seconds.
         s.parentNode.insertBefore(ga, s);
     })();
 </script>
-
-
 
 <script type="text/javascript">
     var vglnk = {

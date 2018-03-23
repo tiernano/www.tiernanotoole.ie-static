@@ -39,6 +39,7 @@
 {"name":null,"description":"[NOTE] This part 9 in a series of posts. The rest can be found here Well, the double internet experiment is about ready to be finished… After 9 posts, 4 months, lots of sweating, many painful nights trying to figure out why something stopped using, shouting when Netflix did not work, wondering why my internet connection was so slow, and many, many other problems, i have decided to wind down the project. in the last 9 posts, i have learned a lot, and i hope i have helped someone figure out some stuff on their end. Even though this is a wind up of the project, there are still new things i have to share. I found another project that has potential for speeding up the internet: VTrunkd. after some testing, i does seem to manage to speed up the connection, but either limits on hardware i have in house, or limits of hardware in the cloud, or even the software, stopped me in my tracks… i did see 400mb/s out of it at one stage, using 200mb/s from each modem… its close, but its not the full 720… messing with Quagga/Zebra as mentioned in the previous post has been, well, interesting… I did manage to get all OVH traffic sent though their server, Digital Ocean traffic sent over that box, and everything else over Hetzner. I added an Azure box to the mix for a while, aswell as a Vultr box, but it got very messey, very quickly. if i had something automated, it would be better. the idea of having a /29 IP range in Hetzner and forwarding it though the tunnels back to the house did work. My Meraki MX64 had one IP address, i had a mail server on a second, everything else on a third, and was planning on using more… but its just, well, again, messy. So, i will be going back to the idea of 2 IP addresses, and hoping whatever i put infront of the network can figure stuff out… So, what am i moving to? well, thats a question… Currently, i have the Meraki MX64 plugged directly into the modems, and protecting my LAN. So far, so good, but due to hardware limits, it maxes out at around 260mb/s. So, thats out of the question for the main network! I did at one stage have Sophos UTM Home edition running. Sophos also have their XG firewall available for home use, so i might try that… There is also PFSense which i used before also… And there may be more… Maybe there will be a new series reviewing these home firewalls? we will see…","author":null,"@type":"BlogPosting","url":"https://www.tiernanotoole.ie/2016/07/20/double-speed-internet-part-9-going-back.html","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://www.tiernanotoole.ie/images/f13a7d94b648a3a15655f0ec1dc3284e.jpeg"}},"image":null,"headline":"double speed Internet Part 9 - Going Back","dateModified":"2016-07-20T12:00:00+00:00","datePublished":"2016-07-20T12:00:00+00:00","sameAs":null,"mainEntityOfPage":{"@type":"WebPage","@id":"https://www.tiernanotoole.ie/2016/07/20/double-speed-internet-part-9-going-back.html"},"@context":"http://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 
     <!-- 
 To collect end-user usage analytics about your application, 
@@ -370,7 +371,7 @@ automatically in just a few seconds.
     
     <p>
         © Tiernan OToole, 2017 &mdash; built with <a href="http://jekyllrb.com/">Jekyll</a> using <a href="https://github.com/swanson/lagom">Lagom theme</a> hosted on <a href="http://www.azure.com">Azure</a> and protected by <a href="http://www.cloudflare.com">CloudFlare</a>.
-        Page generated at:  2018-03-15 16:07:34 +0000
+        Page generated at:  2018-03-23 13:29:14 +0000
     </p>
 </div>
             </div>
@@ -392,8 +393,6 @@ automatically in just a few seconds.
         s.parentNode.insertBefore(ga, s);
     })();
 </script>
-
-
 
 <script type="text/javascript">
     var vglnk = {

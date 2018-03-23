@@ -39,6 +39,7 @@
 {"name":null,"description":"About a month ago, while i was recovering from surgery, i attended a Webinar on Cisco Meraki devices. After the webinar, i was contacted by Maraki and given a MR18 with a 3 year license, to play with and evaluate. So, i set it up in the house and all was good. Thing is, the wifi in the house was grand previously. I have a Routerboard RB951G which does the job and has no issues. And because i am mostly offsite in the office i work, and because i need to remotely manage the network, the MR18 is going into the office from tomorrow morning. I may talk about the MR18 and the rest of the Meraki gear later on, but this is not that post. This post is about something the MR18 did, and i wanted to do on the RB951. So, the MR18 allows you to create multiple Wifi SSIDs, each with different encryption and security and can use different VLANs. Now, the Mikrotik does the same, but the VLANs stuff is not that easy to figure out. but essentially, what i needed to do was as follows: create your new wifi SSIDs: /interface wireless add master-interface=wlan1 name=wlan1.10 ssid=vlan10 add master-interface=wlan1 name=wlan1.20 ssid=vlan20 next, create your vlans. these need to be connected back to your main ethernet connection. In the case of my RB951, there are 5 ethernet ports. 1 is the gateway back to my Cisco switch and on to my PFSense router. 2-5 are all slaves of number 1, which is a master. So, 1 is essentially a trunk network. So, vlans are created on that. /interface vlan add name=vlan10 interface=ether1-gateway name=ether1.10 vlan-id=10 add name=vlan20 interface=ether1-gateway name=ether1.20 vlan-id=20 next, a bridge to connect them /interface bridge add name=vlan10 add name=vlan20 and connect them to the bridge /interface bridge port add bridge=vlan10 interface ether1.10 add bridge=vlan10 interface wlan1.10 add bridge=vlan20 interface ether1.20 add bridge=vlan20 interface wlan1.20 And thats all i needed to do. I have a Sophos UTM Home edition running on a vm for testing, which vlan10 is connected to. It has an upstream connection back to the PFSense box, which has it firewalled off and allows it outside the network, not nothing else. I am planning on doing this with other firewalls, just to do some testing with. This allows me to connect my phone or laptop, or any other wifi device, to a given wifi connection and then be on my way. I also have an older Dell PowerConnect switch, which, if i ever get around to it, will have multiple connections back to the Cisco and then allow physical devices to connect to different vlans. Any questions, comments, etc, leave a comment blow.","author":null,"@type":"BlogPosting","url":"https://www.tiernanotoole.ie/2015/05/10/vlans-wifi-and-mikrotik.html","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://www.tiernanotoole.ie/images/f13a7d94b648a3a15655f0ec1dc3284e.jpeg"}},"image":null,"headline":"VLANs, Wifi and Mikrotik","dateModified":"2015-05-10T18:40:00+00:00","datePublished":"2015-05-10T18:40:00+00:00","sameAs":null,"mainEntityOfPage":{"@type":"WebPage","@id":"https://www.tiernanotoole.ie/2015/05/10/vlans-wifi-and-mikrotik.html"},"@context":"http://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 
     <!-- 
 To collect end-user usage analytics about your application, 
@@ -401,7 +402,7 @@ add bridge=vlan20 interface wlan1.20
     
     <p>
         © Tiernan OToole, 2017 &mdash; built with <a href="http://jekyllrb.com/">Jekyll</a> using <a href="https://github.com/swanson/lagom">Lagom theme</a> hosted on <a href="http://www.azure.com">Azure</a> and protected by <a href="http://www.cloudflare.com">CloudFlare</a>.
-        Page generated at:  2018-03-15 16:07:34 +0000
+        Page generated at:  2018-03-23 13:29:13 +0000
     </p>
 </div>
             </div>
@@ -423,8 +424,6 @@ add bridge=vlan20 interface wlan1.20
         s.parentNode.insertBefore(ga, s);
     })();
 </script>
-
-
 
 <script type="text/javascript">
     var vglnk = {
