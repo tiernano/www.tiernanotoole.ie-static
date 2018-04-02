@@ -1,19 +1,21 @@
 {
     "tags": [
         
-        "Announcement",
+        "Announcements",
         
         "Git",
         
         "Blogging",
         
-        "Amazon AWS",
+        "AWS",
         
         "Cloud",
         
         "Powershell",
         
-        "Windows Server 2012",
+        "Server_2012",
+        
+        "Windows",
         
         "Storage",
         
@@ -25,7 +27,7 @@
         
         "Hardware",
         
-        "Raspberry Pi",
+        "Raspberry_Pi",
         
         "VoIP",
         
@@ -69,15 +71,11 @@
         
         "HowTo",
         
-        "Windows",
-        
         "IPv6",
         
-        "Office 365",
+        "Office_365",
         
         "Email",
-        
-        "Announcements",
         
         "RSync",
         
@@ -101,19 +99,17 @@
         
         "GodBoxV2",
         
-        "Sophos UTM",
+        "Sophos_UTM",
         
         "Hubic",
         
         "B2",
         
-        "Double Internet",
+        "Double_Internet",
         
-        "Cloud Desktop",
+        "Cloud_Desktop",
         
-        "workstation",
-        
-        "hardware",
+        "Workstation",
         
         "Docker",
         
@@ -121,19 +117,17 @@
         
         "S3",
         
-        "jekyll",
+        "PowerShell",
         
-        "website",
+        "Website",
         
-        "tools",
+        "Tools",
         
         "Tutorials",
         
         "Crashplan",
         
-        "BackBlaze",
-        
-        "Tools"
+        "BackBlaze"
         
     ]
 }

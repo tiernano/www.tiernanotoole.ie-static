@@ -21,9 +21,10 @@
     <link rel="stylesheet" href="/assets/css/all.css">
 
     <link rel="pingback" href="https://webmention.io/tiernanotoole.ie/xmlrpc" />
-    <link rel="webmention" href="https://webmention.io/tiernanotoole.ie/webmention" /> <!-- Begin Jekyll SEO tag v2.1.0 -->
-<title>MPTCP, SSH, Squid, OpenVPN (and 2 Cable modems) = Double Speed? Not quite… Part 2 - Tiernan’s Comms Closet</title>
+    <link rel="webmention" href="https://webmention.io/tiernanotoole.ie/webmention" /> <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>MPTCP, SSH, Squid, OpenVPN (and 2 Cable modems) = Double Speed? Not quite… Part 2 | Tiernan’s Comms Closet</title>
 <meta property="og:title" content="MPTCP, SSH, Squid, OpenVPN (and 2 Cable modems) = Double Speed? Not quite… Part 2" />
+<meta property="og:locale" content="en_US" />
 <meta name="description" content="[NOTE] This part 2 in a series of posts. The rest can be found here." />
 <meta property="og:description" content="[NOTE] This part 2 in a series of posts. The rest can be found here." />
 <link rel="canonical" href="https://www.tiernanotoole.ie/2016/03/30/mptcp-ssh-squid-openvpn-double-speed-part-2.html" />
@@ -35,17 +36,10 @@
 <meta name="twitter:site" content="@tiernano" />
 <meta name="twitter:creator" content="@tiernano" />
 <script type="application/ld+json">
-{"@context": "http://schema.org",
-"@type": "BlogPosting",
-"headline": "MPTCP, SSH, Squid, OpenVPN (and 2 Cable modems) = Double Speed? Not quite… Part 2",
-"datePublished": "2016-03-30T20:00:00+00:00",
-"description": "[NOTE] This part 2 in a series of posts. The rest can be found here.",
-"publisher": {"@type": "Organization",
-"logo": {"@type": "ImageObject",
-"url": "https://www.tiernanotoole.ie/images/f13a7d94b648a3a15655f0ec1dc3284e.jpeg"}},
-"url": "https://www.tiernanotoole.ie/2016/03/30/mptcp-ssh-squid-openvpn-double-speed-part-2.html"}</script>
+{"name":null,"description":"[NOTE] This part 2 in a series of posts. The rest can be found here.","author":null,"@type":"BlogPosting","url":"https://www.tiernanotoole.ie/2016/03/30/mptcp-ssh-squid-openvpn-double-speed-part-2.html","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://www.tiernanotoole.ie/images/f13a7d94b648a3a15655f0ec1dc3284e.jpeg"}},"image":null,"headline":"MPTCP, SSH, Squid, OpenVPN (and 2 Cable modems) = Double Speed? Not quite… Part 2","dateModified":"2016-03-30T20:00:00+00:00","datePublished":"2016-03-30T20:00:00+00:00","sameAs":null,"mainEntityOfPage":{"@type":"WebPage","@id":"https://www.tiernanotoole.ie/2016/03/30/mptcp-ssh-squid-openvpn-double-speed-part-2.html"},"@context":"http://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 
     <!-- 
 To collect end-user usage analytics about your application, 
@@ -133,14 +127,14 @@ automatically in just a few seconds.
       </script>
         <h2>Interesting tags</h2>
       <ul>
+          <li><a href="/tag/HomeLab">HomeLab Stuff</a></li>
           <li><a href="/tag/VoIP/">VoIP stuff</a></li>
           <li><a href="/tag/Projects/">Projects</a></li>
           <li><a href="/tag/Programming/">Programming</a></li>
-          <li><a href="/tag/Media%20Center/">Media Center</a></li>
-          <li><a href="/tag/Raspberry%20Pi/">Raspberry Pi Stuff</a></li>
+          <li><a href="/tag/Raspberry_Pi/">Raspberry Pi Stuff</a></li>
           <li><a href="/tag/Networking/">Networking</a></li>
           <li><a href="/tag/IPv6/">IPv6</a></li>
-          <li><a href="/tag/Announcement/">Announcements</a></li>
+          <li><a href="/tag/Announcements/">Announcements</a></li>
           <li><a href="/tag/Development">Development</a></li>
       </ul>
       <h2>My HomeLab</h2>
@@ -206,7 +200,7 @@ automatically in just a few seconds.
         
           
           <li>
-            <a href="/Computers/C6100.html">Dell C6100</a>
+            <a href="/Computers/c6100.html">Dell C6100</a>
           </li>
           
         
@@ -304,7 +298,7 @@ automatically in just a few seconds.
 </script>
 
 <div id="post">
-  <p>[NOTE] This part 2 in a series of posts. The rest can be found <a href="https://www.tiernanotoole.ie/tag/Double Internet/">here</a>.</p>
+  <p>[NOTE] This part 2 in a series of posts. The rest can be found <a href="https://www.tiernanotoole.ie/tag/Double_Internet/">here</a>.</p>
 
 <p>In <a href="https://www.tiernanotoole.ie/2016/03/22/2-Cable-Modems-Double-Internet-Speed-part1.html">my previous post</a> I explained what i was trying to do… This post explains what i have been working on recently, and performance results…
 So, first, what have i tried… There are 3 different things i have tried, and here are some of their details. Some will need to be updated (other parts of this series), and others i will try get back to eventually.</p>
@@ -316,7 +310,7 @@ So, first, what have i tried… There are 3 different things i have tried, and h
 
 <p>Ping wise, Digital Ocean is about 20-30ms away from the house (I picked London to host the servers) and Scaleway is a little further at about 50ms (They are based in France).</p>
 
-<h2 id="mptcp-multipath-tcp5">MPTCP (<a href="http://www.multipath-tcp.org">MultiPath TCP</a>)</h2>
+<h2 id="mptcp-multipath-tcp">MPTCP (<a href="http://www.multipath-tcp.org">MultiPath TCP</a>)</h2>
 <p>MPTCP (their site is a bit wonky as of writing, so bare with me…) is a Linux Kernel patch that allows TCP connections to use multiple paths… Essentially, if you have Wifi and 4G in a phone, and MPTCP is enabled, it should allow you to use both connections for TCP traffic, as long as the server upstream supports it. It also allows for easy fail over if, say, you lose your wifi connection. There is an example <a href="https://youtu.be/VWN0ctPi5cw">video of it on YouTube</a> which should show the fail over parts and <a href="https://www.youtube.com/watch?v=VMdPI9Cfi9k">this video</a> shows how they managed to get 50Gbit/s out of a 6 10Gb Ethernet connections.</p>
 
 <p>When i was using MPTCP, I had a copy of <a href="http://www.squid-cache.org">Squid</a> on both boxes, and told Squid locally to use Squid on the upstream box (over a SSH tunnel, which was over the MPTCP link) as a parent cache. Using this method, i could see (using <a href="http://www.ex-parrot.com/pdw/iftop/">iftop</a>) that both connections were being used. When trying proper performace testing, I setup a RAM disk on both machines and copied a Linux ISO to the Digtial Ocean Box. Then, using wget and <a href="http://axel.alioth.debian.org/">Axel</a> I downloaded the files using <a href="https://www.nginx.com/">Nginx</a> on the server, and checked the results. I can max out 1 single connection, plus use about 60-80mbit/s from the second. about 420-440mbit/s total. Disk was not the bottleneck, since I was writing to RAM, so more tests are required.</p>
@@ -370,15 +364,15 @@ So, first, what have i tried… There are 3 different things i have tried, and h
   <ul class="posts">
     
     <li>
+      <span>01 Apr 2018 &raquo;</span> <a href="/2018/04/01/as204994-own-ip-space-and-anycast.html">AS204994, Own IP Space and Anycast</a>
+    </li>
+    
+    <li>
       <span>06 Mar 2018 &raquo;</span> <a href="/2018/03/06/blogging-on-ipad.html">Blogging on an iPad Pro</a>
     </li>
     
     <li>
       <span>25 Sep 2017 &raquo;</span> <a href="/2017/09/25/new-backup-plans.html">New Backup Plans</a>
-    </li>
-    
-    <li>
-      <span>16 Aug 2017 &raquo;</span> <a href="/2017/08/16/testing-forestry.html">Testing Forestry</a>
     </li>
     
   </ul>
@@ -409,7 +403,7 @@ So, first, what have i tried… There are 3 different things i have tried, and h
     
     <p>
         © Tiernan OToole, 2017 &mdash; built with <a href="http://jekyllrb.com/">Jekyll</a> using <a href="https://github.com/swanson/lagom">Lagom theme</a> hosted on <a href="http://www.azure.com">Azure</a> and protected by <a href="http://www.cloudflare.com">CloudFlare</a>.
-        Page generated at:  2018-03-14 11:30:12 +0000
+        Page generated at:  2018-04-02 10:45:58 +0000
     </p>
 </div>
             </div>
@@ -431,8 +425,6 @@ So, first, what have i tried… There are 3 different things i have tried, and h
         s.parentNode.insertBefore(ga, s);
     })();
 </script>
-
-
 
 <script type="text/javascript">
     var vglnk = {
