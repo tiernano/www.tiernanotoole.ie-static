@@ -4,7 +4,7 @@
 	<title>TiernanOToole</title>
 	<link href="https://feeds.feedburner.com/tiernanotoole" rel="self"/>
 	<link href="https://www.tiernanotoole.ie/"/>
-	<updated>2018-04-02T19:02:41+00:00</updated>
+	<updated>2018-07-02T17:54:47+01:00</updated>
 	<id>https://www.tiernanotoole.ie/</id>
 	<author>
 		<name>Tiernan OToole</name>
@@ -14,7 +14,7 @@
 	<entry>
 		<title>AS204994, Own IP Space and Anycast</title>
 		<link href="https://www.tiernanotoole.ie/2018/04/01/as204994-own-ip-space-and-anycast.html"/>
-		<updated>2018-04-01T22:55:06+00:00</updated>
+		<updated>2018-04-01T23:55:06+01:00</updated>
 		<id>https://www.tiernanotoole.ie{ post.id }}</id>
 		<content type="html">&lt;p&gt;So, if you are reading this page, it is being delivered with the magic of Anycast… Well, technically, it was before, since i used &lt;a href=&quot;http://cloudflare.com&quot;&gt;Cloudflare&lt;/a&gt;, and it still is because of Cloudflare, but also because of my own ASN (&lt;a href=&quot;http://as204994.net&quot;&gt;As204994&lt;/a&gt;), some servers in different locations, and some magic, which i will explain a bit of in this post.&lt;/p&gt;
 
@@ -68,7 +68,7 @@ English to Emoji) is in the place you would expect to find CTRL. and CTRL, Optio
 	<entry>
 		<title>New Backup Plans</title>
 		<link href="https://www.tiernanotoole.ie/2017/09/25/new-backup-plans.html"/>
-		<updated>2017-09-25T06:00:00+00:00</updated>
+		<updated>2017-09-25T07:00:00+01:00</updated>
 		<id>https://www.tiernanotoole.ie{ post.id }}</id>
 		<content type="html">&lt;p&gt;So, a few weeks back, &lt;a href=&quot;http://www.crashplan.com&quot;&gt;CrashPlan&lt;/a&gt;, one of my chosen backup services, decided to &lt;a href=&quot;https://www.crashplan.com/en-us/consumer/nextsteps/&quot;&gt;kill their consumer backup plans&lt;/a&gt;. Which made me have to rethink my backup plan for the house…&lt;/p&gt;
 
@@ -124,7 +124,7 @@ English to Emoji) is in the place you would expect to find CTRL. and CTRL, Optio
 	<entry>
 		<title>Testing Forestry</title>
 		<link href="https://www.tiernanotoole.ie/2017/08/16/testing-forestry.html"/>
-		<updated>2017-08-16T00:00:00+00:00</updated>
+		<updated>2017-08-16T01:00:00+01:00</updated>
 		<id>https://www.tiernanotoole.ie{ post.id }}</id>
 		<content type="html">&lt;p&gt;So, as you probably know, this site is built with &lt;a href=&quot;https://jekyllrb.com/&quot;&gt;Jekyll&lt;/a&gt;. Jekyll is a Static Site Generator, basically taking an input of a load of text files (see the source repo for this site on &lt;a href=&quot;https://github.com/tiernano/www.tiernanotoole.ie/&quot;&gt;Github here&lt;/a&gt;) and generating a load more HTML (the static HTML is hosted on &lt;a href=&quot;https://github.com/tiernano/www.tiernanotoole.ie-static&quot;&gt;Github here&lt;/a&gt;, which auto publishes to &lt;a href=&quot;https://azure.microsoft.com/en-us/services/app-service/web/&quot;&gt;Azure App Service&lt;/a&gt;).&lt;/p&gt;
 
@@ -137,7 +137,7 @@ English to Emoji) is in the place you would expect to find CTRL. and CTRL, Optio
 	<entry>
 		<title>VSCode and Markdown Monster with Powershell</title>
 		<link href="https://www.tiernanotoole.ie/2017/05/06/vscode-with-powershell.html"/>
-		<updated>2017-05-06T13:00:00+00:00</updated>
+		<updated>2017-05-06T13:00:00+01:00</updated>
 		<id>https://www.tiernanotoole.ie{ post.id }}</id>
 		<content type="html">&lt;p&gt;A few years back, i created a post showing you how to add an Alias to PowerShell &lt;a href=&quot;https://www.tiernanotoole.ie/2012/08/30/SublimeText-With-Powershell.html&quot;&gt;to easily start Sublime Text from a PowerShell command line&lt;/a&gt; . This worked well, but this is 2017 (that post is from 2012!) and my daily text editor has changed. I have moved to &lt;a href=&quot;https://code.visualstudio.com/&quot;&gt;Visual Studio Code&lt;/a&gt; for most of my daily work. It works well 95% of the time. I still use &lt;a href=&quot;https://www.visualstudio.com/vs/&quot;&gt;Visual Studio Pro&lt;/a&gt; for C# Development, but for quick fixes and work on, say &lt;a href=&quot;https://golang.org/&quot;&gt;Go&lt;/a&gt; or smaller edits, Code is great. For blogging, on the other hand, I am trying out &lt;a href=&quot;https://markdownmonster.west-wind.com/&quot;&gt;MarkDown Monster&lt;/a&gt; but code still has some nice features. We will see how tests go.&lt;/p&gt;
 
@@ -169,7 +169,7 @@ mm filename.txt
 	<entry>
 		<title>Zerotier and Minio Followup</title>
 		<link href="https://www.tiernanotoole.ie/2017/05/05/zerotier-minio-update.html"/>
-		<updated>2017-05-05T16:00:00+00:00</updated>
+		<updated>2017-05-05T16:00:00+01:00</updated>
 		<id>https://www.tiernanotoole.ie{ post.id }}</id>
 		<content type="html">&lt;p&gt;in a &lt;a href=&quot;https://www.tiernanotoole.ie/2017/01/19/distributed-s3-storage-minio-zerotier.html&quot;&gt;previous post&lt;/a&gt;, I talked about setting up a distributed S3 like data storage system using &lt;a href=&quot;https://minio.io/&quot;&gt;Minio&lt;/a&gt; and &lt;a href=&quot;https://www.zerotier.com/&quot;&gt;ZeroTier&lt;/a&gt;. Well, this week, the ZeroTier guys tweeted about this.&lt;/p&gt;
 
@@ -297,7 +297,7 @@ mm filename.txt
 	<entry>
 		<title>Cloud Desktop becoming a reality</title>
 		<link href="https://www.tiernanotoole.ie/2016/09/14/cloud-desktop-becoming-reality.html"/>
-		<updated>2016-09-14T16:00:00+00:00</updated>
+		<updated>2016-09-14T16:00:00+01:00</updated>
 		<id>https://www.tiernanotoole.ie{ post.id }}</id>
 		<content type="html">&lt;p&gt;I have talked about the theory of the “Cloud desktop” twice on my older blog (&lt;a href=&quot;https://blog.lotas-smartman.net/rackspaces-hosted-virtual-desktop/&quot;&gt;Rackspace’s Hosted Virtual Desktop&lt;/a&gt; and &lt;a href=&quot;https://blog.lotas-smartman.net/more-on-desktop-in-the-cloud/&quot;&gt;More on the desktop in the cloud&lt;/a&gt;) way back since 2011. Since then, a few things have changed:&lt;/p&gt;
 
@@ -319,7 +319,7 @@ mm filename.txt
 	<entry>
 		<title>double speed Internet Part 9 - Going Back</title>
 		<link href="https://www.tiernanotoole.ie/2016/07/20/double-speed-internet-part-9-going-back.html"/>
-		<updated>2016-07-20T12:00:00+00:00</updated>
+		<updated>2016-07-20T12:00:00+01:00</updated>
 		<id>https://www.tiernanotoole.ie{ post.id }}</id>
 		<content type="html">&lt;p&gt;[NOTE] This part 9 in a series of posts. The rest can be found &lt;a href=&quot;https://www.tiernanotoole.ie/tag/Double_Internet/&quot;&gt;here&lt;/a&gt;&lt;/p&gt;
 
@@ -339,7 +339,7 @@ mm filename.txt
 	<entry>
 		<title>Meraki and Ubiquiti networks gear Update</title>
 		<link href="https://www.tiernanotoole.ie/2016/06/20/meraki-gear-update.html"/>
-		<updated>2016-06-20T08:00:00+00:00</updated>
+		<updated>2016-06-20T08:00:00+01:00</updated>
 		<id>https://www.tiernanotoole.ie{ post.id }}</id>
 		<content type="html">&lt;p&gt;In &lt;a href=&quot;https://www.tiernanotoole.ie/2016/05/17/double-speed-internet-part-6-hetzner-edition.html&quot;&gt;part 6&lt;/a&gt; of my &lt;a href=&quot;https://www.tiernanotoole.ie/tag/Double_Internet/&quot;&gt;Double Internet Series&lt;/a&gt; I mentioned i was running a &lt;a href=&quot;https://meraki.cisco.com/&quot;&gt;Meraki&lt;/a&gt; &lt;a href=&quot;https://meraki.cisco.com/products/appliances/mx64&quot;&gt;MX64&lt;/a&gt; in the network, and said i would write up about it. I am taking this oppertunity to also write up about the &lt;a href=&quot;http://www.ubnt.com&quot;&gt;Ubiquiti networks&lt;/a&gt; gear in the house also.&lt;/p&gt;
 
@@ -362,7 +362,7 @@ mm filename.txt
 	<entry>
 		<title>double speed Internet Part 8 - Routing Around</title>
 		<link href="https://www.tiernanotoole.ie/2016/06/08/double-speed-internet-part-8-routing-around.html"/>
-		<updated>2016-06-08T08:00:00+00:00</updated>
+		<updated>2016-06-08T08:00:00+01:00</updated>
 		<id>https://www.tiernanotoole.ie{ post.id }}</id>
 		<content type="html">&lt;p&gt;[NOTE] This part 8 in a series of posts. The rest can be found &lt;a href=&quot;https://www.tiernanotoole.ie/tag/Double_Internet/&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
 
@@ -384,7 +384,7 @@ mm filename.txt
 	<entry>
 		<title>double speed Internet Part 7 - ECMP (kind of)</title>
 		<link href="https://www.tiernanotoole.ie/2016/05/31/double-speed-internet-part-7-ecmp-kind-of.html"/>
-		<updated>2016-05-31T06:00:00+00:00</updated>
+		<updated>2016-05-31T06:00:00+01:00</updated>
 		<id>https://www.tiernanotoole.ie{ post.id }}</id>
 		<content type="html">&lt;p&gt;[NOTE] This part 7 in a series of posts. The rest can be found &lt;a href=&quot;https://www.tiernanotoole.ie/tag/Double_Internet/&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
 
@@ -404,7 +404,7 @@ mm filename.txt
 	<entry>
 		<title>double speed Internet Part 6 - Hetzner Edition</title>
 		<link href="https://www.tiernanotoole.ie/2016/05/17/double-speed-internet-part-6-hetzner-edition.html"/>
-		<updated>2016-05-17T13:00:00+00:00</updated>
+		<updated>2016-05-17T13:00:00+01:00</updated>
 		<id>https://www.tiernanotoole.ie{ post.id }}</id>
 		<content type="html">&lt;p&gt;[NOTE] This part 6 in a series of posts. The rest can be found &lt;a href=&quot;https://www.tiernanotoole.ie/tag/Double_Internet/&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
 
@@ -426,7 +426,7 @@ mm filename.txt
 	<entry>
 		<title>Useful Web and Desktop Apps 2016 edition</title>
 		<link href="https://www.tiernanotoole.ie/2016/04/23/useful-web-and-desktop-apps-2016-edition.html"/>
-		<updated>2016-04-23T22:50:00+00:00</updated>
+		<updated>2016-04-23T22:50:00+01:00</updated>
 		<id>https://www.tiernanotoole.ie{ post.id }}</id>
 		<content type="html">&lt;p&gt;I have decided to do a post on some of my favourite tools to use for development, administration, etc. It’s kind of like &lt;a href=&quot;http://www.hanselman.com/blog/ScottHanselmans2014UltimateDeveloperAndPowerUsersToolListForWindows.aspx&quot;&gt;Hanselman’s Ultimate Tools list&lt;/a&gt;, but not as popular and about 2 years newer… Anyway, the &lt;a href=&quot;https://www.tiernanotoole.ie/ToolsList/&quot;&gt;list is available here&lt;/a&gt;, and will be updated over time, much like my &lt;a href=&quot;https://www.tiernanotoole.ie/DailyCarry/&quot;&gt;Daily Carry&lt;/a&gt; and &lt;a href=&quot;https://www.tiernanotoole.ie/Computers/&quot;&gt;Computers&lt;/a&gt; pages. If you are interested, you add links though &lt;a href=&quot;https://www.github.com&quot;&gt;GitHub&lt;/a&gt; by editing the &lt;a href=&quot;https://github.com/tiernano/www.tiernanotoole.ie/blob/master/_data/toolslist.yml&quot;&gt;toolslist.yml data file&lt;/a&gt;.&lt;/p&gt;
 
@@ -436,7 +436,7 @@ mm filename.txt
 	<entry>
 		<title>(Mad) Max Speed - The Road Warrior (Internet connection) (double speed internet Part 5)</title>
 		<link href="https://www.tiernanotoole.ie/2016/04/21/2-cable-modems-double-speed-part-5.html"/>
-		<updated>2016-04-21T21:33:00+00:00</updated>
+		<updated>2016-04-21T21:33:00+01:00</updated>
 		<id>https://www.tiernanotoole.ie{ post.id }}</id>
 		<content type="html">&lt;p&gt;[NOTE] This part 5 in a series of posts. The rest can be found &lt;a href=&quot;https://www.tiernanotoole.ie/tag/Double_Internet/&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
 
@@ -462,7 +462,7 @@ mm filename.txt
 	<entry>
 		<title>2 Cable Modems = Double Speed? Part 4</title>
 		<link href="https://www.tiernanotoole.ie/2016/04/14/2-cable-modems-double-speed-part-4.html"/>
-		<updated>2016-04-14T08:55:00+00:00</updated>
+		<updated>2016-04-14T08:55:00+01:00</updated>
 		<id>https://www.tiernanotoole.ie{ post.id }}</id>
 		<content type="html">&lt;p&gt;[NOTE] This part 4 in a series of posts. The rest can be found &lt;a href=&quot;https://www.tiernanotoole.ie/tag/Double%Internet/&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
 
@@ -498,7 +498,7 @@ mm filename.txt
 	<entry>
 		<title>Installing Jekyll on Bash On Ubuntu on Windows</title>
 		<link href="https://www.tiernanotoole.ie/2016/04/11/installing-jekyll-on-bash-on-ubuntu-on-windows.html"/>
-		<updated>2016-04-11T10:09:00+00:00</updated>
+		<updated>2016-04-11T10:09:00+01:00</updated>
 		<id>https://www.tiernanotoole.ie{ post.id }}</id>
 		<content type="html">&lt;p&gt;At the 2016 Build conference, Microsoft announced that &lt;a href=&quot;https://www.tiernanotoole.ie/2016/03/31/bash-on-ubuntu-on-windows.html&quot;&gt;Bash on Ubuntu on Windows&lt;/a&gt; was coming. Well, it &lt;a href=&quot;https://blogs.msdn.microsoft.com/commandline/2016/04/06/bash-on-ubuntu-on-windows-download-now-3/&quot;&gt;came out last week&lt;/a&gt;, and I installed it as soon as I could! My next challenge was to get &lt;a href=&quot;https://jekyllrb.com/&quot;&gt;Jekyll&lt;/a&gt; to run and install on it, so I can build and preview this site on my &lt;a href=&quot;https://www.microsoft.com/surface/en-us/devices/surface-book&quot;&gt;Surface Book&lt;/a&gt;.&lt;/p&gt;
 
@@ -581,7 +581,7 @@ bash: /usr/bin/jekyll: No such file or directory
 	<entry>
 		<title>2 Cable modems = Double speed? Part 3</title>
 		<link href="https://www.tiernanotoole.ie/2016/04/02/2-cable-modems-double-speed-part-3.html"/>
-		<updated>2016-04-02T17:48:00+00:00</updated>
+		<updated>2016-04-02T17:48:00+01:00</updated>
 		<id>https://www.tiernanotoole.ie{ post.id }}</id>
 		<content type="html">&lt;p&gt;[NOTE] This part 3 in a series of posts. The rest can be found &lt;a href=&quot;https://www.tiernanotoole.ie/tag/Double_Internet/&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
 
@@ -643,7 +643,7 @@ bash: /usr/bin/jekyll: No such file or directory
 	<entry>
 		<title>Bash on Ubuntu on Windows</title>
 		<link href="https://www.tiernanotoole.ie/2016/03/31/bash-on-ubuntu-on-windows.html"/>
-		<updated>2016-03-31T07:00:00+00:00</updated>
+		<updated>2016-03-31T08:00:00+01:00</updated>
 		<id>https://www.tiernanotoole.ie{ post.id }}</id>
 		<content type="html">&lt;p&gt;Microsoft &lt;a href=&quot;http://www.buildwindows.com/&quot;&gt;Build 2016&lt;/a&gt; is on this week, and there were a lot of interesting developments yesterday, but the one that interested me the most is &lt;a href=&quot;http://www.hanselman.com/blog/DevelopersCanRunBashShellAndUsermodeUbuntuLinuxBinariesOnWindows10.aspx&quot;&gt;Bash on Ubuntu on Windows&lt;/a&gt;. &lt;a href=&quot;http://blog.dustinkirkland.com/2016/03/ubuntu-on-windows.html&quot;&gt;Dustin from Ubuntu&lt;/a&gt; has a more details, and Scott Hanselman has posted &lt;a href=&quot;https://channel9.msdn.com/Events/Build/2016/C906&quot;&gt;a technical video&lt;/a&gt; about this. This is very interesting, and I CANT WAIT TO GET MY HANDS ON IT! But, I do have some questions, which I thought I would put down in blog format:&lt;/p&gt;
 
@@ -662,7 +662,7 @@ bash: /usr/bin/jekyll: No such file or directory
 	<entry>
 		<title>MPTCP, SSH, Squid, OpenVPN (and 2 Cable modems) = Double Speed? Not quite... Part 2</title>
 		<link href="https://www.tiernanotoole.ie/2016/03/30/mptcp-ssh-squid-openvpn-double-speed-part-2.html"/>
-		<updated>2016-03-30T20:00:00+00:00</updated>
+		<updated>2016-03-30T21:00:00+01:00</updated>
 		<id>https://www.tiernanotoole.ie{ post.id }}</id>
 		<content type="html">&lt;p&gt;[NOTE] This part 2 in a series of posts. The rest can be found &lt;a href=&quot;https://www.tiernanotoole.ie/tag/Double_Internet/&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
 
@@ -778,7 +778,7 @@ So, first, what have i tried… There are 3 different things i have tried, and h
 	<entry>
 		<title>Edge Router, Sophos UTM, DMZ and LAN Networks</title>
 		<link href="https://www.tiernanotoole.ie/2015/09/30/EdgeRouter-SophosUTM-DMZ-LAN-Firwwalls.html"/>
-		<updated>2015-09-30T20:00:00+00:00</updated>
+		<updated>2015-09-30T21:00:00+01:00</updated>
 		<id>https://www.tiernanotoole.ie{ post.id }}</id>
 		<content type="html">&lt;p&gt;I have been using an &lt;a href=&quot;https://www.ubnt.com/edgemax/edgerouter-poe/&quot;&gt;EdgeRouer POE&lt;/a&gt; as my main router for most of the network (some of the network still uses &lt;a href=&quot;http://www.pfsense.org&quot;&gt;PFSense&lt;/a&gt; as a router, but thats being removed soon) for the last few weeks, and i am quite happy with it. I also have a second router, a &lt;a href=&quot;https://www.sophos.com/en-us/products/unified-threat-management.aspx&quot;&gt;Sophos UTM&lt;/a&gt; VM between my first LAN (essentially a DMZ) and my client LAN (there will be more “LANs” over there soon). The Client LAN is NATed between the DMZ and the LAN, which means anything on the LAN i want to access from the DMZ has to be port forwarded… Ideally, not much from the LAN should be accessible though the DMZ, but in my initial setup, stuff like &lt;a href=&quot;http://www.plex.tv&quot;&gt;Plex&lt;/a&gt;, etc, is…&lt;/p&gt;
 
@@ -802,7 +802,7 @@ So, first, what have i tried… There are 3 different things i have tried, and h
 	<entry>
 		<title>Network and HomeLab V.Next (Part 4)</title>
 		<link href="https://www.tiernanotoole.ie/2015/09/16/Network-and-HomeLab-vnext-part-4.html"/>
-		<updated>2015-09-16T14:15:00+00:00</updated>
+		<updated>2015-09-16T15:15:00+01:00</updated>
 		<id>https://www.tiernanotoole.ie{ post.id }}</id>
 		<content type="html">&lt;p&gt;So, after some messing, tweaking, and thinking, I have made some progress with the home lab… or at least broken some stuff… I mentioned previously that i had a &lt;a href=&quot;https://www.tiernanotoole.ie/2015/08/05/Ubiquiti-EdgeRouter-POE-In-the-lab.html&quot;&gt;Ubiqititi networks EdgeRouter POE&lt;/a&gt; in the home lab. Originally, the plan was to use a Virtual &lt;a href=&quot;http://www.pfsense.org&quot;&gt;PFSense&lt;/a&gt; box for my core router… Given the power usage of the current PfSense Box (I have 2 &lt;a href=&quot;https://www.ubnt.com/mfi/mpower/&quot;&gt;MPower Pro&lt;/a&gt;’s watching power in the lab) I am now thinking of moving to just the EdgeRouter for, well, edge routing…  below is the usage of the ProLiant for the last 12 hours or so:&lt;/p&gt;
 
@@ -834,7 +834,7 @@ So, first, what have i tried… There are 3 different things i have tried, and h
 	<entry>
 		<title>Windows Server 2012 R2 returning to The GodBoxV2</title>
 		<link href="https://www.tiernanotoole.ie/2015/08/23/WindwsServer2012r2-Returing-To-The-GodBoxV2.html"/>
-		<updated>2015-08-23T20:00:00+00:00</updated>
+		<updated>2015-08-23T21:00:00+01:00</updated>
 		<id>https://www.tiernanotoole.ie{ post.id }}</id>
 		<content type="html">&lt;p&gt;After a few months of running &lt;a href=&quot;http://www.sabayon.org&quot;&gt;Sabayon&lt;/a&gt; Linux on the GodboxV2, i am going back to Windows Server. Back around October of last year, i installed Windows 10 Preview on the GodBoxV2, and, well, there where issues with graphics drivers, etc. Then, some time after, i cant remember off hand when, i moved to Sabayon Linux. Its based on &lt;a href=&quot;http://www.gentoo.org&quot;&gt;Gentoo&lt;/a&gt; but has a lot of the components pre-built. Gentoo is a “Build from scratch” sort of OS. You get a basic kernel and a basic set of components, but you build everything else from scratch… including rebuilding the kernel if you want. Sabayon, on the other hand has all that mostly prebuilt, though you can still use Gentoo’s &lt;a href=&quot;https://wiki.gentoo.org/wiki/Portage&quot;&gt;Portage&lt;/a&gt; to build stuff yourself.&lt;/p&gt;
 
@@ -846,7 +846,7 @@ So, first, what have i tried… There are 3 different things i have tried, and h
 	<entry>
 		<title>ZFS Home storage pool</title>
 		<link href="https://www.tiernanotoole.ie/2015/08/10/ZFS-Home-dir.html"/>
-		<updated>2015-08-10T11:40:00+00:00</updated>
+		<updated>2015-08-10T12:40:00+01:00</updated>
 		<id>https://www.tiernanotoole.ie{ post.id }}</id>
 		<content type="html">&lt;p&gt;Over the weekend, my &lt;a href=&quot;https://btrfs.wiki.kernel.org/index.php/Main_Page&quot;&gt;BTRFS&lt;/a&gt; pool for my /home directory on Linux failed… Not sure what happened, but it made me
 do something i wanted to do for a while: Build a &lt;a href=&quot;https://en.wikipedia.org/wiki/ZFS&quot;&gt;ZFS&lt;/a&gt; pool for my home dir.&lt;/p&gt;
@@ -878,7 +878,7 @@ following…&lt;/p&gt;
 	<entry>
 		<title>Ubiquiti EdgeRouter PoE in the lab</title>
 		<link href="https://www.tiernanotoole.ie/2015/08/05/Ubiquiti-EdgeRouter-POE-In-the-lab.html"/>
-		<updated>2015-08-05T21:00:00+00:00</updated>
+		<updated>2015-08-05T22:00:00+01:00</updated>
 		<id>https://www.tiernanotoole.ie{ post.id }}</id>
 		<content type="html">&lt;p&gt;Today, my &lt;a href=&quot;https://www.ubnt.com/edgemax/edgerouter-poe/&quot;&gt;Ubiquiti EdgeRouter POE&lt;/a&gt; arrived in the house. I got it hooked up to both UPC connections (as secondary connections) and all seems to be working grand. Some notes i wanted to put up here:&lt;/p&gt;
 
@@ -904,7 +904,7 @@ you can manually download the tar and upload it, which i did.&lt;/li&gt;
 	<entry>
 		<title>Network and HomeLab V.Next (Part 3)</title>
 		<link href="https://www.tiernanotoole.ie/2015/07/16/Network-and-HomeLab-vnext-part-3.html"/>
-		<updated>2015-07-16T13:15:00+00:00</updated>
+		<updated>2015-07-16T14:15:00+01:00</updated>
 		<id>https://www.tiernanotoole.ie{ post.id }}</id>
 		<content type="html">&lt;p&gt;So, this part of my article set will be talking specifically about the router and wireless network. At the moment, my router is way overkill:&lt;/p&gt;
 
@@ -936,7 +936,7 @@ other ports for other internal VLANs.&lt;/li&gt;
 	<entry>
 		<title>Network and HomeLab V.Next (Part 2)</title>
 		<link href="https://www.tiernanotoole.ie/2015/06/23/Network-and-HomeLab-vnext-part2.html"/>
-		<updated>2015-06-23T10:30:00+00:00</updated>
+		<updated>2015-06-23T11:30:00+01:00</updated>
 		<id>https://www.tiernanotoole.ie{ post.id }}</id>
 		<content type="html">&lt;p&gt;So, in my last post i talked about the requirements for the home lab, and in this post, im going to talk about a few more updates i have made in the last few weeks.&lt;/p&gt;
 
@@ -955,7 +955,7 @@ other ports for other internal VLANs.&lt;/li&gt;
 	<entry>
 		<title>Network and Homelab V.Next (Part 1)</title>
 		<link href="https://www.tiernanotoole.ie/2015/06/14/Network-and-homelab-vnext-part-1.html"/>
-		<updated>2015-06-14T16:05:00+00:00</updated>
+		<updated>2015-06-14T17:05:00+01:00</updated>
 		<id>https://www.tiernanotoole.ie{ post.id }}</id>
 		<content type="html">&lt;p&gt;So, its that time again… &lt;a href=&quot;http://tiernanotoole.ie/Computers&quot;&gt;HomeLab&lt;/a&gt; upgrade time… Or at least the planning for it. I am in the process of rebuilding my home lab, which involves pull all old servers out of the rack and replacing them with new ones… It also means rewriting the network, possibly upgrading some existing gear and hopefully getting the whole lot done on a budget of some sort…&lt;/p&gt;
 
@@ -982,7 +982,7 @@ other ports for other internal VLANs.&lt;/li&gt;
 	<entry>
 		<title>PFSense with Multiple Public IPs</title>
 		<link href="https://www.tiernanotoole.ie/2015/05/30/PFSense-with-multiple-public-ips.html"/>
-		<updated>2015-05-30T18:50:00+00:00</updated>
+		<updated>2015-05-30T19:50:00+01:00</updated>
 		<id>https://www.tiernanotoole.ie{ post.id }}</id>
 		<content type="html">&lt;p&gt;So, a few weeks back, i got my hands on a &lt;a href=&quot;http://www.hetzner.de/en&quot;&gt;Hetzner&lt;/a&gt; Dedicated box. It has a quad core Xeon, 32Gb ram, 3x3Tb hdds, RAID controller and KVMoIP. one of the first thing i did was get myself a /29 IP pool (8 total, 6 usable IPs). There where already 3 IPs given to me: 1 for the KVM, one for the box itself, and 1 as the router for the IP block.&lt;/p&gt;
 
@@ -1010,7 +1010,7 @@ other ports for other internal VLANs.&lt;/li&gt;
 	<entry>
 		<title>Quick tip for internet facing ESXi servers</title>
 		<link href="https://www.tiernanotoole.ie/2015/05/20/quick-tip-for-internet-facing-esxi.html"/>
-		<updated>2015-05-20T08:12:00+00:00</updated>
+		<updated>2015-05-20T09:12:00+01:00</updated>
 		<id>https://www.tiernanotoole.ie{ post.id }}</id>
 		<content type="html">&lt;p&gt;Quick tip for all you with internet facing &lt;a href=&quot;http://www.vmware.com/products/vsphere-hypervisor&quot;&gt;VMWare ESXi&lt;/a&gt; Hosts. I
 have just got my hands on a box on the &lt;a href=&quot;http://www.hetzner.de/en&quot;&gt;Hetzner&lt;/a&gt; network (more on
@@ -1026,7 +1026,7 @@ that later) and using their LARA system i installed ESXi on it. All was good, th
 	<entry>
 		<title>VLANs, Wifi and Mikrotik</title>
 		<link href="https://www.tiernanotoole.ie/2015/05/10/vlans-wifi-and-mikrotik.html"/>
-		<updated>2015-05-10T18:40:00+00:00</updated>
+		<updated>2015-05-10T19:40:00+01:00</updated>
 		<id>https://www.tiernanotoole.ie{ post.id }}</id>
 		<content type="html">&lt;p&gt;About a month ago, while i was recovering from surgery, i attended a Webinar on
 &lt;a href=&quot;http://www.meraki.com&quot;&gt;Cisco Meraki&lt;/a&gt; devices. After the webinar, i was contacted by Maraki and given a &lt;a href=&quot;https://meraki.cisco.com/products/wireless/mr18&quot;&gt;MR18&lt;/a&gt; with a 3 year license, to play with and evaluate. So, i set it up in the house and all was good.&lt;/p&gt;
@@ -1077,7 +1077,7 @@ add bridge=vlan20 interface wlan1.20
 	<entry>
 		<title>Using git and Route53 together</title>
 		<link href="https://www.tiernanotoole.ie/2015/05/07/using-git-and-route53.html"/>
-		<updated>2015-05-07T20:00:00+00:00</updated>
+		<updated>2015-05-07T21:00:00+01:00</updated>
 		<id>https://www.tiernanotoole.ie{ post.id }}</id>
 		<content type="html">&lt;p&gt;so, earlier on today, i was talking about using &lt;a href=&quot;http://tiernanotoole.ie/2015/05/07/git-push-dns.html&quot;&gt;Git with a DNS service called LuaDNS&lt;/a&gt; to update your DNS records. Well, thing is, i have 30+ domains registered, and of them about 25 are hosted on &lt;a href=&quot;http://aws.amazon.com/route53&quot;&gt;Amazon’s Route53&lt;/a&gt;. So, moving ALL of them seems, well at the moment, excessive… So, i went digging…&lt;/p&gt;
 
@@ -1103,7 +1103,7 @@ add bridge=vlan20 interface wlan1.20
 	<entry>
 		<title>Git Push DNS</title>
 		<link href="https://www.tiernanotoole.ie/2015/05/07/git-push-dns.html"/>
-		<updated>2015-05-07T15:30:00+00:00</updated>
+		<updated>2015-05-07T16:30:00+01:00</updated>
 		<id>https://www.tiernanotoole.ie{ post.id }}</id>
 		<content type="html">&lt;p&gt;There are now a lot of services that have “git push” options available… you can build websites with
 &lt;a href=&quot;http://www.azure.com&quot;&gt;Azure&lt;/a&gt; and &lt;a href=&quot;http://www.github.com&quot;&gt;Github&lt;/a&gt;, books using &lt;a href=&quot;https://www.sharelatex.com/&quot;&gt;ShareLaTeX&lt;/a&gt; and now, DNS using &lt;a href=&quot;http://luadns.com&quot;&gt;LuaDNS&lt;/a&gt;. I have one zone
@@ -1133,7 +1133,7 @@ see how this works…&lt;/p&gt;
 	<entry>
 		<title>Bulk compressing images for the Web</title>
 		<link href="https://www.tiernanotoole.ie/2015/04/29/bulk-compressing-images-for-the-web.html"/>
-		<updated>2015-04-29T17:00:00+00:00</updated>
+		<updated>2015-04-29T18:00:00+01:00</updated>
 		<id>https://www.tiernanotoole.ie{ post.id }}</id>
 		<content type="html">&lt;p&gt;Now that all my sites are running &lt;a href=&quot;http://www.jekyllrb.com&quot;&gt;Jekyll&lt;/a&gt; I am trying to get them optimized for &lt;strong&gt;SPEED&lt;/strong&gt; which meant
 looking at all the stuff that takes time to download… There are more tweaks (and possibly posts) coming down
@@ -1170,7 +1170,7 @@ good! That’s it!&lt;/p&gt;
 	<entry>
 		<title>All blogs moved to Jekyll</title>
 		<link href="https://www.tiernanotoole.ie/2015/04/28/all-blogs-moved-to-jekyll.html"/>
-		<updated>2015-04-28T12:49:53+00:00</updated>
+		<updated>2015-04-28T12:49:53+01:00</updated>
 		<id>https://www.tiernanotoole.ie{ post.id }}</id>
 		<content type="html">&lt;p&gt;Well, its finally happened. All my blogs, &lt;a href=&quot;http://blog.lotas-smartman.net&quot;&gt;Tiernan’s Comms Closet&lt;/a&gt;, &lt;a href=&quot;http://www.geekphotographer.com&quot;&gt;GeekPhotographer&lt;/a&gt; and the &lt;a href=&quot;http://podcast.tiernanotoole.ie&quot;&gt;Podcast&lt;/a&gt; have been
 moved to &lt;a href=&quot;http://www.jekyllrb.com&quot;&gt;Jekyll&lt;/a&gt;. I wrote up &lt;a href=&quot;http://blog.lotas-smartman.net/blog-move-details/&quot;&gt;a long and complicated&lt;/a&gt; post explaining how I did it… Now, i dont have to worry
@@ -1182,7 +1182,7 @@ about &lt;a href=&quot;http://www.wordpress.org&quot;&gt;Wordpress&lt;/a&gt; sec
 	<entry>
 		<title>Hubic and Duplicity</title>
 		<link href="https://www.tiernanotoole.ie/2015/04/01/Duplicity_Hubic.html"/>
-		<updated>2015-04-01T07:00:00+00:00</updated>
+		<updated>2015-04-01T08:00:00+01:00</updated>
 		<id>https://www.tiernanotoole.ie{ post.id }}</id>
 		<content type="html">&lt;p&gt;I mentioned &lt;a href=&quot;https://hubic.com/home/new/?referral=GMSQVQ&quot;&gt;HubiC&lt;/a&gt; in my &lt;a href=&quot;https://www.tiernanotoole.ie/2015/03/31/HubiC_SWIFT_CURL.html&quot;&gt;last post&lt;/a&gt;, and in it i said that you could use &lt;a href=&quot;http://duplicity.nongnu.org/&quot;&gt;Duplicity&lt;/a&gt; for backups. Well, this is how you get it to work…&lt;/p&gt;
 
@@ -1248,7 +1248,7 @@ about &lt;a href=&quot;http://www.wordpress.org&quot;&gt;Wordpress&lt;/a&gt; sec
 	<entry>
 		<title>Hubic, OpenStack Swift and Curl</title>
 		<link href="https://www.tiernanotoole.ie/2015/03/31/HubiC_SWIFT_CURL.html"/>
-		<updated>2015-03-31T22:40:00+00:00</updated>
+		<updated>2015-03-31T23:40:00+01:00</updated>
 		<id>https://www.tiernanotoole.ie{ post.id }}</id>
 		<content type="html">&lt;p&gt;&lt;a href=&quot;https://hubic.com/home/new/?referral=GMSQVQ&quot;&gt;HubiC&lt;/a&gt; is an online storage site, built by the guys at &lt;a href=&quot;http://www.ovh.com&quot;&gt;OVH&lt;/a&gt;. They are currently offering 30Gb free (if you use the link above) or if you pay, you get 110Gb (insted of the usual 100Gb) for EUR1 a month, or 10.5TB (yup… TERABYTES!) for EUR5 a month… Thats a crazy amount of storage for a not crazy amount of money!&lt;/p&gt;
 
@@ -1316,7 +1316,7 @@ about &lt;a href=&quot;http://www.wordpress.org&quot;&gt;Wordpress&lt;/a&gt; sec
 	<entry>
 		<title>Raspberry Pi as an Asterisk Box</title>
 		<link href="https://www.tiernanotoole.ie/2013/05/29/RaspberryPi_Astrisk_Box.html"/>
-		<updated>2013-05-29T08:16:00+00:00</updated>
+		<updated>2013-05-29T08:16:00+01:00</updated>
 		<id>https://www.tiernanotoole.ie{ post.id }}</id>
 		<content type="html">&lt;p&gt;The &lt;a href=&quot;http://www.raspberrypi.org/&quot;&gt;Raspberry Pi&lt;/a&gt; is a pretty amazing peice of kit for its price and size. And now, you can make it even more amazing by using it as a VoIP server for your house!&lt;/p&gt;
 
@@ -1637,7 +1637,7 @@ about &lt;a href=&quot;http://www.wordpress.org&quot;&gt;Wordpress&lt;/a&gt; sec
 	<entry>
 		<title>WANProxy and Squid with Upstream Servers</title>
 		<link href="https://www.tiernanotoole.ie/2012/10/26/wanproxy_and_squid_with_upstream_servers.html"/>
-		<updated>2012-10-26T13:14:00+00:00</updated>
+		<updated>2012-10-26T14:14:00+01:00</updated>
 		<id>https://www.tiernanotoole.ie{ post.id }}</id>
 		<content type="html">&lt;p&gt;In my &lt;a href=&quot;http://tiernanotoole.ie/2012/10/24/building_wanproxy_on_ubuntu_12.04.html&quot;&gt;previous post on WANProxy&lt;/a&gt;, i did not really go into detail about what it actually was. The direct quote from their site is &lt;em&gt;&lt;a href=&quot;http://www.wanproxy.org&quot;&gt;WANProxy&lt;/a&gt; is a free, portable TCP proxy which makes TCP connections send less data, which improves TCP performance and throughput over lossy links, slow links and long links. This is just what you need to improve performance over satellite, wireless and WAN links.&lt;/em&gt; This is something that has interested me for a while, so i have been looking into it, and so far so good… In my last post i mentioned i was proxying &lt;a href=&quot;http://www.squid-cache.org&quot;&gt;Squid&lt;/a&gt; traffic, in todays post, i still am, but with some tweaks.&lt;/p&gt;
 
@@ -1660,7 +1660,7 @@ about &lt;a href=&quot;http://www.wordpress.org&quot;&gt;Wordpress&lt;/a&gt; sec
 	<entry>
 		<title>Building WANProxy on Ubuntu 12.04</title>
 		<link href="https://www.tiernanotoole.ie/2012/10/24/building_wanproxy_on_ubuntu_12.04.html"/>
-		<updated>2012-10-24T14:28:07+00:00</updated>
+		<updated>2012-10-24T15:28:07+01:00</updated>
 		<id>https://www.tiernanotoole.ie{ post.id }}</id>
 		<content type="html">&lt;p&gt;[Updated 2016/04/09] I had to use this today to build on Debian 8.3 for 2 different boxes. So, making minor changes (url to git proxy, and where you build from) to make sure this works now.&lt;/p&gt;
 
@@ -1708,7 +1708,7 @@ make
 	<entry>
 		<title>Boot Raspberry Pi with SSH Enabled, Enable Wifi on Boot, and more</title>
 		<link href="https://www.tiernanotoole.ie/2012/10/18/boot_raspberry_pi_with_ssh_enabled.html"/>
-		<updated>2012-10-18T16:45:01+00:00</updated>
+		<updated>2012-10-18T17:45:01+01:00</updated>
 		<id>https://www.tiernanotoole.ie{ post.id }}</id>
 		<content type="html">&lt;p&gt;Some interesting links for the Raspberry Pi today:&lt;/p&gt;
 
@@ -1723,7 +1723,7 @@ make
 	<entry>
 		<title>GPS and Raspberry Pi</title>
 		<link href="https://www.tiernanotoole.ie/2012/10/15/gps_and_raspberry_pi.html"/>
-		<updated>2012-10-15T16:20:17+00:00</updated>
+		<updated>2012-10-15T17:20:17+01:00</updated>
 		<id>https://www.tiernanotoole.ie{ post.id }}</id>
 		<content type="html">&lt;p&gt;Need to add GPS to your Raspberry Pi? &lt;a href=&quot;http://raspberrypi.stackexchange.com/questions/547/how-do-i-attach-a-gps-receiver&quot;&gt;How do i attach a GPS to a Raspberry&lt;/a&gt; answers your question!&lt;/p&gt;
 
@@ -1733,7 +1733,7 @@ make
 	<entry>
 		<title>Raspberry Pi now with 512MB RAM, other random links...</title>
 		<link href="https://www.tiernanotoole.ie/2012/10/15/raspberry_pi_now_with_512mb_ram.html"/>
-		<updated>2012-10-15T12:37:20+00:00</updated>
+		<updated>2012-10-15T13:37:20+01:00</updated>
 		<id>https://www.tiernanotoole.ie{ post.id }}</id>
 		<content type="html">&lt;p&gt;Earlier on today, the Raspberry Pi Foundation announced that the Model B will now be &lt;a href=&quot;http://www.raspberrypi.org/archives/2180&quot;&gt;shipping with 512Mb RAM as standard&lt;/a&gt;, with no price change. I posted the link up on &lt;a href=&quot;http://news.ycombinator.com/item?id=4654251&quot;&gt;Hacker News&lt;/a&gt; and its caused quite a lot of happy people!&lt;/p&gt;
 
@@ -1764,7 +1764,7 @@ make
 	<entry>
 		<title>more raspberry pi and camera antics</title>
 		<link href="https://www.tiernanotoole.ie/2012/10/12/more_raspberry_pi_and_camera_antics.html"/>
-		<updated>2012-10-12T15:13:53+00:00</updated>
+		<updated>2012-10-12T16:13:53+01:00</updated>
 		<id>https://www.tiernanotoole.ie{ post.id }}</id>
 		<content type="html">&lt;p&gt;A while back I &lt;a href=&quot;http://tiernanotoole.ie/2012/09/06/Rasberry-Stuff.html&quot;&gt;posted&lt;/a&gt; about the &lt;a href=&quot;http://www.raspberrypi.org/&quot;&gt;Raspberry Pi&lt;/a&gt;, and in the post was a link to a Photographer who was &lt;a href=&quot;http://davidhunt.ie/?p=2641&quot;&gt;embeding a Raspberry Pi into a Canon 5D MKII battery grip&lt;/a&gt;. Well, its been a while, and i have been thinking about the Pi and Cameras, so I went looking around… Here is what i found.&lt;/p&gt;
 
@@ -1782,7 +1782,7 @@ make
 	<entry>
 		<title>RouterOS Using Host names in Firewall Rules</title>
 		<link href="https://www.tiernanotoole.ie/2012/10/12/routeros_using_host_names_in_firewall_rules.html"/>
-		<updated>2012-10-12T07:43:17+00:00</updated>
+		<updated>2012-10-12T08:43:17+01:00</updated>
 		<id>https://www.tiernanotoole.ie{ post.id }}</id>
 		<content type="html">&lt;p&gt;As a follow up to yesterday’s post on &lt;a href=&quot;http://tiernanotoole.ie/2012/10/11/routeros_blocking_machine_access.html&quot;&gt;RouterOS Blocking Machine access to all but one IP&lt;/a&gt; I tought i would show how to add extra IPs to that list, without having a shedload of firewall filters.&lt;/p&gt;
 
@@ -1806,7 +1806,7 @@ make
 	<entry>
 		<title>RouterOS Blocking Machine access to all but one IP</title>
 		<link href="https://www.tiernanotoole.ie/2012/10/11/routeros_blocking_machine_access.html"/>
-		<updated>2012-10-11T13:09:20+00:00</updated>
+		<updated>2012-10-11T14:09:20+01:00</updated>
 		<id>https://www.tiernanotoole.ie{ post.id }}</id>
 		<content type="html">&lt;p&gt;So, i have a machine on my network, which should be only connecting to the internet though a VPN. I needed to tell my RouterOS box to block all access, except to this said IP address… The following &lt;em&gt;should&lt;/em&gt; do the trick… YMMV&lt;/p&gt;
 
@@ -1820,7 +1820,7 @@ make
 	<entry>
 		<title>ZFS iSCSI NFS SFTP Hyper-V and more</title>
 		<link href="https://www.tiernanotoole.ie/2012/10/05/zfs_iscsi_nfs_sftp_hyper-v_and_more.html"/>
-		<updated>2012-10-05T09:38:13+00:00</updated>
+		<updated>2012-10-05T10:38:13+01:00</updated>
 		<id>https://www.tiernanotoole.ie{ post.id }}</id>
 		<content type="html">&lt;p&gt;As part of my new task to make my files safer and backups faster, and, well, cheap, I am looking into &lt;a href=&quot;http://en.wikipedia.org/wiki/ZFS&quot;&gt;ZFS&lt;/a&gt; for my storage needs. My needs are as follows:&lt;/p&gt;
 
@@ -1868,7 +1868,7 @@ make
 	<entry>
 		<title>More Jekyll Stuff</title>
 		<link href="https://www.tiernanotoole.ie/2012/10/04/more_jekyll_stuff.html"/>
-		<updated>2012-10-04T20:57:52+00:00</updated>
+		<updated>2012-10-04T21:57:52+01:00</updated>
 		<id>https://www.tiernanotoole.ie{ post.id }}</id>
 		<content type="html">&lt;p&gt;Couple of bits and pieces on Jekyll stuff today… I am tweaking the outline of the site, so i am surfing around finding stuff… here is what i have found&lt;/p&gt;
 
@@ -1887,7 +1887,7 @@ make
 	<entry>
 		<title>Handbrake Cluster</title>
 		<link href="https://www.tiernanotoole.ie/2012/10/03/Handbrake-Cluster.html"/>
-		<updated>2012-10-03T00:00:00+00:00</updated>
+		<updated>2012-10-03T00:00:00+01:00</updated>
 		<id>https://www.tiernanotoole.ie{ post.id }}</id>
 		<content type="html">&lt;p&gt;[UPDATED] someone asked in the comments if there was an binary build for this file. there is now! &lt;a href=&quot;http://handbrakecluster.codeplex.com&quot;&gt;http://handbrakecluster.codeplex.com&lt;/a&gt; now hosts the code and binaries, and will soon have help files and documentation.&lt;/p&gt;
 
@@ -1910,7 +1910,7 @@ make
 	<entry>
 		<title>Enabling True Bridging modem on a Cisco ECP3925 Cable Modem (UPC Ireland)</title>
 		<link href="https://www.tiernanotoole.ie/2012/10/02/Enabling-true-briding-mode-on-Cisco-EPC3925.html"/>
-		<updated>2012-10-02T00:00:00+00:00</updated>
+		<updated>2012-10-02T00:00:00+01:00</updated>
 		<id>https://www.tiernanotoole.ie{ post.id }}</id>
 		<content type="html">&lt;p&gt;I am a &lt;a href=&quot;http://www.upc.ie/&quot;&gt;UPC Ireland&lt;/a&gt; customer, and have 2 cable modems into the house, both Cisco EPC3925s. These are not exactly great modems for power users, but are grand for normal use… Me, however, being a poweruser wanted something a little more, how should I put it, powerful.&lt;/p&gt;
 
@@ -1922,7 +1922,7 @@ make
 	<entry>
 		<title>PowerShell + HandBrake + AppleTV + iTunes = Automatic TV... Ish...</title>
 		<link href="https://www.tiernanotoole.ie/2012/09/28/Powershell-HandBrake-AppleTV-iTunes.html"/>
-		<updated>2012-09-28T00:00:00+00:00</updated>
+		<updated>2012-09-28T00:00:00+01:00</updated>
 		<id>https://www.tiernanotoole.ie{ post.id }}</id>
 		<content type="html">&lt;p&gt;I have an &lt;a href=&quot;http://www.apple.com/appletv&quot;&gt;AppleTV&lt;/a&gt; in the house (3, actually) and i am very happy with its ease of use, size and cost… You cant really argue with the small price!&lt;/p&gt;
 
@@ -1955,7 +1955,7 @@ make
 	<entry>
 		<title>More VoIP Stuff</title>
 		<link href="https://www.tiernanotoole.ie/2012/09/27/More-VoIP-Stuff.html"/>
-		<updated>2012-09-27T00:00:00+00:00</updated>
+		<updated>2012-09-27T00:00:00+01:00</updated>
 		<id>https://www.tiernanotoole.ie{ post.id }}</id>
 		<content type="html">&lt;p&gt;As part of my ongoing plan to upgrade the house to VoIP, and as a follow up to my first &lt;a href=&quot;http://tiernanotoole.ie/2012/09/11/VOIP-Stuff.html&quot;&gt;VoIP stuff&lt;/a&gt; post, here are some more things i have found…&lt;/p&gt;
 
@@ -1985,7 +1985,7 @@ make
 	<entry>
 		<title>Building a Cross Compiler for your Raspberry Pi</title>
 		<link href="https://www.tiernanotoole.ie/2012/09/25/Raspberry-Pi-Cross-Compiling.html"/>
-		<updated>2012-09-25T00:00:00+00:00</updated>
+		<updated>2012-09-25T00:00:00+01:00</updated>
 		<id>https://www.tiernanotoole.ie{ post.id }}</id>
 		<content type="html">&lt;p&gt;My main machine at home, known as “The GodBox” is a Dual Processor, &lt;a href=&quot;http://www.amazon.com/gp/product/B001QCEMFA/ref=as_li_ss_tl?ie=UTF8&amp;amp;camp=1789&amp;amp;creative=390957&amp;amp;creativeASIN=B001QCEMFA&amp;amp;linkCode=as2&amp;amp;tag=lotassmartmann00&quot;&gt;Quad Core Xeon 5520&lt;/a&gt; with 60Gb RAM, 2 &lt;a href=&quot;http://www.amazon.com/gp/product/B005CGDSDI/ref=as_li_ss_tl?ie=UTF8&amp;amp;camp=1789&amp;amp;creative=390957&amp;amp;creativeASIN=B005CGDSDI&amp;amp;linkCode=as2&amp;amp;tag=lotassmartmann00&quot;&gt;300Gb 10,000 RPM Western Digital Velociraptor&lt;/a&gt; in RAID 0 for boot, 4X1Tb 7200RPM drives for storage, 2 more 300Gb 10,000 RPM drives for “scratch disk” and a couple high(ish) end graphics cards with 3 monitors plugged in… Hence the name, GodBox!&lt;/p&gt;
 
@@ -1997,7 +1997,7 @@ make
 	<entry>
 		<title>MicroTik RouterOS VPN Setup</title>
 		<link href="https://www.tiernanotoole.ie/2012/09/24/MicroTik-RouterOS-VPN-Setup.html"/>
-		<updated>2012-09-24T00:00:00+00:00</updated>
+		<updated>2012-09-24T00:00:00+01:00</updated>
 		<id>https://www.tiernanotoole.ie{ post.id }}</id>
 		<content type="html">&lt;p&gt;I have been running a &lt;a href=&quot;http://www.routerboard.com&quot;&gt;MikroTik RouterBoard&lt;/a&gt; in the house for a couple of months now (the &lt;a href=&quot;http://www.routerboard.com/RB750G&quot;&gt;RB750G&lt;/a&gt;) and I am very much loving the thing. But one thing you may need to do is setup VPN connections… Here are some tips on how to create a VPN Server and Client on your RouterBoard.&lt;/p&gt;
 
@@ -2035,7 +2035,7 @@ make
 	<entry>
 		<title>SSH Tunneling made simple</title>
 		<link href="https://www.tiernanotoole.ie/2012/09/17/SSH-Tunneling-Made-Simple.html"/>
-		<updated>2012-09-17T00:00:00+00:00</updated>
+		<updated>2012-09-17T00:00:00+01:00</updated>
 		<id>https://www.tiernanotoole.ie{ post.id }}</id>
 		<content type="html">&lt;p&gt;Something I do on a regular basis is use the internet while “out and about”. This could be college, which has a semi open network, or it could be a coffee shop, which also usually has a semi open connection. There is also the possibility of using the a mobile internet connection on my iPhone, which can be slow, but at least its only shared with me… Anyway, over on RevSys.com, there is a post &lt;a href=&quot;http://www.revsys.com/writings/quicktips/ssh-tunnel.html&quot;&gt;SSH Tunneling made simple&lt;/a&gt; which shows you how to open an SSH tunnel to your machine somewhere else (could be at home, as is my case, or a VPS/Dedicated server somewhere, or even on Amazon…) and use that for different things… In the case he shows, its for SMTP access. For my case, i am forwarding my local port 3128 to my Microsoft TMG 2010 Server in house on port 8080. Then my system proxy on my laptop is set to use localhost:3128 for all web and HTTPS requests. Very handy. One other tip: Using the -C flag, so your command may look like:&lt;/p&gt;
 
@@ -2052,7 +2052,7 @@ make
 	<entry>
 		<title>VOIP Stuff</title>
 		<link href="https://www.tiernanotoole.ie/2012/09/11/VOIP-Stuff.html"/>
-		<updated>2012-09-11T00:00:00+00:00</updated>
+		<updated>2012-09-11T00:00:00+01:00</updated>
 		<id>https://www.tiernanotoole.ie{ post.id }}</id>
 		<content type="html">&lt;p&gt;I have been very interested in VOIP stuff for the last while now, and finally started looking at implementing it in the house. Here are some links which may be useful. I will do a full post soon.&lt;/p&gt;
 
@@ -2082,7 +2082,7 @@ make
 	<entry>
 		<title>Raspberry Pi Stuff</title>
 		<link href="https://www.tiernanotoole.ie/2012/09/06/Rasberry-Stuff.html"/>
-		<updated>2012-09-06T00:00:00+00:00</updated>
+		<updated>2012-09-06T00:00:00+01:00</updated>
 		<id>https://www.tiernanotoole.ie{ post.id }}</id>
 		<content type="html">&lt;p&gt;A couple months back, I got my hands on a &lt;a href=&quot;http://www.raspberrypi.org/&quot;&gt;Raspberry Pi&lt;/a&gt;, a tiny development board that can run a full copy of Linux, has a HDMI port, a couple USB ports, Ethernet and a few other little bits and pieces. The full specs, from the &lt;a href=&quot;http://en.wikipedia.org/wiki/Raspberry_Pi&quot;&gt;Wikipedia Article&lt;/a&gt; are as follows:&lt;/p&gt;
 
@@ -2117,7 +2117,7 @@ make
 	<entry>
 		<title>Build your own Private GIT server</title>
 		<link href="https://www.tiernanotoole.ie/2012/09/03/Build-Your-Own-Private-Git-Server.html"/>
-		<updated>2012-09-03T10:28:11+00:00</updated>
+		<updated>2012-09-03T11:28:11+01:00</updated>
 		<id>https://www.tiernanotoole.ie{ post.id }}</id>
 		<content type="html">&lt;p&gt;This site is built with GIT, GitoLite and Jekyll… I posted about this &lt;a href=&quot;http://tiernanotoole.ie/2012/08/29/NewSite.html&quot;&gt;before&lt;/a&gt;. but how do you setup your own Git Server? checkout &lt;a href=&quot;http://www.mmncs.com/2011/07/how-to-install-and-setup-a-git-repository-server-using-gitolite-on-linux-ubuntu-11-04-server-and-client/&quot;&gt;How to install and Setup a Git Repository Server using Gitolite on Linux Ubuntu 10.04 and 11.04&lt;/a&gt; on mmncs.com. I am using Ubuntu 12.04, but its mostly the same…&lt;/p&gt;
 
@@ -2127,7 +2127,7 @@ make
 	<entry>
 		<title>Crashplan Backups</title>
 		<link href="https://www.tiernanotoole.ie/2012/08/30/CrashPlan-Backups.html"/>
-		<updated>2012-08-30T11:32:32+00:00</updated>
+		<updated>2012-08-30T12:32:32+01:00</updated>
 		<id>https://www.tiernanotoole.ie{ post.id }}</id>
 		<content type="html">&lt;p&gt;I have been running &lt;a href=&quot;http://www.crashplan.com&quot;&gt;CrashPlan&lt;/a&gt; for a while now, and, other than some minor issues (backup speed to their central location is the big one), everything has been going grand. I use it to backup about 600GB of photos and videos, 500GB+ of VMs, documents, source code and a fair whack of other stuff… In total, about 2TB of data.&lt;/p&gt;
 
@@ -2147,7 +2147,7 @@ make
 	<entry>
 		<title>Understanding Storage Spaces in Windows 8 and Windows Server 2012</title>
 		<link href="https://www.tiernanotoole.ie/2012/08/30/Understanding-Windows8-Storage-Spaces.html"/>
-		<updated>2012-08-30T09:04:14+00:00</updated>
+		<updated>2012-08-30T10:04:14+01:00</updated>
 		<id>https://www.tiernanotoole.ie{ post.id }}</id>
 		<content type="html">&lt;p&gt;So, Windows Server 2012 and Windows 8 have both RTMed in the last couple of weeks and will be available to the public in the next month or so (September for Server, October for Client). If you are an MSDN Subscriber, you already have Client, and will (hopefully) get server in the next couple of weeks… Fingers crossed… Anyway, one of the interesting features i am waiting for is &lt;a href=&quot;http://blogs.msdn.com/b/b8/archive/2012/01/05/virtualizing-storage-for-scale-resiliency-and-efficiency.aspx&quot;&gt;Storage Spaces&lt;/a&gt;. Tim Anderson’s Gadget Writing blog has some information on &lt;a href=&quot;http://gadgets.itwriting.com/1462-understanding-windows-8-storage-spaces-confusing-but-powerful.html&quot;&gt;how Storage Spaces works&lt;/a&gt;. handy notes on what to do and what not to do.&lt;/p&gt;
 
@@ -2157,7 +2157,7 @@ make
 	<entry>
 		<title>Sublime Text 2 with Powershell</title>
 		<link href="https://www.tiernanotoole.ie/2012/08/30/SublimeText-With-Powershell.html"/>
-		<updated>2012-08-30T09:00:13+00:00</updated>
+		<updated>2012-08-30T10:00:13+01:00</updated>
 		<id>https://www.tiernanotoole.ie{ post.id }}</id>
 		<content type="html">&lt;p&gt;My new Favorite cross platform text editor is &lt;a href=&quot;http://www.sublimetext.com/2&quot;&gt;Sublime Text 2&lt;/a&gt;. It works on Windows, Mac OS and Linux, and i am very happy with it. My only problem is the path to start it is not exactly easy to type… So, with the help of PowerShell, my new favorite command line tool on Windows, i added an alias:&lt;/p&gt;
 
@@ -2177,7 +2177,7 @@ make
 	<entry>
 		<title>AutoScaling with Amazon</title>
 		<link href="https://www.tiernanotoole.ie/2012/08/30/AutoScalling-With-Amazon.html"/>
-		<updated>2012-08-30T00:00:00+00:00</updated>
+		<updated>2012-08-30T00:00:00+01:00</updated>
 		<id>https://www.tiernanotoole.ie{ post.id }}</id>
 		<content type="html">&lt;p&gt;I have a few &lt;a href=&quot;http://aws.amazon.com/ec2/&quot;&gt;Amazon EC2&lt;/a&gt; instances running on a project, and one of these instances was known as the Zombie Instance! Every time i killed it, it came back to life a few min later… I found out that i, at some point, set that instance to be in an &lt;a href=&quot;http://aws.amazon.com/autoscaling/&quot;&gt;AutoScaling&lt;/a&gt; group. Any time the instance died, Amazon would check and restart the instance. So, how did I kill this undead instance? Check out “&lt;a href=&quot;http://kkpradeeban.blogspot.ie/2011/02/auto-scaling-with-amazon-ec2-ii.html&quot;&gt;Auto Scaling with Amazon EC2 II&lt;/a&gt;” on LLOVIZNA’s blog. They had the same issue i had (trying to kill the Auto Scaling group gives an error) and figured out how to do it. Handy stuff. Now the instance is dead, and hopefully it wont come back any time soon… Mind you, When AutoScaling works correctly, it can be very cool indeed!&lt;/p&gt;
 
@@ -2187,7 +2187,7 @@ make
 	<entry>
 		<title>My new Git Powered Site</title>
 		<link href="https://www.tiernanotoole.ie/2012/08/29/NewSite.html"/>
-		<updated>2012-08-29T12:54:40+00:00</updated>
+		<updated>2012-08-29T13:54:40+01:00</updated>
 		<id>https://www.tiernanotoole.ie{ post.id }}</id>
 		<content type="html">&lt;p&gt;So, this site is brought to you by &lt;a href=&quot;http://git-scm.com/&quot;&gt;GIT&lt;/a&gt;, &lt;a href=&quot;https://github.com/mojombo/jekyll&quot;&gt;Jekyll&lt;/a&gt; and Magic… here is how i did it…&lt;/p&gt;
 
